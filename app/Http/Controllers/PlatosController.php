@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\plato;
+use App\Models\Plato;
 use Illuminate\Http\Request;
 
 class PlatosController extends Controller
@@ -12,7 +12,10 @@ class PlatosController extends Controller
      */
     public function index()
     {
-        //
+        $platos = Plato::all();
+        return response()->json([
+            $platos
+        ], 200);
     }
 
     /**
@@ -20,23 +23,33 @@ class PlatosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $plato = Plato::create($request->all());
+        return response()->json([
+            $plato
+        ], 201);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(platos $platos)
+    public function show(string $id)
     {
-        //
+        $plato = Plato::findOrFail($id);
+        return response()->json([
+            $plato
+        ], 200);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, platos $platos)
+    public function update(Request $request, string $id)
     {
-        //
+        $plato = Plato::findOrFail($id);
+        $plato->update($request->all());
+        return response()->json([
+            $plato
+        ], 200);
     }
 
     /**
@@ -44,6 +57,8 @@ class PlatosController extends Controller
      */
     public function destroy(platos $platos)
     {
-        //
+        $plato = Plato::findOrFail($id);
+        $plato->delete();
+        return response()->json([], 204);
     }
 }

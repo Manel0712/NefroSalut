@@ -12,7 +12,10 @@ class QuizController extends Controller
      */
     public function index()
     {
-        //
+        $quizs = Quiz::all();
+        return response()->json([
+            $quizs
+        ], 200);
     }
 
     /**
@@ -20,30 +23,42 @@ class QuizController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $quiz = Quiz::create($request->all());
+        return response()->json([
+            $quiz
+        ], 201);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Quiz $quiz)
+    public function show(string $id)
     {
-        //
+        $quiz = Quiz::findOrFail($id);
+        return response()->json([
+            $quiz
+        ], 200);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Quiz $quiz)
+    public function update(Request $request, string $id)
     {
-        //
+        $quiz = Quiz::findOrFail($id);
+        $quiz->update($request->all());
+        return response()->json([
+            $quiz
+        ], 200);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Quiz $quiz)
+    public function destroy(string $id)
     {
-        //
+        $quiz = Quiz::findOrFail($id);
+        $quiz->delete();
+        return response()->json([], 204);
     }
 }

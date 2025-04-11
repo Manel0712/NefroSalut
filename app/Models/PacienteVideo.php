@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Videos extends Model
+class PacienteVideo extends Model
 {
     protected $fillable = [
-        "titulo",
+        "paciente_id",
+        "video_id",
+        "num_visualizaciones",
         "estado_visualizacion",
-        "introduccion",
-        "detalle",
     ];
 }

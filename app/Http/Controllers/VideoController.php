@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Categoria;
+use App\Models\Video;
 use Illuminate\Http\Request;
 
-class CategoriaController extends Controller
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $categorias = Categoria::all();
+        $videos = Video::all();
         return response()->json([
-            $categorias
+            $videos
         ], 200);
     }
 
@@ -23,10 +23,8 @@ class CategoriaController extends Controller
      */
     public function store(Request $request)
     {
-        $categoria = Categoria::create($request->all());
-        return response()->json([
-            categoria
-        ], 201);
+        $video = Video::create($request->all());
+        return response()->json([$video], 201);
     }
 
     /**
@@ -34,9 +32,9 @@ class CategoriaController extends Controller
      */
     public function show(string $id)
     {
-        $categoria = Categoria::findOrFail($id);
+        $video = Video::findOrFail($id);
         return response()->json([
-            $categoria
+            $video
         ], 200);
     }
 
@@ -45,9 +43,10 @@ class CategoriaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $categoria = Categoria::findOrFail($id);
+        $video = Video::findOrFail($id);
+        $video->update($request->all());
         return response()->json([
-            $categoria
+            $video
         ], 200);
     }
 
@@ -56,7 +55,8 @@ class CategoriaController extends Controller
      */
     public function destroy(string $id)
     {
-        $categoria = Categoria::findOrFail($id);
+        $video = Video::findOrFail($id);
+        $video->delete();
         return response()->json([], 204);
     }
 }

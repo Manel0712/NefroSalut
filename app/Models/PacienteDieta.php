@@ -4,9 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ingrediente extends Model
+class PacienteDieta extends Model
 {
     protected $fillable = [
-        "nombre",
+        "dieta_id",
+        "paciente_id",
+        "familiar_id"
     ];
 }
