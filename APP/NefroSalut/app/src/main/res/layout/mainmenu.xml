@@ -76,12 +76,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <!-- Botón Dietas -->
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnJocs"
         style="@style/RoundedButtonStyle"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/base"
         android:iconGravity="textStart"
         android:iconPadding="12dp"
@@ -89,10 +91,10 @@
         android:textColor="#000000"
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnVideos" />
 
-    <!-- Botón Dietas -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnDietas"
         style="@style/RoundedButtonStyle"
