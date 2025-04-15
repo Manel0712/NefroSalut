@@ -9,4 +9,13 @@
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_margin">16dp</item>
     </style>
+    <style name="RoundedTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/rounded_text</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
 </resources>
