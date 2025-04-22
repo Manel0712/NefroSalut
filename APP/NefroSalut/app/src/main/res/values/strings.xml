@@ -21,15 +21,21 @@
     <string name="login_password_hint">Password</string>
     <string name="submit_login_button_text">Login</string>
 
-    <string name="title_welcome">Benvingut/da</string>
-    <string name="title_menu">Menu</string>
+    <!-- Spinner de categorias -->
+    <string-array name="Categoria">
+        <item>Que es la nefrologia</item>
+        <item>Dieta y Plats</item>
+        <item>Exercici Fisic</item>
+        <item>Medicacio</item>
+        <item>Dialisis</item>
+        <item>Trasplantament renal</item>
+    </string-array>
 
-    <!-- Botones -->
-    <string name="btn_videos">Videos</string>
-    <string name="btn_jocs">Jocs</string>
-    <string name="btn_dietas">Dietas</string>
-    <string name="btn_perfil">Perfil</string>
-    <string name="btn_foros">Foros</string>
-    <string name="btn_omple_les_dades">Omple les dades</string>
+    <string-array name="Fase">
+        <item>Hemodialisis</item>
+        <item>Transplantament renal</item>
+        <item>Dialisis peritoneal</item>
+        <item>Tractament conservador</item>
+    </string-array>
 
 </resources>

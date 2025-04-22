@@ -35,20 +35,37 @@
         android:id="@+id/nomCategoria"
         android:layout_width="131dp"
         android:layout_height="34dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
         android:text="Categorias"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="402dp"
-        android:layout_height="406dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="413dp"
+        android:layout_height="377dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomCategoria"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="373dp"
+        android:layout_height="61dp"
+        android:entries="@array/Categoria"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomCategoria"
+        app:layout_constraintVertical_bias="0.488" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
