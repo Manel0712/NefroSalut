@@ -20,4 +20,22 @@
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
     <string name="submit_login_button_text">Login</string>
+
+    <!-- Spinner de categorias -->
+    <string-array name="Categoria">
+        <item>Que es la nefrologia</item>
+        <item>Dieta y Plats</item>
+        <item>Exercici Fisic</item>
+        <item>Medicacio</item>
+        <item>Dialisis</item>
+        <item>Trasplantament renal</item>
+    </string-array>
+
+    <string-array name="Fase">
+        <item>Hemodialisis</item>
+        <item>Transplantament renal</item>
+        <item>Dialisis peritoneal</item>
+        <item>Tractament conservador</item>
+    </string-array>
+
 </resources>
