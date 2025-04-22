@@ -44,6 +44,8 @@ id btnPerfil
 id btnRegister
 id btnSubmitLogin
 id btnSubmitRegister
+id btnSubmitRegister2
+id btnSubmitRegister4
 id btnTransplants
 id btnVideos
 id btnjocs
@@ -51,6 +53,9 @@ id btnperfil
 id btnplats
 id btnvideos
 id data_inici
+id editText
+id editText2
+id editText3
 id etEmail
 id etLoginEmail
 id etLoginPassword
@@ -60,6 +65,11 @@ id etPassword2
 id guideline
 id guideline10
 id guideline11
+id guideline12
+id guideline13
+id guideline15
+id guideline16
+id guideline17
 id guideline2
 id guideline3
 id guideline4
@@ -99,6 +109,7 @@ id toolbar
 id tvLoginTitle
 id tvRegisterTitle
 layout activity_main
+layout dades_mediques
 layout login
 layout mainmenu
 layout perfil

@@ -96,6 +96,10 @@
         "source": "com.mariona.nefrosalut.app-main-35:/drawable/ajedrez_caballero_alt.png"
     },
     {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_dades_mediques.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/dades_mediques.xml"
+    },
+    {
         "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "com.mariona.nefrosalut.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
     },
