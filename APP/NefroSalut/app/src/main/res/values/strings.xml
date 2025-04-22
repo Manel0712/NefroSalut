@@ -3,13 +3,14 @@
     <string name="app_name">NEFROSALUT</string>
 
     <!-- Main Activity -->
-    <string name="register_button_text">Register</string>
+    <string name="register_button_text">Register Familiar</string>
     <string name="login_button_text">Login</string>
 
     <!-- Register Activity -->
     <string name="register_title">Register</string>
     <string name="name_hint">Name</string>
     <string name="email_hint">Email</string>
+    <string name="telefono_hint">Telefono</string>
     <string name="password_hint">Password</string>
     <string name="confirm_password_hint">Confirm Password</string>
     <string name="submit_register_button_text">Register</string>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btnvideos"
+        android:icon="@drawable/juego_de_claqueta"
+        android:title="Videos"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btnjocs"
+        android:icon="@drawable/ajedrez_caballero_alt"
+        android:title="Jocs"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btnplats"
+        android:icon="@drawable/cena_tomandose_de_la_mano"
+        android:title="plats"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btnperfil"
+        android:icon="@drawable/usuario"
+        android:title="perfil"
+        app:showAsAction="always" />
+</menu>

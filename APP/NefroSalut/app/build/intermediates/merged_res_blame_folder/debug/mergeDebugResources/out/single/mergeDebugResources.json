@@ -1,0 +1,190 @@
+[
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_registre_personal.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/registre_personal.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_barras_progreso.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/barras_progreso.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/xml_data_extraction_rules.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_videos_categoria.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/videos_categoria.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_mainmenu.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/mainmenu.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_ojo.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/ojo.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_rounded_button.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/rounded_button.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_usuarios.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/usuarios.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_perfil.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/perfil.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_rounded_text.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/rounded_text.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_activity_main.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_rinones.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/rinones.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_ensalada.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/ensalada.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_login.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/login.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_pastillas.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/pastillas.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_progres.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/progres.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/menu_mainmenu.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/menu/mainmenu.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_ajedrez_caballero_alt.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/ajedrez_caballero_alt.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_dades_mediques.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/dades_mediques.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_levantamiento_de_pesas_con_mancuernas.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/levantamiento_de_pesas_con_mancuernas.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_cena_tomandose_de_la_mano.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/cena_tomandose_de_la_mano.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_ojo_abierto.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/ojo_abierto.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/font_inria_sans_light.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/font/inria_sans_light.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_x.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/x.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable__rallas.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/_rallas.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/xml_backup_rules.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_juego_de_claqueta.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/juego_de_claqueta.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_sangre_de_inyeccion_de_jeringa.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/sangre_de_inyeccion_de_jeringa.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_usuario.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/usuario.png"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/menu_menu.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/menu/menu.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_register.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/register.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/layout_quiz.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/layout/quiz.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-33:/drawable_foro.png.flat",
+        "source": "com.mariona.nefrosalut.app-main-35:/drawable/foro.png"
+    }
+]
