@@ -9,13 +9,52 @@
     tools:context=".MainActivity">
 
     <!-- Toolbar superior -->
+
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgvideo"
         android:layout_width="37dp"
         android:layout_height="34dp"
-        app:srcCompat="@drawable/juego_de_claqueta"
-        tools:layout_editor_absoluteX="283dp"
-        tools:layout_editor_absoluteY="225dp" />
+        android:src="@drawable/juego_de_claqueta"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVideos"
+        app:layout_constraintStart_toEndOf="@+id/btnVideos"
+        app:layout_constraintTop_toTopOf="@+id/btnVideos" />
+
+    <ImageView
+        android:id="@+id/imgjocs"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ajedrez_caballero_alt"
+        app:layout_constraintBottom_toBottomOf="@+id/btnJocs"
+        app:layout_constraintStart_toEndOf="@+id/btnJocs"
+        app:layout_constraintTop_toTopOf="@+id/btnJocs" />
+
+    <ImageView
+        android:id="@+id/imgdietas"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ensalada"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDietas"
+        app:layout_constraintStart_toEndOf="@+id/btnDietas"
+        app:layout_constraintTop_toTopOf="@+id/btnDietas" />
+
+    <ImageView
+        android:id="@+id/imgperfil"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:src="@drawable/usuario"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPerfil"
+        app:layout_constraintStart_toEndOf="@+id/btnPerfil"
+        app:layout_constraintTop_toTopOf="@+id/btnPerfil" />
+
+    <ImageView
+        android:id="@+id/imgForo"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:src="@drawable/foro"
+        app:layout_constraintBottom_toBottomOf="@+id/btnForos"
+        app:layout_constraintStart_toEndOf="@+id/btnForos"
+        app:layout_constraintTop_toTopOf="@+id/btnForos" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/menu"
@@ -27,6 +66,16 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Texto Bienvenida -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="249dp"
+        android:layout_height="62dp"
+        android:src="@drawable/untitled"
+        app:layout_constraintBottom_toBottomOf="@+id/menu"
+        app:layout_constraintEnd_toEndOf="@+id/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
