@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\mario\.gradle\caches\8.10.2\transforms\25e644db283c70c7bfb3e5088784aa21\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\mario\.gradle\caches\8.10.2\transforms\c2b7af8aef16264710d9c69104aba49d\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\mario\.gradle\caches\8.10.2\transforms\f11518a3fb87a932eaf77b2b44b6fe16\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
@@ -57,8 +57,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\mario\.
 	xmlns:android
 		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:5:5-27:19
-INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:5:5-27:19
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:5:5-35:19
+INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:5:5-35:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\mario\.gradle\caches\8.10.2\transforms\25e644db283c70c7bfb3e5088784aa21\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\mario\.gradle\caches\8.10.2\transforms\25e644db283c70c7bfb3e5088784aa21\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\mario\.gradle\caches\8.10.2\transforms\c2b7af8aef16264710d9c69104aba49d\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -113,12 +113,36 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
 		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:21:27-74
-meta-data#preloaded_fonts
-ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:24:9-26:57
-	android:resource
-		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:26:13-54
+activity#com.mariona.nefrosalut.LoginActivity
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:24:9-51
 	android:name
-		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:25:13-43
+		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:24:19-48
+activity#com.mariona.nefrosalut.RegisterSelectActivity
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:25:9-60
+	android:name
+		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:25:19-57
+activity#com.mariona.nefrosalut.RegisterPacientActivity
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:26:9-61
+	android:name
+		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:26:19-58
+activity#com.mariona.nefrosalut.RegisterFamiliarActivity
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:27:9-62
+	android:name
+		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:27:19-59
+activity#com.mariona.nefrosalut.prova
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:28:9-43
+	android:name
+		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:28:19-40
+activity#com.mariona.nefrosalut.VidesoProva
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:29:9-49
+	android:name
+		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:29:19-46
+meta-data#preloaded_fonts
+ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:32:9-34:57
+	android:resource
+		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:34:13-54
+	android:name
+		ADDED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:33:13-43
 uses-sdk
 INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\mario\Desktop\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml

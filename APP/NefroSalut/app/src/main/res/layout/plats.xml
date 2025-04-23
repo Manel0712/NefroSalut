@@ -21,51 +21,48 @@
         android:id="@+id/nomDieta"
         android:layout_width="235dp"
         android:layout_height="57dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
-        android:gravity="center"
-        android:text="Videos"
+        android:text="Plats"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
         android:id="@+id/nomCategoria"
-        android:layout_width="131dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="256dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
-        android:text="Categorias"
+        android:text="Categoria"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomDieta" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvListVideos"
-        android:layout_width="413dp"
-        android:layout_height="377dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomCategoria"
-        app:layout_constraintVertical_bias="0.898" />
 
     <Spinner
         android:id="@+id/spinerCategoriaPlat"
         android:layout_width="373dp"
         android:layout_height="61dp"
-        android:entries="@array/Categoria"
-        app:layout_constraintBottom_toTopOf="@+id/rvListVideos"
+        android:entries="@array/CategoriPlats"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomCategoria"
-        app:layout_constraintVertical_bias="0.488" />
+        app:layout_constraintVertical_bias="0.039" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVerDietas"
+        android:layout_width="410dp"
+        android:layout_height="387dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinerCategoriaPlat" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

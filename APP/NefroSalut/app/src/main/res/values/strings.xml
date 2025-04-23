@@ -38,4 +38,27 @@
         <item>Tractament conservador</item>
     </string-array>
 
+    <string-array name="Estat">
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="CategoriPlats">
+        <item>Carns</item>
+        <item>Peix</item>
+        <item>Embotits</item>
+        <item>Làctics</item>
+        <item>Llegums</item>
+        <item>Verdures</item>
+        <item>Tubèrcles</item>
+        <item>Fruites</item>
+        <item>Grases</item>
+        <item>Pastisseria Bolleria i Dolços</item>
+        <item>Condiments</item>
+    </string-array>
+
 </resources>

@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/nomDieta"
         android:layout_width="235dp"
         android:layout_height="57dp"
         android:layout_marginTop="32dp"
@@ -68,7 +68,6 @@
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
         android:gravity="center"
-        android:text="Sample Text"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.576"
@@ -83,7 +82,6 @@
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
         android:gravity="center"
-        android:text="Sample Text"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +95,6 @@
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
         android:gravity="center"
-        android:text="Sample Text"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +107,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/nomDieta"
         tools:srcCompat="@tools:sample/avatars" />
 
 
