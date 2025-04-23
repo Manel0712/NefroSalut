@@ -115,8 +115,7 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/base"
         android:icon="@drawable/juego_de_claqueta"
-        android:iconGravity="textStart"
-        android:iconPadding="12dp"
+
         android:text="Videos"
         android:textColor="#000000"
         app:cornerRadius="16dp"
@@ -134,8 +133,6 @@
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/base"
-        android:iconGravity="textStart"
-        android:iconPadding="12dp"
         android:text="Jocs"
         android:textColor="#000000"
         app:cornerRadius="16dp"
@@ -151,8 +148,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/base"
-        android:iconGravity="textStart"
-        android:iconPadding="12dp"
+
         android:text="Dietas"
         android:textColor="#000000"
         app:cornerRadius="16dp"
@@ -168,8 +164,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/base"
-        android:iconGravity="textStart"
-        android:iconPadding="12dp"
+
         android:text="Perfil"
         android:textColor="#000000"
         app:cornerRadius="16dp"
@@ -185,8 +180,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/base"
-        android:iconGravity="textStart"
-        android:iconPadding="12dp"
+
         android:text="Foros"
         android:textColor="#000000"
         app:cornerRadius="16dp"

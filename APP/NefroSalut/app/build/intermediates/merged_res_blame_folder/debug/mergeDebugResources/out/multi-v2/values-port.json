@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-31:/values-port/values-port.xml",
+            "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-2:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\2ef72b1274f433e14c6b8dc20bd0aa97\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "source": "C:\\DAMANDROID\\caches\\8.10.2\\transforms\\170e10fa358ce014006343775152ca77\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
