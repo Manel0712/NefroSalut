@@ -1,0 +1,92 @@
+[
+    {
+      "titulo": "¿Qué es la nefrología?",
+      "url": "https://www.ejemplo.com/video/nefr-001",
+      "categoria": "Que es la nefrologia?"
+    },
+    {
+      "titulo": "Funciones del nefrólogo en el tratamiento renal",
+      "url": "https://www.ejemplo.com/video/nefr-002",
+      "categoria": "Que es la nefrologia?"
+    },
+    {
+      "titulo": "Importancia de la nefrología en la salud pública",
+      "url": "https://www.ejemplo.com/video/nefr-003",
+      "categoria": "Que es la nefrologia?"
+    },
+    {
+      "titulo": "Dieta baja en fósforo para pacientes renales",
+      "url": "https://www.ejemplo.com/video/dieta-001",
+      "categoria": "Dietas y plats"
+    },
+    {
+      "titulo": "Menús semanales para insuficiencia renal crónica",
+      "url": "https://www.ejemplo.com/video/dieta-002",
+      "categoria": "Dietas y plats"
+    },
+    {
+      "titulo": "Errores comunes en la alimentación renal",
+      "url": "https://www.ejemplo.com/video/dieta-003",
+      "categoria": "Dietas y plats"
+    },
+    {
+      "titulo": "Ejercicios suaves para personas con enfermedad renal",
+      "url": "https://www.ejemplo.com/video/ejercicio-001",
+      "categoria": "Exercici Fisic"
+    },
+    {
+      "titulo": "Rutina de estiramientos para pacientes renales",
+      "url": "https://www.ejemplo.com/video/ejercicio-002",
+      "categoria": "Exercici Fisic"
+    },
+    {
+      "titulo": "¿Es seguro hacer ejercicio con insuficiencia renal?",
+      "url": "https://www.ejemplo.com/video/ejercicio-003",
+      "categoria": "Exercici Fisic"
+    },
+    {
+      "titulo": "Cómo organizar tu medicación renal",
+      "url": "https://www.ejemplo.com/video/medicacion-001",
+      "categoria": "Medicacio"
+    },
+    {
+      "titulo": "Efectos secundarios comunes de la medicación renal",
+      "url": "https://www.ejemplo.com/video/medicacion-002",
+      "categoria": "Medicacio"
+    },
+    {
+      "titulo": "Interacción entre medicamentos en pacientes renales",
+      "url": "https://www.ejemplo.com/video/medicacion-003",
+      "categoria": "Medicacio"
+    },
+    {
+      "titulo": "Diferencias entre hemodiálisis y diálisis peritoneal",
+      "url": "https://www.ejemplo.com/video/dialisis-001",
+      "categoria": "Dialisis"
+    },
+    {
+      "titulo": "Cómo prepararse para una sesión de diálisis",
+      "url": "https://www.ejemplo.com/video/dialisis-002",
+      "categoria": "Dialisis"
+    },
+    {
+      "titulo": "Complicaciones comunes durante la diálisis",
+      "url": "https://www.ejemplo.com/video/dialisis-003",
+      "categoria": "Dialisis"
+    },
+    {
+      "titulo": "Transplante renal paso a paso",
+      "url": "https://www.ejemplo.com/video/transplante-001",
+      "categoria": "Transplantament renal"
+    },
+    {
+      "titulo": "Vivir con un riñón trasplantado",
+      "url": "https://www.ejemplo.com/video/transplante-002",
+      "categoria": "Transplantament renal"
+    },
+    {
+      "titulo": "Rechazo de órganos: prevención y tratamiento",
+      "url": "https://www.ejemplo.com/video/transplante-003",
+      "categoria": "Transplantament renal"
+    }
+  ]
