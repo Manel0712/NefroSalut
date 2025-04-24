@@ -26,7 +26,7 @@
                 app:srcCompat="@drawable/ensalada" />
 
             <TextView
-                android:id="@+id/cardNomVideos"
+                android:id="@+id/cardNomDieta"
                 android:layout_width="283dp"
                 android:layout_height="42dp"
                 android:autoSizeTextType="uniform"

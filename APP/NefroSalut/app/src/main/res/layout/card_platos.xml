@@ -26,7 +26,7 @@
                 app:srcCompat="@drawable/cena_tomandose_de_la_mano" />
 
             <TextView
-                android:id="@+id/cardNomVideos"
+                android:id="@+id/cardNomDelPlat"
                 android:layout_width="279dp"
                 android:layout_height="30dp"
                 android:autoSizeTextType="uniform"
@@ -39,7 +39,7 @@
                 app:layout_constraintVertical_bias="0.157" />
 
             <TextView
-                android:id="@+id/cardCategoria"
+                android:id="@+id/cardCategoriaPlat"
                 android:layout_width="279dp"
                 android:layout_height="30dp"
                 android:autoSizeTextType="uniform"
