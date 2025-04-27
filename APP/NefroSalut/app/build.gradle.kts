@@ -33,9 +33,21 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
 }
 
 dependencies {
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation ("com.google.android.gms:play-services-maps:19.1.0")  // Asegúrate de tener esta dependencia
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation(libs.lifecycle.process)
+
+    implementation(libs.okhttp.logging)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

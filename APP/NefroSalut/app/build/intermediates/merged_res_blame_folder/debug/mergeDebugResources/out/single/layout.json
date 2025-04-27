@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\videos_categoria.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\videos_categoria.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\loginfamiliar.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\loginfamiliar.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\progres.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\progres.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\mainmenu.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\mainmenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\register_familiar.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\register_familiar.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\registre_pacient.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\registre_pacient.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\videos.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\videos.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\quiz.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\perfil.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\list_videos.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\list_videos.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\registre_personal.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\registre_personal.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\activity_login_select.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\activity_login_select.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\dades_mediques.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\dades_mediques.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\login.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\login.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-mergeDebugResources-40:/layout/register_familiar.xml",
+        "source": "com.mariona.nefrosalut.app-main-43:/layout/register_familiar.xml"
+    }
+]
