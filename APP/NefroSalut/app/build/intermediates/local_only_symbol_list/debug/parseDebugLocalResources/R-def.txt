@@ -1,6 +1,8 @@
 R_DEF: Internal format may change without notice
 local
+array CategoriPlats
 array Categoria
+array Estat
 array Fase
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
@@ -95,11 +97,13 @@ id imglogo
 id imgperfil
 id imgvideo
 id inputAlcada
+id inputClassificacio
 id inputContrasena
 id inputData
-id inputDni
 id inputEmail
+id inputEstat
 id inputFoto
+id inputNomDieta
 id inputPes
 id inputUser
 id logo
@@ -128,10 +132,12 @@ id tvActividadFisica
 id tvLoginTitle
 id tvRegisterTitle
 id videoView2
+layout activity_login_select
 layout activity_main
 layout dades_mediques
 layout list_videos
 layout login
+layout loginfamiliar
 layout mainmenu
 layout perfil
 layout progres
@@ -148,10 +154,12 @@ mipmap ic_launcher_round
 string app_name
 string confirm_password_hint
 string email_hint
+string login
 string login_button_text
 string login_email_hint
 string login_password_hint
 string login_title
+string login_title_familiar
 string name_hint
 string password_hint
 string register_button_text

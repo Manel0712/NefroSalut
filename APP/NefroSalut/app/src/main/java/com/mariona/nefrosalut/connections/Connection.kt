@@ -1,6 +1,5 @@
 package com.mariona.nefrosalut.connections
 
-
 import okhttp3.OkHttpClient
 import okhttp3.Interceptor
 import okhttp3.logging.HttpLoggingInterceptor
@@ -11,7 +10,7 @@ import retrofit2.create
 import java.util.concurrent.TimeUnit
 
 object Connection {
-    private const val TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlN2VlMmViYjBlZWZjMzg2OWRkYTk5OGJmNjYwZDBlNSIsIm5iZiI6MTc0MTM3MDAyNi40NzQsInN1YiI6IjY3Y2IzMmFhN2M5NjdlMDRkNTViODFkYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.exgP_rmpLGXCSx8RaYre9nszrjECdl_Aep4yjRzyxf4"
+    private const val TOKEN = "eOAnQ3ZLex43Yinb8rWLGa1XjrTrW7JLXGfAB9PFf2640000"
 
     private val authInterceptor = Interceptor { chain ->
         val originalRequest: Request = chain.request()
@@ -36,7 +35,7 @@ object Connection {
     }
 
     private val builderNefrosalut = Retrofit.Builder()
-        .baseUrl("http://apinefrosalut.test/public")
+        .baseUrl("http://10.0.2.2:8000/")
         .client(okHttpClientNefrosalut)
         .addConverterFactory(GsonConverterFactory.create())
         .build()

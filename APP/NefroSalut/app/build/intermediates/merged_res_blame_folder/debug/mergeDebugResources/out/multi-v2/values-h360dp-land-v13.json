@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-2:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+            "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-39:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\DAMANDROID\\caches\\8.10.2\\transforms\\4cb657df3aefa8616f80ab5be186be9e\\transformed\\material-1.12.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\2dcd5e9375ec0d46f4349744a7f63733\\transformed\\material-1.12.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

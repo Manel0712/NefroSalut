@@ -40,7 +40,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.NefroSalut" >
+        android:theme="@style/Theme.NefroSalut"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.mariona.nefrosalut.LoginSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mariona.nefrosalut.LoginFamiliar"
+            android:exported="false" />
         <activity
             android:name="com.mariona.nefrosalut.MainActivity"
             android:exported="true" >
@@ -54,6 +61,8 @@
         <activity android:name="com.mariona.nefrosalut.RegisterSelectActivity" />
         <activity android:name="com.mariona.nefrosalut.RegisterPacientActivity" />
         <activity android:name="com.mariona.nefrosalut.RegisterFamiliarActivity" />
+        <activity android:name="com.mariona.nefrosalut.DadesMediques" />
+        <activity android:name="com.mariona.nefrosalut.MainMenu" />
 
         <meta-data
             android:name="preloaded_fonts"

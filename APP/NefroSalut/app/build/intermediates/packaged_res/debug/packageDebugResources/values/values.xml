@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="CategoriPlats">
+        <item>Carns</item>
+        <item>Peix</item>
+        <item>Embotits</item>
+        <item>Làctics</item>
+        <item>Llegums</item>
+        <item>Verdures</item>
+        <item>Tubèrcles</item>
+        <item>Fruites</item>
+        <item>Grases</item>
+        <item>Pastisseria Bolleria i Dolços</item>
+        <item>Condiments</item>
+    </string-array>
     <string-array name="Categoria">
         <item>Que es la nefrologia</item>
         <item>Dieta y Plats</item>
@@ -7,6 +20,14 @@
         <item>Medicacio</item>
         <item>Dialisis</item>
         <item>Trasplantament renal</item>
+    </string-array>
+    <string-array name="Estat">
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
     <string-array name="Fase">
         <item>Hemodialisis</item>
@@ -38,10 +59,12 @@
     <string name="app_name">NEFROSALUT</string>
     <string name="confirm_password_hint">Confirm Password</string>
     <string name="email_hint">Email</string>
+    <string name="login">Login</string>
     <string name="login_button_text">Login</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
-    <string name="login_title">Login</string>
+    <string name="login_title">Login Paciente</string>
+    <string name="login_title_familiar">Login Familiar</string>
     <string name="name_hint">Name</string>
     <string name="password_hint">Password</string>
     <string name="register_button_text">Register Familiar</string>

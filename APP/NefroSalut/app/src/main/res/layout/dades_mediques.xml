@@ -22,12 +22,13 @@
         style="@style/RoundedButtonStyle"
         android:layout_width="139dp"
         android:layout_height="46dp"
+        android:onClick="añadirDatosMedicos"
         android:text="Desa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintVertical_bias="0.951" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/inputData"
@@ -38,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputDni" />
+        app:layout_constraintTop_toBottomOf="@+id/inputNomDieta" />
 
 
     <com.google.android.material.textfield.TextInputEditText
@@ -64,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputPes" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/inputDni"
+        android:id="@+id/inputNomDieta"
         android:layout_width="383dp"
         android:layout_height="64dp"
         android:layout_marginTop="32dp"
@@ -77,7 +78,7 @@
         android:id="@+id/tvActividadFisica"
         android:layout_width="180dp"
         android:layout_height="31dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
         android:text="Activitat física"
@@ -89,53 +90,78 @@
 
     <CheckBox
         android:id="@+id/checkboxActividadFisicaSi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_width="48dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/inria_sans_light"
         android:text="Sí"
         app:layout_constraintStart_toEndOf="@+id/tvActividadFisica"
-        tools:layout_editor_absoluteY="421dp" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAlcada" />
 
     <CheckBox
         android:id="@+id/checkboxActividadFisicaNo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
         android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/inria_sans_light"
         android:text="No"
         app:layout_constraintStart_toEndOf="@+id/checkboxActividadFisicaSi"
-        tools:layout_editor_absoluteY="421dp" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAlcada" />
 
     <CheckBox
         android:id="@+id/checkboxHipertenso"
-        android:layout_width="173dp"
-        android:layout_height="50dp"
+        android:layout_width="170dp"
+        android:layout_height="36dp"
         android:layout_marginStart="12dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
         android:text="Hipertensió"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/checkboxDiabetico"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.675" />
 
     <CheckBox
         android:id="@+id/checkboxDiabetico"
-        android:layout_width="153dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="178dp"
+        android:layout_height="35dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
         android:text="Diabétic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkboxActividadFisicaNo"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675" />
+
+    <Spinner
+        android:id="@+id/inputClassificacio"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="216dp"
+        android:entries="@array/Fase"
+        android:layout_marginBottom="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxDiabetico"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/inputEstat"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="144dp"
+        android:entries="@array/Estat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxHipertenso"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
