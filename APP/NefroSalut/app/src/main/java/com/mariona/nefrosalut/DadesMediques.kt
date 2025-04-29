@@ -84,9 +84,110 @@ class DadesMediques : AppCompatActivity() {
             diabetic = false
         }
         var estat = binding.inputEstat.selectedItem.toString()
-        var classificacio = binding.inputClassificacio.selectedItem.toString()
+        var estadio = binding.inputClassificacio.selectedItem.toString()
         var IMC = pes / alçada.pow(2)
-        var paciente = Paciente(name, apellidos, email, telefono, password.trim(), estat, "animo", activitatFisica, diabetic, hipertensio, 0, null, DNI, data, pes, alçada, IMC, classificacio, 0)
+        var classificacio = ""
+        if (IMC>=18.5 && IMC<=24.9) {
+            if (activitatFisica) {
+                if (estadio.equals("Tractament conservador")) {
+                    if (diabetic) {
+                        classificacio = "C2"
+                    }
+                    else {
+                        classificacio = "C1"
+                    }
+                }
+                else {
+                    if (diabetic) {
+                        classificacio = "C4"
+                    }
+                    else {
+                        classificacio = "C3"
+                    }
+                }
+            }
+            else {
+                if (estadio.equals("Tractament conservador")) {
+                    if (diabetic) {
+                        classificacio = "C6"
+                    }
+                    else {
+                        classificacio = "C5"
+                    }
+                }
+                else {
+                    if (diabetic) {
+                        classificacio = "C8"
+                    }
+                    else {
+                        classificacio = "C7"
+                    }
+                }
+            }
+        }
+        else if (IMC<18.5) {
+            if (activitatFisica) {
+                if (estadio.equals("Tractament conservador")) {
+                    if (diabetic) {
+                        classificacio = "C10"
+                    } else {
+                        classificacio = "C9"
+                    }
+                } else {
+                    if (diabetic) {
+                        classificacio = "C12"
+                    } else {
+                        classificacio = "C11"
+                    }
+                }
+            } else {
+                if (estadio.equals("Tractament conservador")) {
+                    if (diabetic) {
+                        classificacio = "C14"
+                    } else {
+                        classificacio = "C13"
+                    }
+                } else {
+                    if (diabetic) {
+                        classificacio = "C16"
+                    } else {
+                        classificacio = "C15"
+                    }
+                }
+            }
+        }
+        else if (IMC>25.0) {
+            if (activitatFisica) {
+                if (estadio.equals("Tractament conservador")) {
+                    if (diabetic) {
+                        classificacio = "C18"
+                    } else {
+                        classificacio = "C17"
+                    }
+                } else {
+                    if (diabetic) {
+                        classificacio = "C20"
+                    } else {
+                        classificacio = "C19"
+                    }
+                }
+            } else {
+                if (estadio.equals("Tractament conservador")) {
+                    if (diabetic) {
+                        classificacio = "C22"
+                    } else {
+                        classificacio = "C21"
+                    }
+                } else {
+                    if (diabetic) {
+                        classificacio = "C24"
+                    } else {
+                        classificacio = "C23"
+                    }
+                }
+            }
+        }
+        var paciente = Paciente(name, apellidos, email, telefono, password.trim(), estat, "animo", activitatFisica, diabetic, hipertensio, estadio, 0, null, DNI, data, pes, alçada, IMC, classificacio, 0)
         viewModel.register(paciente)
     }
 }
