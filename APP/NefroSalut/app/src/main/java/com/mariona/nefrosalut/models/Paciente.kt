@@ -18,6 +18,7 @@ data class Paciente (
     var actividadFisica: Boolean,
     var diabetico: Boolean,
     var hipertenso: Boolean,
+    var estadio: String,
     var puntos: Int,
     @SerializedName("personal_sanitario_id")
     var personalSanitarioId: Int?,
