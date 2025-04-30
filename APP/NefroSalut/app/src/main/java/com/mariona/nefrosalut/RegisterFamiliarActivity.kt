@@ -45,7 +45,7 @@ class RegisterFamiliarActivity : AppCompatActivity() {
         }
     }
     fun registraFamiliar(view: View) {
-        if (binding.etName.text.toString().equals("") || binding.etEmail.text.toString().equals("") || binding.etTelefono.text.toString().equals("") || binding.etPassword.text.toString().equals("") || binding.etPassword2.text.toString().equals("")) {
+        if (binding.etName.text.toString().equals("")|| binding.etApellidos.text.toString().equals("")|| binding.etEmail.text.toString().equals("") || binding.etTelefono.text.toString().equals("") || binding.etPassword.text.toString().equals("") || binding.etPassword2.text.toString().equals("")) {
             val snackbar = Snackbar.make(view, "No pueden haver campos vacios",
                 Snackbar.LENGTH_LONG).setAction("Action", null)
             snackbar.setActionTextColor(Color.WHITE)
@@ -72,7 +72,7 @@ class RegisterFamiliarActivity : AppCompatActivity() {
         }
 
         else {
-            var familiar = Familiar(binding.etName.text.toString(), "ejemplo", binding.etEmail.text.toString(), binding.etTelefono.text.toString(), binding.etPassword.text.toString().trim(), null)
+            var familiar = Familiar(binding.etName.text.toString(), binding.etApellidos.text.toString(), binding.etEmail.text.toString(), binding.etTelefono.text.toString(), binding.etPassword.text.toString().trim(), null)
             viewModel.register(familiar)
         }
     }

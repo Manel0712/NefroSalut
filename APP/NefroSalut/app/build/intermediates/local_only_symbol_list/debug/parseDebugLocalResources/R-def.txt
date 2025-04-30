@@ -72,6 +72,7 @@ id checkboxActividadFisicaSi
 id checkboxDiabetico
 id checkboxHipertenso
 id data_inici
+id etApellidos
 id etEmail
 id etLoginEmail
 id etLoginPassword
@@ -140,6 +141,8 @@ id textView12
 id textView2
 id textView3
 id textView4
+id textView5
+id textView6
 id textView7
 id toolbar
 id tvActividadFisica

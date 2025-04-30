@@ -8,10 +8,6 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\dietas.xml"
     },
     {
-        "merged": "com.mariona.nefrosalut.app-mergeDebugResources-40:/layout/dietas_plats.xml",
-        "source": "com.mariona.nefrosalut.app-main-43:/layout/dietas_plats.xml"
-    },
-    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-40:\\layout\\ver_dietas.xml",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-43:\\layout\\ver_dietas.xml"
     },

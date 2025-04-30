@@ -25,6 +25,9 @@ public final class RegistrePacientBinding implements ViewBinding {
   public final AppCompatButton btnSubmitRegister;
 
   @NonNull
+  public final EditText etApellidos;
+
+  @NonNull
   public final EditText etEmail;
 
   @NonNull
@@ -43,11 +46,13 @@ public final class RegistrePacientBinding implements ViewBinding {
   public final TextView tvRegisterTitle;
 
   private RegistrePacientBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatButton btnSubmitRegister, @NonNull EditText etEmail,
-      @NonNull EditText etName, @NonNull EditText etPassword, @NonNull EditText etPassword2,
-      @NonNull EditText etTelefono, @NonNull TextView tvRegisterTitle) {
+      @NonNull AppCompatButton btnSubmitRegister, @NonNull EditText etApellidos,
+      @NonNull EditText etEmail, @NonNull EditText etName, @NonNull EditText etPassword,
+      @NonNull EditText etPassword2, @NonNull EditText etTelefono,
+      @NonNull TextView tvRegisterTitle) {
     this.rootView = rootView;
     this.btnSubmitRegister = btnSubmitRegister;
+    this.etApellidos = etApellidos;
     this.etEmail = etEmail;
     this.etName = etName;
     this.etPassword = etPassword;
@@ -89,6 +94,12 @@ public final class RegistrePacientBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.etApellidos;
+      EditText etApellidos = ViewBindings.findChildViewById(rootView, id);
+      if (etApellidos == null) {
+        break missingId;
+      }
+
       id = R.id.etEmail;
       EditText etEmail = ViewBindings.findChildViewById(rootView, id);
       if (etEmail == null) {
@@ -125,8 +136,8 @@ public final class RegistrePacientBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RegistrePacientBinding((ConstraintLayout) rootView, btnSubmitRegister, etEmail,
-          etName, etPassword, etPassword2, etTelefono, tvRegisterTitle);
+      return new RegistrePacientBinding((ConstraintLayout) rootView, btnSubmitRegister, etApellidos,
+          etEmail, etName, etPassword, etPassword2, etTelefono, tvRegisterTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
