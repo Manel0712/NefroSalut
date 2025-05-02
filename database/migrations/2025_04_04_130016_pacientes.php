@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('apellidos');
             $table->string('email')->unique();
             $table->string('telefono');
-            $table->text('contraseña');
+            $table->text('password');
             $table->string('estado_enfermedad');
             $table->string('estado_animo');
             $table->boolean('actividad_fisica');
@@ -34,7 +34,7 @@ return new class extends Migration
             $table->double("peso");
             $table->double("altura");
             $table->integer("IMC");
-            $table->integer("clasificacion");
+            $table->string("clasificacion");
             $table->unsignedBigInteger("progreso_id");
             $table->foreign('progreso_id')
                 ->references('id')

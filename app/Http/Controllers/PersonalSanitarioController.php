@@ -7,6 +7,8 @@ use App\Models\Paciente;
 use App\Models\Progreso;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
+use PragmaRX\Google2FA\Google2FA;
+use Base32\Base32;
 
 class PersonalSanitarioController extends Controller
 {
@@ -38,7 +40,7 @@ class PersonalSanitarioController extends Controller
             'apellidos' => $request->apellidos,
             'email' => $request->email,
             'telefono' => $request->telefono,
-            'contraseña' => $passwordHash,
+            'password' => $passwordHash,
             'rol' => $request->rol,
             'identificador' => $request->identificador,
             'progreso_id' => $progreso->id
@@ -101,7 +103,7 @@ class PersonalSanitarioController extends Controller
     }
 
     public function loggin(Request $request) {
-        $personal = PersonalSanitario::where('email', $request->email)->get();
+        $personal = PersonalSanitario::where('email', $request->email)->first();
         if ($personal && Hash::check($request->password, $personal->password)) {
             return response()->json([
                 $personal

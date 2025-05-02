@@ -9,6 +9,7 @@ use App\Http\Controllers\DietaController;
 use App\Http\Controllers\PlatosController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\WebAuthnController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -35,7 +36,7 @@ Route::post('/paciente/loggin', [PacienteController::class, "loggin"])->middlewa
 Route::get('/familiar/{familiar}/asignarpaciente/{paciente}', [FamiliarController::class, "asignarPaciente"])->middleware('auth:sanctum');
 Route::get('/familiar/{familiar}/asignardieta', [FamiliarController::class, "asignarDieta"])->middleware('auth:sanctum');
 Route::get('/familiar/{familiar}/dietas', [FamiliarController::class, "dietas"])->middleware('auth:sanctum');
-Route::post('/personal/loggin', [FamiliarController::class, "loggin"])->middleware('auth:sanctum');
+Route::post('/familiar/loggin', [FamiliarController::class, "loggin"])->middleware('auth:sanctum');
 Route::get('/dieta/{dieta}/añadirplato', [DietaController::class, "añadirPlato"])->middleware('auth:sanctum');
 Route::get('/dieta/{dieta}/platos', [DietaController::class, "platos"])->middleware('auth:sanctum');
 

@@ -15,7 +15,7 @@ class Usuario extends Model
         'apellidos',
         'email',
         'telefono',
-        'contraseña',
+        'password',
         'progreso_id'
     ];
     public function __construct(array $attributes = [])

@@ -1,14 +1,12 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '83a2bf09cac0a4a900ea455cbfff25402cb3d685',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '78068b8dc78c660c6a8f6e96d0d0bd819841009b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
-        'aliases' => array(
-            0 => '11.x-dev',
-        ),
+        'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
@@ -36,6 +34,15 @@
             'reference' => '18ba5ddfec8976260ead6e866180bd5d2f71aa1d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../carbonphp/carbon-doctrine-types',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'christian-riesen/base32' => array(
+            'pretty_version' => '1.6.0',
+            'version' => '1.6.0.0',
+            'reference' => '2e82dab3baa008e24a505649b0d583c31d31e894',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../christian-riesen/base32',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -396,6 +403,24 @@
                 0 => '*',
             ),
         ),
+        'laragear/meta-model' => array(
+            'pretty_version' => 'v2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '1973517263d9ff1cfaabf682f3c2883425271dbc',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laragear/meta-model',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'laragear/webauthn' => array(
+            'pretty_version' => 'v4.0.0',
+            'version' => '4.0.0.0',
+            'reference' => '7eed0fa249f8a6b1e3611a4a31f6ab14c28da402',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laragear/webauthn',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'laravel/fortify' => array(
             'pretty_version' => 'v1.25.4',
             'version' => '1.25.4.0',
@@ -424,14 +449,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '83a2bf09cac0a4a900ea455cbfff25402cb3d685',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '78068b8dc78c660c6a8f6e96d0d0bd819841009b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
-            'aliases' => array(
-                0 => '11.x-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(

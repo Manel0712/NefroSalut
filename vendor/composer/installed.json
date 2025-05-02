@@ -193,6 +193,68 @@
             "install-path": "../carbonphp/carbon-doctrine-types"
         },
         {
+            "name": "christian-riesen/base32",
+            "version": "1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ChristianRiesen/base32.git",
+                "reference": "2e82dab3baa008e24a505649b0d583c31d31e894"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ChristianRiesen/base32/zipball/2e82dab3baa008e24a505649b0d583c31d31e894",
+                "reference": "2e82dab3baa008e24a505649b0d583c31d31e894",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.17",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.5.13 || ^9.5"
+            },
+            "time": "2021-02-26T10:19:33+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Base32\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Riesen",
+                    "email": "chris.riesen@gmail.com",
+                    "homepage": "http://christianriesen.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Base32 encoder/decoder according to RFC 4648",
+            "homepage": "https://github.com/ChristianRiesen/base32",
+            "keywords": [
+                "base32",
+                "decode",
+                "encode",
+                "rfc4648"
+            ],
+            "support": {
+                "issues": "https://github.com/ChristianRiesen/base32/issues",
+                "source": "https://github.com/ChristianRiesen/base32/tree/1.6.0"
+            },
+            "install-path": "../christian-riesen/base32"
+        },
+        {
             "name": "dasprid/enum",
             "version": "1.0.6",
             "version_normalized": "1.0.6.0",
@@ -1390,6 +1452,167 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "install-path": "../hamcrest/hamcrest-php"
+        },
+        {
+            "name": "laragear/meta-model",
+            "version": "v2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laragear/MetaModel.git",
+                "reference": "1973517263d9ff1cfaabf682f3c2883425271dbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laragear/MetaModel/zipball/1973517263d9ff1cfaabf682f3c2883425271dbc",
+                "reference": "1973517263d9ff1cfaabf682f3c2883425271dbc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "11.*|12.*",
+                "illuminate/contracts": "11.*|12.*",
+                "illuminate/database": "11.*|12.*",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "phpunit/phpunit": "11.*|12.*"
+            },
+            "time": "2025-02-16T04:19:25+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Laragear\\MetaModel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Italo Israel Baeza Cabrera",
+                    "email": "DarkGhostHunter@Gmail.com",
+                    "homepage": "https://github.com/sponsors/DarkGhostHunter",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Let other developers customize your package model and migrations",
+            "keywords": [
+                "database",
+                "eloquent",
+                "laravel",
+                "model"
+            ],
+            "support": {
+                "issues": "https://github.com/Laragear/MetaModel/issues",
+                "source": "https://github.com/Laragear/MetaModel"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/DarkGhostHunter",
+                    "type": "Github Sponsorship"
+                },
+                {
+                    "url": "https://paypal.me/darkghosthunter",
+                    "type": "Paypal"
+                }
+            ],
+            "install-path": "../laragear/meta-model"
+        },
+        {
+            "name": "laragear/webauthn",
+            "version": "v4.0.0",
+            "version_normalized": "4.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laragear/WebAuthn.git",
+                "reference": "7eed0fa249f8a6b1e3611a4a31f6ab14c28da402"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laragear/WebAuthn/zipball/7eed0fa249f8a6b1e3611a4a31f6ab14c28da402",
+                "reference": "7eed0fa249f8a6b1e3611a4a31f6ab14c28da402",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "illuminate/auth": "11.*|12.*",
+                "illuminate/config": "11.*|12.*",
+                "illuminate/database": "11.*|12.*",
+                "illuminate/encryption": "11.*|12.*",
+                "illuminate/http": "11.*|12.*",
+                "illuminate/session": "11.*|12.*",
+                "illuminate/support": "11.*|12.*",
+                "laragear/meta-model": "2.*",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "ext-sodium": "*",
+                "orchestra/testbench": "9.*|10.*"
+            },
+            "suggest": {
+                "paragonie/sodium_compat": "To enable EdDSA 25519 keys from authenticators, if `ext-sodium` is unavailable."
+            },
+            "time": "2025-02-16T06:40:11+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laragear\\WebAuthn\\WebAuthnServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Laragear\\WebAuthn\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukas Buchs",
+                    "role": "Original developer"
+                },
+                {
+                    "name": "Italo Israel Baeza Cabrera",
+                    "email": "DarkGhostHunter@Gmail.com",
+                    "homepage": "https://github.com/sponsors/DarkGhostHunter",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Authenticate users with Passkeys: fingerprints, patterns and biometric data.",
+            "homepage": "https://github.com/laragear/webauthn",
+            "keywords": [
+                "Authentication",
+                "faceid",
+                "laravel",
+                "passkeys",
+                "touchid",
+                "webauthn",
+                "windows hello"
+            ],
+            "support": {
+                "issues": "https://github.com/Laragear/WebAuthn/issues",
+                "source": "https://github.com/Laragear/WebAuthn"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/DarkGhostHunter",
+                    "type": "Github Sponsorship"
+                },
+                {
+                    "url": "https://paypal.me/darkghosthunter",
+                    "type": "Paypal"
+                }
+            ],
+            "install-path": "../laragear/webauthn"
         },
         {
             "name": "laravel/fortify",

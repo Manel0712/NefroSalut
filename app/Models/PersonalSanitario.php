@@ -17,4 +17,9 @@ class PersonalSanitario extends Usuario
     {
         return $this->hasMany(Paciente::class);
     }
+
+    public function webAuthnCredentials()
+    {
+        return $this->hasMany(WebAuthnCredential::class, 'personal_sanitario_id');
+    }
 }

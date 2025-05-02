@@ -40,7 +40,7 @@ class PacienteController extends Controller
             'apellidos' => $request->apellidos,
             'email' => $request->email,
             'telefono' => $request->telefono,
-            'contraseña' => $passwordHash,
+            'password' => $passwordHash,
             'estado_enfermedad' => $request->estado_enfermedad,
             'estado_animo' => $request->estado_animo,
             'actividad_fisica' => filter_var($request->actividad_fisica, FILTER_VALIDATE_BOOLEAN),
@@ -143,7 +143,7 @@ class PacienteController extends Controller
     }
 
     public function loggin(Request $request) {
-        $paciente = Paciente::where('email', $request->email)->get();
+        $paciente = Paciente::where('email', $request->email)->first();
         if ($paciente && Hash::check($request->password, $paciente->password)) {
             return response()->json([
                 $paciente

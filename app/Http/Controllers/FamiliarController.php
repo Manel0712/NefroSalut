@@ -37,7 +37,7 @@ class FamiliarController extends Controller
             'apellidos' => $request->apellidos,
             'email' => $request->email,
             'telefono' => $request->telefono,
-            'contraseña' => $passwordHash,
+            'password' => $passwordHash,
             'progreso_id' => $progreso->id
         ]);
         return response()->json([
@@ -108,8 +108,8 @@ class FamiliarController extends Controller
     }
 
     public function loggin(Request $request) {
-        $familiar = Familiar::where('email', $request->email)->get();
-        if ($familiar && Hash::check($request->password, $paciente->password)) {
+        $familiar = Familiar::where('email', $request->email)->first();
+        if ($familiar && Hash::check($request->password, $familiar->password)) {
             return response()->json([
                 $familiar
             ], 200);

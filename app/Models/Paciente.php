@@ -27,6 +27,12 @@ class Paciente extends Usuario
         'clasificacion',
     ];
 
+    protected $casts = [
+        'actividad_fisica' => 'boolean',
+        'diabetico' => 'boolean',
+        'hipertenso' => 'boolean',
+    ];
+
     public function personal_sanitario()
     {
         return $this->belongsTo(PersonalSanitario::class);
