@@ -1,4 +1,13 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-*.gradle
+# Ignorar scripts y configuraciones de Gradle
+/gradle/
+/.gradle/
+/build.gradle.kts
+/settings.gradle.kts
+/gradle.properties
+/gradle-wrapper.properties
+/local.properties
+/libs.versions.toml
+**/proguard-rules.pro
