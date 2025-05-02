@@ -26,7 +26,7 @@ class videosAdapter(private val videos: List<Videos>) : RecyclerView.Adapter<vid
         val videos = videos[position]
         holder.nombreVideo.text = videos.titulo
         holder.categoriaVideo.text = videos.categoria
-        holder.linkVideo.text = videos.url
+        holder.linkVideo.text = videos.link
     }
 
     override fun getItemCount(): Int {

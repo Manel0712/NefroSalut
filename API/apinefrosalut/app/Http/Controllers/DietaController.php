@@ -16,9 +16,7 @@ class DietaController extends Controller
     public function index()
     {
         $dietas = Dieta::all();
-        return response()->json([
-            $dietas
-        ], 200);
+        return response()->json($dietas, 200);
     }
 
     /**

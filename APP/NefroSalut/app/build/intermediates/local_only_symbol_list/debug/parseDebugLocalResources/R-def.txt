@@ -132,6 +132,7 @@ id op4
 id power1
 id power2
 id power3
+id progress
 id recyclerView
 id rvVerDietas
 id spinerCategoriaPlat

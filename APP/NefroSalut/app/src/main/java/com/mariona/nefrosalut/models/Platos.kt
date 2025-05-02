@@ -1,4 +1,7 @@
 package com.mariona.nefrosalut.models
 
-class Platos {
-}
+import java.io.Serializable
+
+data class Platos (
+    var nombre: String
+): Serializable

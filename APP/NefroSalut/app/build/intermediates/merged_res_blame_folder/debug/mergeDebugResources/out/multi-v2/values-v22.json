@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-39:/values-v22/values-v22.xml",
+            "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-41:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\e6e730e614405c1b808ab1d598fa3635\\transformed\\appcompat-1.7.0\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\05d8938d95f2e38d6766b8b187619eed\\transformed\\appcompat-1.7.0\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

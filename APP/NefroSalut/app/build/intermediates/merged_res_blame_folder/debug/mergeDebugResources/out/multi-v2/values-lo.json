@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-39:/values-lo/values-lo.xml",
+            "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-41:/values-lo/values-lo.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\7580224e7f0e2e3d74a37583a7efdadc\\transformed\\play-services-base-18.5.0\\res\\values-lo\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,297,463,589,692,840,961,1065,1177,1325,1426,1588,1713,1880,2037,2101,2166",
-                        "endColumns": "103,165,125,102,147,120,103,111,147,100,161,124,166,156,63,64,80",
-                        "endOffsets": "296,462,588,691,839,960,1064,1176,1324,1425,1587,1712,1879,2036,2100,2165,2246"
-                    },
-                    "to": {
-                        "startLines": "48,49,50,51,52,53,54,55,57,58,59,60,61,62,63,64,65",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4404,4512,4682,4812,4919,5071,5196,5304,5552,5704,5809,5975,6104,6275,6436,6504,6573",
-                        "endColumns": "107,169,129,106,151,124,107,115,151,104,165,128,170,160,67,68,84",
-                        "endOffsets": "4507,4677,4807,4914,5066,5191,5299,5415,5699,5804,5970,6099,6270,6431,6499,6568,6653"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\e6e730e614405c1b808ab1d598fa3635\\transformed\\appcompat-1.7.0\\res\\values-lo\\values-lo.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\05d8938d95f2e38d6766b8b187619eed\\transformed\\appcompat-1.7.0\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\2dcd5e9375ec0d46f4349744a7f63733\\transformed\\material-1.12.0\\res\\values-lo\\values-lo.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\f0472988e9c6c9eb7a34d4c9cdbecd04\\transformed\\play-services-base-18.5.0\\res\\values-lo\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,297,463,589,692,840,961,1065,1177,1325,1426,1588,1713,1880,2037,2101,2166",
+                        "endColumns": "103,165,125,102,147,120,103,111,147,100,161,124,166,156,63,64,80",
+                        "endOffsets": "296,462,588,691,839,960,1064,1176,1324,1425,1587,1712,1879,2036,2100,2165,2246"
+                    },
+                    "to": {
+                        "startLines": "48,49,50,51,52,53,54,55,57,58,59,60,61,62,63,64,65",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4404,4512,4682,4812,4919,5071,5196,5304,5552,5704,5809,5975,6104,6275,6436,6504,6573",
+                        "endColumns": "107,169,129,106,151,124,107,115,151,104,165,128,170,160,67,68,84",
+                        "endOffsets": "4507,4677,4807,4914,5066,5191,5299,5415,5699,5804,5970,6099,6270,6431,6499,6568,6653"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\b3c804c0023da1c0e36643f7f23c5c7a\\transformed\\play-services-basement-18.4.0\\res\\values-lo\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "127",
+                        "endOffsets": "322"
+                    },
+                    "to": {
+                        "startLines": "56",
+                        "startColumns": "4",
+                        "startOffsets": "5420",
+                        "endColumns": "131",
+                        "endOffsets": "5547"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\64c0c60d70f026faebb431a7d1fc5053\\transformed\\material-1.12.0\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +74,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\0f32235ec84be27fabc007dc6f769e8f\\transformed\\core-1.15.0\\res\\values-lo\\values-lo.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\9d4d57ee3eadf8234598e7596aeea40b\\transformed\\core-1.15.0\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -71,23 +88,6 @@
                         "startOffsets": "3381,3477,3580,3679,3777,3878,3976,11936",
                         "endColumns": "95,102,98,97,100,97,110,100",
                         "endOffsets": "3472,3575,3674,3772,3873,3971,4082,12032"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\d684934a45bf7196e0395037af36f613\\transformed\\play-services-basement-18.4.0\\res\\values-lo\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "127",
-                        "endOffsets": "322"
-                    },
-                    "to": {
-                        "startLines": "56",
-                        "startColumns": "4",
-                        "startOffsets": "5420",
-                        "endColumns": "131",
-                        "endOffsets": "5547"
                     }
                 }
             ]

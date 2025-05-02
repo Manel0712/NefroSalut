@@ -1,8 +1,11 @@
 package com.mariona.nefrosalut.connections
 
+import com.mariona.nefrosalut.models.Dietas
 import com.mariona.nefrosalut.models.Familiar
 import com.mariona.nefrosalut.models.LoginPaciente
 import com.mariona.nefrosalut.models.Paciente
+import com.mariona.nefrosalut.models.Platos
+import com.mariona.nefrosalut.models.Videos
 import retrofit2.Response
 import retrofit2.http.*
 import okhttp3.ResponseBody
@@ -20,5 +23,17 @@ interface Endpoint {
 
     @POST("api/familiar")
     suspend fun registerFamiliar(@Query("nombre") nombre: String, @Query("apellidos") apellidos: String, @Query("email") email: String, @Query("telefono") telefono: String, @Query("contraseña") contraseña: String): Response<ResponseBody>
+
+    @GET("api/dieta")
+    suspend fun dietas(): Response<List<Dietas>>
+
+    @GET("api/dieta/{dieta}/platos")
+    suspend fun dietaPlatos(@Path("id") id: String): Response<List<Platos>>
+
+    @GET("api/video")
+    suspend fun videos(): Response<List<Videos>>
+
+    @GET("api/video/categoria/{categoria}")
+    suspend fun videosCategoria(): Response<List<Videos>>
 
 }

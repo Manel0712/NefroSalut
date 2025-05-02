@@ -49,6 +49,9 @@
             android:name="com.mariona.nefrosalut.LoginFamiliar"
             android:exported="false" />
         <activity
+            android:name="com.mariona.nefrosalut.Dietas"
+            android:exported="false" />
+        <activity
             android:name="com.mariona.nefrosalut.MainActivity"
             android:exported="true" >
             <intent-filter>

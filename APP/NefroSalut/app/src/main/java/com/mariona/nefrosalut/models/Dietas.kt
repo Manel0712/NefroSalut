@@ -1,4 +1,7 @@
 package com.mariona.nefrosalut.models
 
-class Dietas {
-}
+import java.io.Serializable
+
+data class Dietas (
+    var nombre: String
+): Serializable

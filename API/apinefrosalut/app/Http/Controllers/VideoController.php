@@ -59,4 +59,10 @@ class VideoController extends Controller
         $video->delete();
         return response()->json([], 204);
     }
+
+    public function videosCategoria(string $nombre) {
+        $categoria = Categoria::where('nombre', $request->nombre)->first();
+        $videos = $categoria->videos();
+        return response()->json([$videos], 200);
+    }
 }

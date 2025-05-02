@@ -4,6 +4,7 @@ package com.mariona.nefrosalut.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,15 +26,19 @@ public final class DietasBinding implements ViewBinding {
   public final TextView nomDieta;
 
   @NonNull
+  public final ProgressBar progress;
+
+  @NonNull
   public final RecyclerView rvVerDietas;
 
   @NonNull
   public final Toolbar toolbar;
 
   private DietasBinding(@NonNull ConstraintLayout rootView, @NonNull TextView nomDieta,
-      @NonNull RecyclerView rvVerDietas, @NonNull Toolbar toolbar) {
+      @NonNull ProgressBar progress, @NonNull RecyclerView rvVerDietas, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.nomDieta = nomDieta;
+    this.progress = progress;
     this.rvVerDietas = rvVerDietas;
     this.toolbar = toolbar;
   }
@@ -71,6 +76,12 @@ public final class DietasBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progress;
+      ProgressBar progress = ViewBindings.findChildViewById(rootView, id);
+      if (progress == null) {
+        break missingId;
+      }
+
       id = R.id.rvVerDietas;
       RecyclerView rvVerDietas = ViewBindings.findChildViewById(rootView, id);
       if (rvVerDietas == null) {
@@ -83,7 +94,8 @@ public final class DietasBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DietasBinding((ConstraintLayout) rootView, nomDieta, rvVerDietas, toolbar);
+      return new DietasBinding((ConstraintLayout) rootView, nomDieta, progress, rvVerDietas,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

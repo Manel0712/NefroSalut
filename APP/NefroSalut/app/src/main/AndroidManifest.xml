@@ -20,6 +20,9 @@
             android:name=".LoginFamiliar"
             android:exported="false" />
         <activity
+            android:name=".Dietas"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
