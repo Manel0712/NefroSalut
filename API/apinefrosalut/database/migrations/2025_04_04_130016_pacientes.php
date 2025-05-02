@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('actividad_fisica');
             $table->boolean('diabetico');
             $table->boolean('hipertenso');
-            $table->integer('estadio');
+            $table->string('estadio');
             $table->integer('puntos');
             $table->unsignedBigInteger("personal_sanitario_id")->nullable();
             $table->foreign('personal_sanitario_id')
