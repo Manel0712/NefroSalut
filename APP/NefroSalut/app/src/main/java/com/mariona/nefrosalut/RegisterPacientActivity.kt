@@ -21,7 +21,7 @@ class RegisterPacientActivity : AppCompatActivity() {
         setContentView(view)
     }
     fun registraUsuari(view: View) {
-        if (binding.etName.text.toString().equals("") || binding.etEmail.text.toString().equals("") || binding.etTelefono.text.toString().equals("") || binding.etPassword.text.toString().equals("") || binding.etPassword2.text.toString().equals("")) {
+        if (binding.etName.text.toString().equals("")||binding.etApellidos.text.toString().equals("") || binding.etEmail.text.toString().equals("") || binding.etTelefono.text.toString().equals("") || binding.etPassword.text.toString().equals("") || binding.etPassword2.text.toString().equals("")) {
             val snackbar = Snackbar.make(view, "No pueden haver campos vacios",
                 Snackbar.LENGTH_LONG).setAction("Action", null)
             snackbar.setActionTextColor(Color.WHITE)
@@ -50,7 +50,7 @@ class RegisterPacientActivity : AppCompatActivity() {
         else {
             val i = Intent(this, DadesMediques::class.java)
             i.putExtra("name", binding.etName.text.toString())
-            i.putExtra("apellidos", "ejemplo")
+            i.putExtra("apellidos", binding.etApellidos.text.toString())
             i.putExtra("email", binding.etEmail.text.toString())
             i.putExtra("telefono", binding.etTelefono.text.toString())
             i.putExtra("password", binding.etPassword.text.toString())

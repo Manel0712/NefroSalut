@@ -120,10 +120,10 @@
         android:text="Hipertensió"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/checkboxDiabetico"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintTop_toBottomOf="@+id/tvActividadFisica"
+        app:layout_constraintVertical_bias="0.103" />
 
     <CheckBox
         android:id="@+id/checkboxDiabetico"
@@ -136,32 +136,58 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintTop_toBottomOf="@+id/checkboxActividadFisicaNo"
+        app:layout_constraintVertical_bias="0.069" />
 
     <Spinner
         android:id="@+id/inputClassificacio"
         android:layout_width="177dp"
         android:layout_height="52dp"
-        android:layout_marginStart="216dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="92dp"
         android:entries="@array/Fase"
-        android:layout_marginBottom="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkboxDiabetico"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/inputEstat"
         android:layout_width="177dp"
         android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="92dp"
         android:entries="@array/Estat"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inputClassificacio"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkboxHipertenso"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/inria_sans_light"
+        android:text="Estat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxHipertenso" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/inria_sans_light"
+        android:text="Fase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxDiabetico" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

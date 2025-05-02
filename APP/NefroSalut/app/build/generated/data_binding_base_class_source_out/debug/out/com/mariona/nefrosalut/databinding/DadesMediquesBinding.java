@@ -57,6 +57,12 @@ public final class DadesMediquesBinding implements ViewBinding {
   public final TextInputEditText inputPes;
 
   @NonNull
+  public final TextView textView5;
+
+  @NonNull
+  public final TextView textView6;
+
+  @NonNull
   public final TextView tvActividadFisica;
 
   @NonNull
@@ -68,8 +74,8 @@ public final class DadesMediquesBinding implements ViewBinding {
       @NonNull CheckBox checkboxHipertenso, @NonNull TextInputEditText inputAlcada,
       @NonNull Spinner inputClassificacio, @NonNull TextInputEditText inputData,
       @NonNull Spinner inputEstat, @NonNull TextInputEditText inputNomDieta,
-      @NonNull TextInputEditText inputPes, @NonNull TextView tvActividadFisica,
-      @NonNull TextView tvRegisterTitle) {
+      @NonNull TextInputEditText inputPes, @NonNull TextView textView5, @NonNull TextView textView6,
+      @NonNull TextView tvActividadFisica, @NonNull TextView tvRegisterTitle) {
     this.rootView = rootView;
     this.btnSubmitRegister4 = btnSubmitRegister4;
     this.checkboxActividadFisicaNo = checkboxActividadFisicaNo;
@@ -82,6 +88,8 @@ public final class DadesMediquesBinding implements ViewBinding {
     this.inputEstat = inputEstat;
     this.inputNomDieta = inputNomDieta;
     this.inputPes = inputPes;
+    this.textView5 = textView5;
+    this.textView6 = textView6;
     this.tvActividadFisica = tvActividadFisica;
     this.tvRegisterTitle = tvRegisterTitle;
   }
@@ -179,6 +187,18 @@ public final class DadesMediquesBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView6;
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
+      if (textView6 == null) {
+        break missingId;
+      }
+
       id = R.id.tvActividadFisica;
       TextView tvActividadFisica = ViewBindings.findChildViewById(rootView, id);
       if (tvActividadFisica == null) {
@@ -194,7 +214,7 @@ public final class DadesMediquesBinding implements ViewBinding {
       return new DadesMediquesBinding((ConstraintLayout) rootView, btnSubmitRegister4,
           checkboxActividadFisicaNo, checkboxActividadFisicaSi, checkboxDiabetico,
           checkboxHipertenso, inputAlcada, inputClassificacio, inputData, inputEstat, inputNomDieta,
-          inputPes, tvActividadFisica, tvRegisterTitle);
+          inputPes, textView5, textView6, tvActividadFisica, tvRegisterTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
