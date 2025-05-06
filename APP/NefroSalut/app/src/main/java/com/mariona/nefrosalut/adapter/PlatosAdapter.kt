@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mariona.nefrosalut.R
+import com.mariona.nefrosalut.models.Platos
 import com.mariona.nefrosalut.models.Aliments
 
-class platosAdapter(private val aliments: List<Aliments>) : RecyclerView.Adapter<platosAdapter.ViewHolder>() {
+class PlatosAdapter( var aliments: List<Aliments>) : RecyclerView.Adapter<PlatosAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombre: TextView = itemView.findViewById(R.id.cardNomDelPlat)
@@ -22,7 +23,7 @@ class platosAdapter(private val aliments: List<Aliments>) : RecyclerView.Adapter
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val alimento = aliments[position]
-        holder.nombre.text = alimento.alimento
+        holder.nombre.text = alimento.nombre
         holder.categoria.text = alimento.categoria
     }
 
