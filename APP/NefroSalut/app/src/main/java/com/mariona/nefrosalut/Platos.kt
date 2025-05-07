@@ -11,25 +11,29 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.mariona.nefrosalut.adapter.PlatosAdapter
-import com.mariona.nefrosalut.databinding.PlatsBinding
+import com.mariona.nefrosalut.databinding.VerDietasBinding
 import com.mariona.nefrosalut.viewModels.PlatosViewModel
 import com.mariona.nefrosalut.viewModels.PlatosViewModelFactory
 
 class Platos : AppCompatActivity() {
     private val viewModel: PlatosViewModel by viewModels { PlatosViewModelFactory() }
-    private lateinit var binding: PlatsBinding
+    private lateinit var binding: VerDietasBinding
     private val platosAdapter = PlatosAdapter(emptyList())
     var dieta: Int = 0
+    private lateinit var nombreDieta: String
     var activacion: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        binding = PlatsBinding.inflate(layoutInflater)
+        binding = VerDietasBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
         dieta = intent.extras!!.getLong("dieta").toInt()
+        nombreDieta = intent.extras!!.getString("nombreDieta").toString()
+
+        binding.nomDieta.text = nombreDieta
 
         binding.rvVerDietas.adapter = platosAdapter
 
@@ -66,22 +70,5 @@ class Platos : AppCompatActivity() {
         }
 
         viewModel.loadPlatos(dieta)
-
-        val spinner: Spinner = binding.spinerCategoriaPlat
-
-        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                if (activacion) {
-                    val seleccionado = parent.getItemAtPosition(position).toString()
-                    viewModel.loadPlatosCategoria(dieta, seleccionado)
-                }
-                else {
-                    activacion = true
-                }
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>) {
-            }
-        }
     }
 }

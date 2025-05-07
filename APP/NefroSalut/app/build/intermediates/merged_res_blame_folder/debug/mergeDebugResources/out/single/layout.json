@@ -24,6 +24,10 @@
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\activity_login_select.xml"
     },
     {
+        "merged": "com.mariona.nefrosalut.app-mergeDebugResources-42:/layout/ver_dietas.xml",
+        "source": "com.mariona.nefrosalut.app-main-45:/layout/ver_dietas.xml"
+    },
+    {
         "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\videos_categoria.xml",
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\videos_categoria.xml"
     },
@@ -56,10 +60,6 @@
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\dietas_plats.xml"
     },
     {
-        "merged": "com.mariona.nefrosalut.app-mergeDebugResources-42:/layout/card_videos.xml",
-        "source": "com.mariona.nefrosalut.app-main-45:/layout/card_videos.xml"
-    },
-    {
         "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\card_dietas.xml",
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\card_dietas.xml"
     },
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\login.xml"
     },
     {
-        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\progres.xml",
-        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\progres.xml"
-    },
-    {
         "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\ver_dietas.xml",
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\ver_dietas.xml"
+    },
+    {
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\progres.xml",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\progres.xml"
     },
     {
         "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\card_platos.xml",

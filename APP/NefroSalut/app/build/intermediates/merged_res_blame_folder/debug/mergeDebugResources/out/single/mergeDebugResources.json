@@ -124,16 +124,12 @@
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\drawable\\untitled.png"
     },
     {
-        "merged": "com.mariona.nefrosalut.app-debug-43:/layout_card_videos.xml.flat",
-        "source": "com.mariona.nefrosalut.app-main-45:/layout/card_videos.xml"
+        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-debug-43:\\layout_card_videos.xml.flat",
+        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\card_videos.xml"
     },
     {
         "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-debug-43:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-debug-43:\\layout_card_videos.xml.flat",
-        "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\layout\\card_videos.xml"
     },
     {
         "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-debug-43:\\drawable_ojo_abierto.png.flat",
@@ -234,6 +230,10 @@
     {
         "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-debug-43:\\font_inria_sans_light.xml.flat",
         "source": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-main-45:\\font\\inria_sans_light.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-43:/layout_ver_dietas.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-45:/layout/ver_dietas.xml"
     },
     {
         "merged": "C:\\Users\\MANEL\\.gradle\\daemon\\8.11.1\\com.mariona.nefrosalut.app-debug-43:\\drawable_barras_progreso.png.flat",
