@@ -4,6 +4,7 @@ package com.mariona.nefrosalut.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -29,6 +30,9 @@ public final class PlatsBinding implements ViewBinding {
   public final TextView nomDieta;
 
   @NonNull
+  public final ProgressBar progress;
+
+  @NonNull
   public final RecyclerView rvVerDietas;
 
   @NonNull
@@ -38,11 +42,12 @@ public final class PlatsBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private PlatsBinding(@NonNull ConstraintLayout rootView, @NonNull TextView nomCategoria,
-      @NonNull TextView nomDieta, @NonNull RecyclerView rvVerDietas,
+      @NonNull TextView nomDieta, @NonNull ProgressBar progress, @NonNull RecyclerView rvVerDietas,
       @NonNull Spinner spinerCategoriaPlat, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.nomCategoria = nomCategoria;
     this.nomDieta = nomDieta;
+    this.progress = progress;
     this.rvVerDietas = rvVerDietas;
     this.spinerCategoriaPlat = spinerCategoriaPlat;
     this.toolbar = toolbar;
@@ -87,6 +92,12 @@ public final class PlatsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progress;
+      ProgressBar progress = ViewBindings.findChildViewById(rootView, id);
+      if (progress == null) {
+        break missingId;
+      }
+
       id = R.id.rvVerDietas;
       RecyclerView rvVerDietas = ViewBindings.findChildViewById(rootView, id);
       if (rvVerDietas == null) {
@@ -105,8 +116,8 @@ public final class PlatsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new PlatsBinding((ConstraintLayout) rootView, nomCategoria, nomDieta, rvVerDietas,
-          spinerCategoriaPlat, toolbar);
+      return new PlatsBinding((ConstraintLayout) rootView, nomCategoria, nomDieta, progress,
+          rvVerDietas, spinerCategoriaPlat, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

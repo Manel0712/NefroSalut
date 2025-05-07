@@ -4,6 +4,12 @@ import java.io.Serializable
 
 data class Videos (
     val titulo: String = "",
-    val link: String = "",
-    val categoria: String = ""
+    var link: String = "",
+    var categoria: String = "",
+    var categoria_id: Int
+): Serializable
+
+data class Categoria (
+    val id: Int,
+    val nombre: String
 ): Serializable
