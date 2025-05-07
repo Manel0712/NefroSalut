@@ -59,8 +59,12 @@
         android:id="@+id/rvVerDietas"
         android:layout_width="410dp"
         android:layout_height="387dp"
+<<<<<<< HEAD
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
+=======
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"        app:layout_constraintBottom_toBottomOf="parent"
+>>>>>>> mariona6
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinerCategoriaPlat" />

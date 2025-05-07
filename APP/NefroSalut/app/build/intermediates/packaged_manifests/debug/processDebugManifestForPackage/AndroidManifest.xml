@@ -52,7 +52,11 @@
             android:name="com.mariona.nefrosalut.Dietas"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name="com.mariona.nefrosalut.Platos"
+=======
+            android:name="com.mariona.nefrosalut.verPlatos"
+>>>>>>> mariona6
             android:exported="false" />
         <activity
             android:name="com.mariona.nefrosalut.verVideos"
@@ -72,6 +76,7 @@
         <activity android:name="com.mariona.nefrosalut.RegisterFamiliarActivity" />
         <activity android:name="com.mariona.nefrosalut.DadesMediques" />
         <activity android:name="com.mariona.nefrosalut.MainMenu" />
+        <activity android:name="com.mariona.nefrosalut.dietasPlats" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -32,5 +32,3 @@ class VideosAdapter(var videos: List<Videos>) : RecyclerView.Adapter<VideosAdapt
         return videos.size
     }
 }
-
-

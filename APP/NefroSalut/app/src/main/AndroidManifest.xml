@@ -23,7 +23,11 @@
             android:name=".Dietas"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name=".Platos"
+=======
+            android:name=".verPlatos"
+>>>>>>> mariona6
             android:exported="false" />
         <activity
             android:name=".verVideos"
@@ -43,6 +47,8 @@
         <activity android:name=".RegisterFamiliarActivity" />
         <activity android:name=".DadesMediques" />
         <activity android:name=".MainMenu" />
+        <activity android:name=".dietasPlats"/>
+
 
         <meta-data
             android:name="preloaded_fonts"
