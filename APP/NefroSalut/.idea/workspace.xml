@@ -100,13 +100,40 @@
           <theme>@style/Theme.NefroSalut</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/ver_dietas.xml">
+        <config>
+          <theme>@style/Theme.NefroSalut</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7048f904-a423-4bc5-8239-93afea667e51" name="Changes" comment="cc" />
+    <list default="true" id="7048f904-a423-4bc5-8239-93afea667e51" name="Changes" comment="cc">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/dietasPlats.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/verPlatos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/viewModels/PlatosViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2025_19_28__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2025_19_28__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/MainMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/MainMenu.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/adapter/platosAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/adapter/PlatosAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/connections/Endpoint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/connections/Endpoint.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/models/Aliments.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/models/Aliments.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/models/Platos.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mariona/nefrosalut/models/Platos.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dietas_plats.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dietas_plats.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/plats.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/plats.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +233,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mario/Desktop/NefroSalut/APP/NefroSalut",
+    "last_opened_file_path": "C:/laragon/www/NefroSalut/APP/NefroSalut",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -357,12 +384,12 @@
       <map>
         <entry key="com.mariona.nefrosalut">
           <value>
-            <CheckInfo lastCheckTimestamp="1746174240244" />
+            <CheckInfo lastCheckTimestamp="1746556029407" />
           </value>
         </entry>
         <entry key="com.mariona.nefrosalut.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1746174240243" />
+            <CheckInfo lastCheckTimestamp="1746556029407" />
           </value>
         </entry>
       </map>

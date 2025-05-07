@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mariona.nefrosalut.R
+import com.mariona.nefrosalut.models.Platos
 import com.mariona.nefrosalut.models.Aliments
 
-class PlatosAdapter(var aliments: List<Aliments> = emptyList()) : RecyclerView.Adapter<PlatosAdapter.ViewHolder>() {
+class PlatosAdapter( var aliments: List<Aliments>) : RecyclerView.Adapter<PlatosAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombre: TextView = itemView.findViewById(R.id.cardNomDelPlat)

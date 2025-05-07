@@ -55,10 +55,10 @@
         android:text="Veure dieta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAfegirPlats"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVerPlato"
+        app:layout_constraintVertical_bias="0.059" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnVerPlato"

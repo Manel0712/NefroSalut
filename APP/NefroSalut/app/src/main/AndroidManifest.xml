@@ -43,6 +43,8 @@
         <activity android:name=".RegisterFamiliarActivity" />
         <activity android:name=".DadesMediques" />
         <activity android:name=".MainMenu" />
+        <activity android:name=".verPlatos" />
+        <activity android:name=".dietasPlats" />
 
         <meta-data
             android:name="preloaded_fonts"

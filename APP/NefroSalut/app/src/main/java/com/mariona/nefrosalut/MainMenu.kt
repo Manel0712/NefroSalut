@@ -29,7 +29,7 @@ class MainMenu : AppCompatActivity() {
     }
 
     fun dietasClick(view: View) {
-        val i = Intent(this, Dietas::class.java)
+        val i = Intent(this, dietasPlats::class.java)
         startActivity(i)
     }
 

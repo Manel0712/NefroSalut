@@ -24,7 +24,7 @@ class PlatosViewModel: ViewModel() {
     public fun loadPlatos(id: Int) {
         viewModelScope.launch {
             _error.value = null
-            var resposta = Connection.nefroSalutService.dietaPlatos(id)
+            var resposta = Connection.nefroSalutService.dietaPlatos()
             if (resposta.isSuccessful) {
                 _plato.value = resposta.body()
             }
