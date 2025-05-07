@@ -13,7 +13,6 @@ import com.mariona.nefrosalut.databinding.DadesMediquesBinding
 import com.mariona.nefrosalut.models.Paciente
 import com.mariona.nefrosalut.viewModels.RegisterPacienteViewModel
 import com.mariona.nefrosalut.viewModels.RegisterPacienteViewModelFactory
-import kotlin.math.pow
 
 class DadesMediques : AppCompatActivity() {
     private val viewModel: RegisterPacienteViewModel by viewModels { RegisterPacienteViewModelFactory() }
@@ -85,7 +84,7 @@ class DadesMediques : AppCompatActivity() {
         }
         var estat = binding.inputEstat.selectedItem.toString()
         var estadio = binding.inputClassificacio.selectedItem.toString()
-        var IMC = pes / alçada.pow(2)
+        var IMC = pes / (alçada*alçada)
         var classificacio = ""
         if (IMC>=18.5 && IMC<=24.9) {
             if (activitatFisica) {

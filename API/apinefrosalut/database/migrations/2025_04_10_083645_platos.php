@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('platos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('categoria');
+            $table->json('clasificaciones')->nullable();
             $table->timestamps();
         });
     }

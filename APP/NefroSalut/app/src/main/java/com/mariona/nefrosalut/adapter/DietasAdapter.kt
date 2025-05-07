@@ -10,7 +10,7 @@ import com.mariona.nefrosalut.R
 import com.mariona.nefrosalut.databinding.CardDietasBinding
 import com.mariona.nefrosalut.databinding.DietasBinding
 
-class DietasAdapter(var dietas: List<Dietas> = emptyList()) : RecyclerView.Adapter<DietasAdapter.ViewHolder>() {
+class DietasAdapter(var dietas: List<Dietas> = emptyList(), private val onDietaClicked: (Dietas) -> Unit) : RecyclerView.Adapter<DietasAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -20,6 +20,8 @@ class DietasAdapter(var dietas: List<Dietas> = emptyList()) : RecyclerView.Adapt
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val dieta = dietas[position]
         holder.bind(dieta)
+
+        holder.itemView.setOnClickListener { onDietaClicked(dieta) }
     }
 
     override fun getItemCount(): Int = dietas.size

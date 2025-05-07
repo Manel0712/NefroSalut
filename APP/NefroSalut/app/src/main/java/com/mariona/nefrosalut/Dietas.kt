@@ -1,5 +1,6 @@
 package com.mariona.nefrosalut
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -12,11 +13,12 @@ import com.mariona.nefrosalut.adapter.DietasAdapter
 import com.mariona.nefrosalut.viewModels.DietasViewModel
 import com.mariona.nefrosalut.viewModels.DietasViewModelFactory
 import com.mariona.nefrosalut.databinding.DietasBinding
+import com.mariona.nefrosalut.models.Dietas
 
 class Dietas : AppCompatActivity() {
     private val viewModel: DietasViewModel by viewModels { DietasViewModelFactory() }
     private lateinit var binding: DietasBinding
-    private val dietasAdapter = DietasAdapter(emptyList())
+    private val dietasAdapter = DietasAdapter(emptyList(), {platos(it)})
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -55,5 +57,11 @@ class Dietas : AppCompatActivity() {
                 snackbar.show()
             }
         }
+    }
+
+    fun platos(dieta: Dietas) {
+        val i = Intent(this, Platos::class.java)
+        i.putExtra("dieta", dieta.id)
+        startActivity(i)
     }
 }

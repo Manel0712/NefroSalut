@@ -4,7 +4,7 @@
             "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-41:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\05d8938d95f2e38d6766b8b187619eed\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.11.1\\transforms\\064d48c61b1f317e79b71166069ede58\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

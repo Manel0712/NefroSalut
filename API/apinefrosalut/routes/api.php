@@ -9,6 +9,7 @@ use App\Http\Controllers\DietaController;
 use App\Http\Controllers\PlatosController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\CategoriaController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -20,7 +21,8 @@ Route::apiResource('/familiar', FamiliarController::class)->middleware('auth:san
 Route::apiResource('/dieta', DietaController::class)->middleware('auth:sanctum');
 Route::apiResource('/plato', PlatosController::class)->middleware('auth:sanctum');
 Route::apiResource('/quiz', QuizController::class)->middleware('auth:sanctum');
-Route::apiResource('/video', VideosController::class)->middleware('auth:sanctum');
+Route::apiResource('/video', VideoController::class)->middleware('auth:sanctum');
+Route::apiResource('/categoria', CategoriaController::class)->middleware('auth:sanctum');
 
 Route::get('/personal/{personal}/pacientes', [PersonalSanitarioController::class, "pacientes"])->middleware('auth:sanctum');
 Route::get('/personal/{personal}/asignarpaciente/{paciente}', [PersonalSanitarioController::class, "asignarPaciente"])->middleware('auth:sanctum');
@@ -38,6 +40,7 @@ Route::get('/familiar/{familiar}/dietas', [FamiliarController::class, "dietas"])
 Route::post('/familiar/loggin', [FamiliarController::class, "loggin"])->middleware('auth:sanctum');
 Route::get('/dieta/{dieta}/añadirplato', [DietaController::class, "añadirPlato"])->middleware('auth:sanctum');
 Route::get('/dieta/{dieta}/platos', [DietaController::class, "platos"])->middleware('auth:sanctum');
+Route::get('/dieta/{dieta}/platos/{categoria}', [DietaController::class, "platosCategoria"])->middleware('auth:sanctum');
 Route::get('/video/categoria/{categoria}', [VideoController::class, "videosCategoria"])->middleware('auth:sanctum');
 
-/* Token: sxqiboygTluUzvaBgSRSUxtGYv1VctKFPhuGb2Gyaaa195ca */
+/* Token: eOAnQ3ZLex43Yinb8rWLGa1XjrTrW7JLXGfAB9PFf2640000 */

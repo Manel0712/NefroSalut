@@ -23,6 +23,12 @@
             android:name=".Dietas"
             android:exported="false" />
         <activity
+            android:name=".Platos"
+            android:exported="false" />
+        <activity
+            android:name=".verVideos"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

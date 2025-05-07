@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Video;
+use App\Models\Categoria;
 use Illuminate\Http\Request;
 
 class VideoController extends Controller
@@ -13,9 +14,7 @@ class VideoController extends Controller
     public function index()
     {
         $videos = Video::all();
-        return response()->json([
-            $videos
-        ], 200);
+        return response()->json($videos, 200);
     }
 
     /**
@@ -61,8 +60,20 @@ class VideoController extends Controller
     }
 
     public function videosCategoria(string $nombre) {
-        $categoria = Categoria::where('nombre', $request->nombre)->first();
-        $videos = $categoria->videos();
-        return response()->json([$videos], 200);
+        $categoria = Categoria::where('nombre', $nombre)->first();
+        $videos = $categoria->videos;
+        $finalResult = [];
+        if ($videos->count()==1) {
+            foreach ($videos as $item) {
+                $finalResult[] = $item;
+            }
+            return response()->json($finalResult, 200);
+        }
+        else {
+            foreach ($videos as $item) {
+                $finalResult[] = $item;
+            }
+            return response()->json($finalResult, 200);
+        }
     }
 }

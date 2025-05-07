@@ -116,6 +116,7 @@
         android:backgroundTint="@color/base"
         android:icon="@drawable/juego_de_claqueta"
 
+        android:onClick="videosClick"
         android:text="Videos"
         android:textColor="#000000"
         app:cornerRadius="16dp"

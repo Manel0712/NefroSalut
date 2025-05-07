@@ -95,8 +95,24 @@ class DietaController extends Controller
     public function platos(string $idDieta) {
         $dieta = Dieta::findOrFail($idDieta);
         $platos = $dieta->platos;
-        return response()->json([
-            $platos
-        ], 200);
+        return response()->json($platos, 200);
+    }
+
+    public function platosCategoria(string $idDieta, string $categoria) {
+        $dieta = Dieta::findOrFail($idDieta);
+        $platos = $dieta->platos->where('categoria', $categoria);
+        $finalResult = [];
+        if ($platos->count()==1) {
+            foreach ($platos as $item) {
+                $finalResult[] = $item;
+            }
+            return response()->json($finalResult, 200);
+        }
+        else {
+            foreach ($platos as $item) {
+                $finalResult[] = $item;
+            }
+            return response()->json($finalResult, 200);
+        }
     }
 }

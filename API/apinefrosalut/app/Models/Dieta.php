@@ -3,8 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Model\Usuario;
-use App\Model\Plato;
+use App\Models\Usuario;
+use App\Models\Plato;
 
 class Dieta extends Model
 {

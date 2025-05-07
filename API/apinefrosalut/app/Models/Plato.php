@@ -9,6 +9,12 @@ class Plato extends Model
 {
     protected $fillable = [
         "nombre",
+        "categoria",
+        "clasificaciones"
+    ];
+
+    protected $casts = [
+        'clasificaciones' => 'array',
     ];
 
     public function dietas()

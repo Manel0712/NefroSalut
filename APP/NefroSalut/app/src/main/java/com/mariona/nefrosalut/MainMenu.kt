@@ -32,4 +32,9 @@ class MainMenu : AppCompatActivity() {
         val i = Intent(this, Dietas::class.java)
         startActivity(i)
     }
+
+    fun videosClick(view: View) {
+        val i = Intent(this, verVideos::class.java)
+        startActivity(i)
+    }
 }
