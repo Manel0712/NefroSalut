@@ -60,11 +60,8 @@ class Dietas : AppCompatActivity() {
     }
 
     fun platos(dieta: Dietas) {
-<<<<<<< HEAD
-        val i = Intent(this, Platos::class.java)
-=======
         val i = Intent(this, verPlatos::class.java)
->>>>>>> mariona6
+
         i.putExtra("dieta", dieta.id)
         i.putExtra("nombreDieta", dieta.nombre)
         startActivity(i)
