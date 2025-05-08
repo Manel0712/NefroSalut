@@ -42,4 +42,10 @@ interface Endpoint {
     @GET("api/categoria/{id}")
     suspend fun categoriaNombre(@Path("id") id: String): Response<Categoria>
 
+    @GET("api/plato")
+    suspend fun platos(): Response<List<Aliments>>
+
+    @GET("api/plato/categoria/{categoria}")
+    suspend fun platosCategoria(@Path("categoria") categoria: String): Response<List<Aliments>>
+
 }

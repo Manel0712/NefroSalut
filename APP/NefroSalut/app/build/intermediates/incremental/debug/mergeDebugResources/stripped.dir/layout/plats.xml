@@ -19,24 +19,6 @@
 
     <TextView
         android:id="@+id/nomDieta"
-<<<<<<<< HEAD:APP/NefroSalut/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir/layout/ver_dietas.xml
-        android:layout_width="276dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="132dp"
-        android:autoSizeTextType="uniform"
-        android:fontFamily="@font/inria_sans_light"
-        app:layout_constraintEnd_toStartOf="@+id/progress"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvVerDietas"
-        android:layout_width="409dp"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        android:layout_height="541dp"
-========
         android:layout_width="235dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"
@@ -66,7 +48,6 @@
         android:layout_width="373dp"
         android:layout_height="61dp"
         android:entries="@array/CategoriPlats"
->>>>>>>> mariona6:APP/NefroSalut/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/plats.xml
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
@@ -88,13 +69,8 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
-<<<<<<<< HEAD:APP/NefroSalut/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir/layout/ver_dietas.xml
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
-========
         android:layout_marginTop="16dp"
         android:layout_marginEnd="60dp"
->>>>>>>> mariona6:APP/NefroSalut/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/plats.xml
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 

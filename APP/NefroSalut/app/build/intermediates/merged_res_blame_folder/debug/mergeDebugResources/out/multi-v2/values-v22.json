@@ -4,11 +4,7 @@
             "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-41:/values-v22/values-v22.xml",
             "map": [
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.11.1\\transforms\\064d48c61b1f317e79b71166069ede58\\transformed\\appcompat-1.7.0\\res\\values-v22\\values-v22.xml",
-=======
                     "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\05d8938d95f2e38d6766b8b187619eed\\transformed\\appcompat-1.7.0\\res\\values-v22\\values-v22.xml",
->>>>>>> mariona6
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
