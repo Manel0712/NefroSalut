@@ -28,7 +28,7 @@ class verPlatos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
 
         binding = PlatsBinding.inflate(layoutInflater)

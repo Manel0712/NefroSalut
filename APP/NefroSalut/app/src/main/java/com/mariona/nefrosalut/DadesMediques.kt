@@ -29,7 +29,16 @@ class DadesMediques : AppCompatActivity() {
         binding = DadesMediquesBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
+        binding.inputNomDieta.setOnFocusChangeListener { _, hasFocus ->
+            if (!hasFocus) {
+                val dni = binding.inputNomDieta.text.toString()
+                if (!validarDNI(dni)) {
+                    binding.inputNomDieta.error = "DNI no válido"
+                } else {
+                    binding.inputNomDieta.error = null
+                }
+            }
+        }
         name = intent.extras!!.getString("name").toString()
         apellidos = intent.extras!!.getString("apellidos").toString()
         email = intent.extras!!.getString("email").toString()
@@ -57,9 +66,37 @@ class DadesMediques : AppCompatActivity() {
     }
 
     fun añadirDatosMedicos(view: View) {
-        var DNI = binding.inputNomDieta.text.toString()
+        val DNI = binding.inputNomDieta.text.toString()
         if (!validarDNI(DNI)) {
-            Snackbar.make(view, "DNI no válido", Snackbar.LENGTH_LONG).apply {
+            binding.inputNomDieta.error = "DNI no válido"
+            return
+        }
+
+        val pesString = binding.inputPes.text.toString().replace(",", ".")
+        val alçadaString = binding.inputAlcada.text.toString().replace(",", ".")
+
+        val pes = pesString.toDoubleOrNull()
+        val alçada = alçadaString.toDoubleOrNull()
+
+        if (pes == null) {
+            binding.inputPes.error = "Peso inválido"
+            return
+        } else {
+            binding.inputPes.error = null
+        }
+
+        if (alçada == null) {
+            binding.inputAlcada.error = "Altura inválida"
+            return
+        } else {
+            binding.inputAlcada.error = null
+        }
+
+        var data = binding.inputData.text.toString()
+
+
+        if (pes == null || alçada == null) {
+            Snackbar.make(view, "Peso o altura inválidos", Snackbar.LENGTH_LONG).apply {
                 setActionTextColor(Color.WHITE)
                 view.setBackgroundColor(Color.RED)
                 val textView = view.findViewById<TextView>(com.google.android.material.R.id.snackbar_text)
@@ -68,9 +105,7 @@ class DadesMediques : AppCompatActivity() {
             }.show()
             return
         }
-        var data = binding.inputData.text.toString()
-        var pes = binding.inputPes.text.toString().toDouble()
-        var alçada = binding.inputAlcada.text.toString().toDouble()
+
         var activitatFisica = false
         if (binding.checkboxActividadFisicaSi.isChecked) {
             activitatFisica = true
