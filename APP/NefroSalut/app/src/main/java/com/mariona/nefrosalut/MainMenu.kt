@@ -39,7 +39,7 @@ class MainMenu : AppCompatActivity() {
     }
 
     fun quizClick(view: View) {
-        val i = Intent(this, Quiz::class.java)
+        val i = Intent(this, escogerQuiz::class.java)
         startActivity(i)
     }
 
