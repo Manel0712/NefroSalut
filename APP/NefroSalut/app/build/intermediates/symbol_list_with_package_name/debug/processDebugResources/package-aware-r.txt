@@ -3320,6 +3320,7 @@ id btnCategoriaMedicacio
 id btnCategoriaNefrologia
 id btnCategoriaTransplants
 id btnCerrarSesion
+id btnCrearDieta
 id btnDialisis
 id btnDietas
 id btnDietes
@@ -3487,6 +3488,7 @@ id guideline15
 id guideline16
 id guideline17
 id guideline18
+id guideline19
 id guideline2
 id guideline3
 id guideline4

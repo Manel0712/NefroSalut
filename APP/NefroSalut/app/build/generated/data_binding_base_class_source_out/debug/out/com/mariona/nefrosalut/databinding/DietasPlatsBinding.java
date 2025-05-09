@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.mariona.nefrosalut.R;
@@ -22,7 +23,7 @@ public final class DietasPlatsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton btnAfegirPlats;
+  public final AppCompatButton btnCrearDieta;
 
   @NonNull
   public final AppCompatButton btnVerDieta;
@@ -31,18 +32,23 @@ public final class DietasPlatsBinding implements ViewBinding {
   public final AppCompatButton btnVerPlato;
 
   @NonNull
+  public final Guideline guideline19;
+
+  @NonNull
   public final TextView nomDieta;
 
   @NonNull
   public final Toolbar toolbar;
 
   private DietasPlatsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatButton btnAfegirPlats, @NonNull AppCompatButton btnVerDieta,
-      @NonNull AppCompatButton btnVerPlato, @NonNull TextView nomDieta, @NonNull Toolbar toolbar) {
+      @NonNull AppCompatButton btnCrearDieta, @NonNull AppCompatButton btnVerDieta,
+      @NonNull AppCompatButton btnVerPlato, @NonNull Guideline guideline19,
+      @NonNull TextView nomDieta, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.btnAfegirPlats = btnAfegirPlats;
+    this.btnCrearDieta = btnCrearDieta;
     this.btnVerDieta = btnVerDieta;
     this.btnVerPlato = btnVerPlato;
+    this.guideline19 = guideline19;
     this.nomDieta = nomDieta;
     this.toolbar = toolbar;
   }
@@ -74,9 +80,9 @@ public final class DietasPlatsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnAfegirPlats;
-      AppCompatButton btnAfegirPlats = ViewBindings.findChildViewById(rootView, id);
-      if (btnAfegirPlats == null) {
+      id = R.id.btnCrearDieta;
+      AppCompatButton btnCrearDieta = ViewBindings.findChildViewById(rootView, id);
+      if (btnCrearDieta == null) {
         break missingId;
       }
 
@@ -92,6 +98,12 @@ public final class DietasPlatsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline19;
+      Guideline guideline19 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline19 == null) {
+        break missingId;
+      }
+
       id = R.id.nomDieta;
       TextView nomDieta = ViewBindings.findChildViewById(rootView, id);
       if (nomDieta == null) {
@@ -104,8 +116,8 @@ public final class DietasPlatsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DietasPlatsBinding((ConstraintLayout) rootView, btnAfegirPlats, btnVerDieta,
-          btnVerPlato, nomDieta, toolbar);
+      return new DietasPlatsBinding((ConstraintLayout) rootView, btnCrearDieta, btnVerDieta,
+          btnVerPlato, guideline19, nomDieta, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

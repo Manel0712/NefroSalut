@@ -16,13 +16,13 @@ interface Endpoint {
     suspend fun loggin(@Query("email") email: String, @Query("password") password: String): Response<List<Paciente>>
 
     @POST("api/paciente")
-    suspend fun register(@Query("nombre") nombre: String, @Query("apellidos") apellidos: String, @Query("email") email: String, @Query("telefono") telefono: String, @Query("contrase単a") contrase単a: String, @Query("estado_enfermedad") estadoEnfermedad: String, @Query("estado_animo") estadoAnimo: String, @Query("actividad_fisica") actividadFisica: Boolean, @Query("diabetico") diabetico: Boolean, @Query("hipertenso") hipertenso: Boolean, @Query("estadio") estadio: String, @Query("puntos") puntos: Int, @Query("DNI") DNI: String, @Query("fecha_nacimiento") fechaNacimiento: String, @Query("peso") peso: Double, @Query("altura") altura: Double, @Query("IMC") IMC: Double, @Query("clasificacion") clasificacion: String, @Query("progreso_id") progresoId: Int): Response<ResponseBody>
+    suspend fun register(@Query("nombre") nombre: String, @Query("apellidos") apellidos: String, @Query("email") email: String, @Query("telefono") telefono: String, @Query("password") password: String, @Query("estado_enfermedad") estadoEnfermedad: String, @Query("estado_animo") estadoAnimo: String, @Query("actividad_fisica") actividadFisica: Boolean, @Query("diabetico") diabetico: Boolean, @Query("hipertenso") hipertenso: Boolean, @Query("estadio") estadio: String, @Query("puntos") puntos: Int, @Query("DNI") DNI: String, @Query("fecha_nacimiento") fechaNacimiento: String, @Query("peso") peso: Double, @Query("altura") altura: Double, @Query("IMC") IMC: Double, @Query("clasificacion") clasificacion: String, @Query("progreso_id") progresoId: Int): Response<ResponseBody>
 
     @POST("api/familiar/loggin")
     suspend fun logginFamiliar(@Query("email") email: String, @Query("password") password: String): Response<List<Familiar>>
 
     @POST("api/familiar")
-    suspend fun registerFamiliar(@Query("nombre") nombre: String, @Query("apellidos") apellidos: String, @Query("email") email: String, @Query("telefono") telefono: String, @Query("contrase単a") contrase単a: String): Response<ResponseBody>
+    suspend fun registerFamiliar(@Query("nombre") nombre: String, @Query("apellidos") apellidos: String, @Query("email") email: String, @Query("telefono") telefono: String, @Query("password") password: String): Response<ResponseBody>
 
     @GET("api/dieta")
     suspend fun dietas(): Response<List<Dietas>>
