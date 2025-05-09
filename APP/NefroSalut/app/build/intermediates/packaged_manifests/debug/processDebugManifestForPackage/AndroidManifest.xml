@@ -67,6 +67,15 @@
             android:name="com.mariona.nefrosalut.Perfil"
             android:exported="false" />
         <activity
+            android:name="com.mariona.nefrosalut.quizCategoria"
+            android:exported="false" />
+        <activity
+            android:name="com.mariona.nefrosalut.escogerQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.mariona.nefrosalut.verProgreso"
+            android:exported="false" />
+        <activity
             android:name="com.mariona.nefrosalut.MainActivity"
             android:exported="true" >
             <intent-filter>

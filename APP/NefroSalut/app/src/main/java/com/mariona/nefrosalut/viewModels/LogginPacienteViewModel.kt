@@ -24,7 +24,7 @@ class LogginPacienteViewModel: ViewModel() {
         viewModelScope.launch {
             _error.value = null
             var loginPaciente = LoginPaciente(email, password)
-            var resposta = Connection.nefroSalutService.loggin(loginPaciente.email, loginPaciente.contraseña)
+            var resposta = Connection.nefroSalutService.loggin(loginPaciente.email, loginPaciente.password)
             if (resposta.isSuccessful) {
                 _paciente.value = resposta.body()
             }

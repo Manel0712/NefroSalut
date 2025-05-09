@@ -3312,6 +3312,13 @@ int id bounceEnd 0x7f0a0066
 int id bounceStart 0x7f0a0067
 int id btnAfegirPlats 0x7f0a0068
 int id btnAleatorio 0x7f0a0069
+int id btnCategoriaDialisis 0x7f0a027d
+int id btnCategoriaDietes 0x7f0a027e
+int id btnCategoriaExercici 0x7f0a027f
+int id btnCategoriaMedicacio 0x7f0a0280
+int id btnCategoriaNefrologia 0x7f0a0281
+int id btnCategoriaTransplants 0x7f0a0282
+int id btnCerrarSesion 0x7f0a0283
 int id btnDialisis 0x7f0a006a
 int id btnDietas 0x7f0a006b
 int id btnDietes 0x7f0a006c
@@ -3330,6 +3337,7 @@ int id btnSubmitRegister4 0x7f0a0078
 int id btnTransplants 0x7f0a0079
 int id btnVerDieta 0x7f0a007a
 int id btnVerPlato 0x7f0a007b
+int id btnVerProgreso 0x7f0a0284
 int id btnVideos 0x7f0a007c
 int id btnjocs 0x7f0a007d
 int id btnperfil 0x7f0a007e
@@ -3504,7 +3512,6 @@ int id ignoreRequest 0x7f0a0126
 int id image 0x7f0a0127
 int id imageView2 0x7f0a0128
 int id imageView3 0x7f0a0129
-int id imageView4 0x7f0a012a
 int id imgdietas 0x7f0a012b
 int id imgjocs 0x7f0a012c
 int id imglogo 0x7f0a012d
@@ -3667,7 +3674,6 @@ int id position 0x7f0a01c9
 int id postLayout 0x7f0a01ca
 int id power1 0x7f0a01cb
 int id power2 0x7f0a01cc
-int id power3 0x7f0a01cd
 int id powerDisolver 0x7f0a01ce
 int id powerPorDos 0x7f0a01cf
 int id pregunta 0x7f0a01d0

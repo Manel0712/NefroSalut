@@ -30,4 +30,16 @@ class Perfil : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+
+
+    fun verProgresoClick(view: android.view.View) {
+        val i = android.content.Intent(this, verProgreso::class.java)
+        startActivity(i)
+    }
+
+    fun cerrarSesionClick(view: android.view.View) {
+        //val i = android.content.Intent(this, verProgreso::class.java)
+        //startActivity(i)
+    }
 }

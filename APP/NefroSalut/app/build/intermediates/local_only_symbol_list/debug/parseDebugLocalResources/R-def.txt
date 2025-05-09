@@ -40,6 +40,13 @@ font inria_sans_light
 id Nomapp
 id btnAfegirPlats
 id btnAleatorio
+id btnCategoriaDialisis
+id btnCategoriaDietes
+id btnCategoriaExercici
+id btnCategoriaMedicacio
+id btnCategoriaNefrologia
+id btnCategoriaTransplants
+id btnCerrarSesion
 id btnDialisis
 id btnDietas
 id btnDietes
@@ -58,6 +65,7 @@ id btnSubmitRegister4
 id btnTransplants
 id btnVerDieta
 id btnVerPlato
+id btnVerProgreso
 id btnVideos
 id btnjocs
 id btnperfil
@@ -102,7 +110,6 @@ id guideline8
 id guideline9
 id imageView2
 id imageView3
-id imageView4
 id imgdietas
 id imgjocs
 id imglogo
@@ -130,7 +137,6 @@ id op3
 id op4
 id power1
 id power2
-id power3
 id powerDisolver
 id powerPorDos
 id pregunta

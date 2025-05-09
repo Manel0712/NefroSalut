@@ -25,7 +25,7 @@ class LogginFamiliarViewModel: ViewModel() {
         viewModelScope.launch {
             _error.value = null
             var loginPaciente = LoginPaciente(email, password)
-            var resposta = Connection.nefroSalutService.logginFamiliar(loginPaciente.email, loginPaciente.contraseña)
+            var resposta = Connection.nefroSalutService.logginFamiliar(loginPaciente.email, loginPaciente.password)
             if (resposta.isSuccessful) {
                 _familiar.value = resposta.body()
             }

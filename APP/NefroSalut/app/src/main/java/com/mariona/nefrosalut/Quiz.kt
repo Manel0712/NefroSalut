@@ -10,7 +10,7 @@ import androidx.appcompat.widget.Toolbar
 class Quiz : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.escoger_quiz)
+        setContentView(R.layout.quiz)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -30,4 +30,5 @@ class Quiz : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
 }

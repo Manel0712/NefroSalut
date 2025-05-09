@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
@@ -21,6 +22,12 @@ import java.lang.String;
 public final class PerfilBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final AppCompatButton btnCerrarSesion;
+
+  @NonNull
+  public final AppCompatButton btnVerProgreso;
 
   @NonNull
   public final Guideline guideline11;
@@ -49,11 +56,14 @@ public final class PerfilBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
-  private PerfilBinding(@NonNull ConstraintLayout rootView, @NonNull Guideline guideline11,
-      @NonNull Guideline guideline6, @NonNull Guideline guideline7, @NonNull Guideline guideline8,
-      @NonNull TextView inputEmail, @NonNull ImageView inputFoto, @NonNull TextView inputUser,
-      @NonNull TextView textView3, @NonNull Toolbar toolbar) {
+  private PerfilBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppCompatButton btnCerrarSesion, @NonNull AppCompatButton btnVerProgreso,
+      @NonNull Guideline guideline11, @NonNull Guideline guideline6, @NonNull Guideline guideline7,
+      @NonNull Guideline guideline8, @NonNull TextView inputEmail, @NonNull ImageView inputFoto,
+      @NonNull TextView inputUser, @NonNull TextView textView3, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.btnCerrarSesion = btnCerrarSesion;
+    this.btnVerProgreso = btnVerProgreso;
     this.guideline11 = guideline11;
     this.guideline6 = guideline6;
     this.guideline7 = guideline7;
@@ -92,6 +102,18 @@ public final class PerfilBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnCerrarSesion;
+      AppCompatButton btnCerrarSesion = ViewBindings.findChildViewById(rootView, id);
+      if (btnCerrarSesion == null) {
+        break missingId;
+      }
+
+      id = R.id.btnVerProgreso;
+      AppCompatButton btnVerProgreso = ViewBindings.findChildViewById(rootView, id);
+      if (btnVerProgreso == null) {
+        break missingId;
+      }
+
       id = R.id.guideline11;
       Guideline guideline11 = ViewBindings.findChildViewById(rootView, id);
       if (guideline11 == null) {
@@ -146,8 +168,9 @@ public final class PerfilBinding implements ViewBinding {
         break missingId;
       }
 
-      return new PerfilBinding((ConstraintLayout) rootView, guideline11, guideline6, guideline7,
-          guideline8, inputEmail, inputFoto, inputUser, textView3, toolbar);
+      return new PerfilBinding((ConstraintLayout) rootView, btnCerrarSesion, btnVerProgreso,
+          guideline11, guideline6, guideline7, guideline8, inputEmail, inputFoto, inputUser,
+          textView3, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
