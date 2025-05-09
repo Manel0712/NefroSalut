@@ -65,6 +65,7 @@
         android:layout_height="56dp"
         android:drawableStart="@drawable/baseline_add_24"
         android:drawablePadding="8dp"
+        android:onClick="afegirPlats"
         android:text="Afegir plats"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

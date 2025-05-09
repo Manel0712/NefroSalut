@@ -2,6 +2,8 @@ package com.mariona.nefrosalut
 
 import android.content.Intent
 import android.os.Bundle
+import android.renderscript.ScriptGroup.Input
+import android.view.InputEvent
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
@@ -16,17 +18,17 @@ class dietasPlats  : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.dietas_plats)
-        val btnAfegirPlats = findViewById<Button>(R.id.btnAfegirPlats)
+        val btnCrearDieta = findViewById<Button>(R.id.btnCrearDieta)
         val btnVerPlato = findViewById<Button>(R.id.btnVerPlato)
         val btnVerDieta = findViewById<Button>(R.id.btnVerDieta)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        /*btnAfegirPlats.setOnClickListener {
-            val intent = Intent(this, AfegirPlats::class.java)
+        btnCrearDieta.setOnClickListener {
+            val intent = Intent(this, crearDieta::class.java)
             startActivity(intent)
-        }*/
+        }
 
         btnVerPlato.setOnClickListener {
             val intent = Intent(this, verPlatos::class.java)
@@ -37,6 +39,12 @@ class dietasPlats  : AppCompatActivity() {
             val intent = Intent(this, Dietas::class.java)
             startActivity(intent)
         }
+
+        //poner el nombre de la nueva dieta
+        //val nombreDieta = findViewById<>(R.id.nomDieta)
+
+        //cuando pone el nombre de la dieta se guarda
+
 
 
     }

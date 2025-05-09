@@ -32,19 +32,17 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAfegirPlats"
+        android:id="@+id/btnCrearDieta"
         style="@style/RoundedButtonStyle"
         android:layout_width="228dp"
         android:layout_height="56dp"
         android:drawableStart="@drawable/baseline_add_24"
         android:drawablePadding="8dp"
         android:text="Crear dieta"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintTop_toTopOf="@+id/guideline19" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnVerDieta"
@@ -53,12 +51,10 @@
         android:layout_height="56dp"
         android:drawablePadding="8dp"
         android:text="Veure dieta"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAfegirPlats"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearDieta" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnVerPlato"
@@ -67,13 +63,17 @@
         android:layout_height="56dp"
         android:drawablePadding="8dp"
         android:text="Veure plat"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAfegirPlats"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVerDieta" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
