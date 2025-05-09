@@ -3091,6 +3091,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable disolver
 drawable ensalada
 drawable foro
 drawable googleg_disabled_color_18
@@ -3129,6 +3130,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable masdos
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3310,17 +3312,17 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAfegirPlats
+id btnAleatorio
 id btnDialisis
 id btnDietas
 id btnDietes
 id btnExercici
-id btnForos
 id btnJocs
 id btnLogin
 id btnMedicacio
 id btnNefrologia
-id btnOmpleDades
 id btnPerfil
+id btnPorCategoria
 id btnRegister
 id btnSubmitLogin
 id btnSubmitRegister
@@ -3504,8 +3506,6 @@ id image
 id imageView2
 id imageView3
 id imageView4
-id imgForo
-id imgTema
 id imgdietas
 id imgjocs
 id imglogo
@@ -3517,7 +3517,6 @@ id indeterminate
 id info
 id inputAlcada
 id inputClassificacio
-id inputContrasena
 id inputData
 id inputEmail
 id inputEstat
@@ -3620,7 +3619,6 @@ id noScroll
 id noState
 id nomCategoria
 id nomDieta
-id nombreTema
 id none
 id normal
 id north
@@ -3633,6 +3631,7 @@ id on
 id onAttachStateChangeListener
 id onDateChanged
 id onInterceptTouchReturnSwipe
+id op1
 id op2
 id op3
 id op4
@@ -3670,6 +3669,9 @@ id postLayout
 id power1
 id power2
 id power3
+id powerDisolver
+id powerPorDos
+id pregunta
 id pressed
 id progress
 id progress_circular
@@ -3781,6 +3783,7 @@ id textView4
 id textView5
 id textView6
 id textView7
+id textView8
 id textWatcher
 id text_input_end_icon
 id text_input_error_icon
@@ -3981,6 +3984,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dietas
 layout dietas_plats
+layout escoger_quiz
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout list_videos
@@ -4048,6 +4052,7 @@ layout perfil
 layout plats
 layout progres
 layout quiz
+layout quiz_categoria
 layout register_familiar
 layout registre_pacient
 layout registre_personal

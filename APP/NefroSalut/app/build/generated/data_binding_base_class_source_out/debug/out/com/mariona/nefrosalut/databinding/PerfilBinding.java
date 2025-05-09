@@ -35,9 +35,6 @@ public final class PerfilBinding implements ViewBinding {
   public final Guideline guideline8;
 
   @NonNull
-  public final TextView inputContrasena;
-
-  @NonNull
   public final TextView inputEmail;
 
   @NonNull
@@ -54,14 +51,13 @@ public final class PerfilBinding implements ViewBinding {
 
   private PerfilBinding(@NonNull ConstraintLayout rootView, @NonNull Guideline guideline11,
       @NonNull Guideline guideline6, @NonNull Guideline guideline7, @NonNull Guideline guideline8,
-      @NonNull TextView inputContrasena, @NonNull TextView inputEmail, @NonNull ImageView inputFoto,
-      @NonNull TextView inputUser, @NonNull TextView textView3, @NonNull Toolbar toolbar) {
+      @NonNull TextView inputEmail, @NonNull ImageView inputFoto, @NonNull TextView inputUser,
+      @NonNull TextView textView3, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.guideline11 = guideline11;
     this.guideline6 = guideline6;
     this.guideline7 = guideline7;
     this.guideline8 = guideline8;
-    this.inputContrasena = inputContrasena;
     this.inputEmail = inputEmail;
     this.inputFoto = inputFoto;
     this.inputUser = inputUser;
@@ -120,12 +116,6 @@ public final class PerfilBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.inputContrasena;
-      TextView inputContrasena = ViewBindings.findChildViewById(rootView, id);
-      if (inputContrasena == null) {
-        break missingId;
-      }
-
       id = R.id.inputEmail;
       TextView inputEmail = ViewBindings.findChildViewById(rootView, id);
       if (inputEmail == null) {
@@ -157,7 +147,7 @@ public final class PerfilBinding implements ViewBinding {
       }
 
       return new PerfilBinding((ConstraintLayout) rootView, guideline11, guideline6, guideline7,
-          guideline8, inputContrasena, inputEmail, inputFoto, inputUser, textView3, toolbar);
+          guideline8, inputEmail, inputFoto, inputUser, textView3, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

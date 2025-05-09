@@ -87,19 +87,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
-    <TextView
-        android:id="@+id/inputContrasena"
-        style="@style/RoundedTextStyle"
-        android:layout_width="357dp"
-        android:layout_height="44dp"
-        android:autoSizeTextType="uniform"
-        android:fontFamily="@font/inria_sans_light"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/guideline8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline11" />
-
     <ImageView
         android:id="@+id/inputFoto"
         android:layout_width="wrap_content"

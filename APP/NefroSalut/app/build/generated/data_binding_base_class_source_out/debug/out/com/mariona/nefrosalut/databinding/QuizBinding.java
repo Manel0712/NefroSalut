@@ -24,19 +24,13 @@ public final class QuizBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton btnNefrologia;
-
-  @NonNull
   public final Guideline guideline4;
 
   @NonNull
   public final Guideline guideline5;
 
   @NonNull
-  public final ImageView imgTema;
-
-  @NonNull
-  public final TextView nombreTema;
+  public final AppCompatButton op1;
 
   @NonNull
   public final AppCompatButton op2;
@@ -48,24 +42,35 @@ public final class QuizBinding implements ViewBinding {
   public final AppCompatButton op4;
 
   @NonNull
+  public final ImageView powerDisolver;
+
+  @NonNull
+  public final ImageView powerPorDos;
+
+  @NonNull
+  public final TextView pregunta;
+
+  @NonNull
   public final TextView textView3;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private QuizBinding(@NonNull ConstraintLayout rootView, @NonNull AppCompatButton btnNefrologia,
-      @NonNull Guideline guideline4, @NonNull Guideline guideline5, @NonNull ImageView imgTema,
-      @NonNull TextView nombreTema, @NonNull AppCompatButton op2, @NonNull AppCompatButton op3,
-      @NonNull AppCompatButton op4, @NonNull TextView textView3, @NonNull Toolbar toolbar) {
+  private QuizBinding(@NonNull ConstraintLayout rootView, @NonNull Guideline guideline4,
+      @NonNull Guideline guideline5, @NonNull AppCompatButton op1, @NonNull AppCompatButton op2,
+      @NonNull AppCompatButton op3, @NonNull AppCompatButton op4, @NonNull ImageView powerDisolver,
+      @NonNull ImageView powerPorDos, @NonNull TextView pregunta, @NonNull TextView textView3,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.btnNefrologia = btnNefrologia;
     this.guideline4 = guideline4;
     this.guideline5 = guideline5;
-    this.imgTema = imgTema;
-    this.nombreTema = nombreTema;
+    this.op1 = op1;
     this.op2 = op2;
     this.op3 = op3;
     this.op4 = op4;
+    this.powerDisolver = powerDisolver;
+    this.powerPorDos = powerPorDos;
+    this.pregunta = pregunta;
     this.textView3 = textView3;
     this.toolbar = toolbar;
   }
@@ -97,12 +102,6 @@ public final class QuizBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnNefrologia;
-      AppCompatButton btnNefrologia = ViewBindings.findChildViewById(rootView, id);
-      if (btnNefrologia == null) {
-        break missingId;
-      }
-
       id = R.id.guideline4;
       Guideline guideline4 = ViewBindings.findChildViewById(rootView, id);
       if (guideline4 == null) {
@@ -115,15 +114,9 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imgTema;
-      ImageView imgTema = ViewBindings.findChildViewById(rootView, id);
-      if (imgTema == null) {
-        break missingId;
-      }
-
-      id = R.id.nombreTema;
-      TextView nombreTema = ViewBindings.findChildViewById(rootView, id);
-      if (nombreTema == null) {
+      id = R.id.op1;
+      AppCompatButton op1 = ViewBindings.findChildViewById(rootView, id);
+      if (op1 == null) {
         break missingId;
       }
 
@@ -145,6 +138,24 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.powerDisolver;
+      ImageView powerDisolver = ViewBindings.findChildViewById(rootView, id);
+      if (powerDisolver == null) {
+        break missingId;
+      }
+
+      id = R.id.powerPorDos;
+      ImageView powerPorDos = ViewBindings.findChildViewById(rootView, id);
+      if (powerPorDos == null) {
+        break missingId;
+      }
+
+      id = R.id.pregunta;
+      TextView pregunta = ViewBindings.findChildViewById(rootView, id);
+      if (pregunta == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -157,8 +168,8 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
-      return new QuizBinding((ConstraintLayout) rootView, btnNefrologia, guideline4, guideline5,
-          imgTema, nombreTema, op2, op3, op4, textView3, toolbar);
+      return new QuizBinding((ConstraintLayout) rootView, guideline4, guideline5, op1, op2, op3,
+          op4, powerDisolver, powerPorDos, pregunta, textView3, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

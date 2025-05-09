@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-#Wed May 07 18:58:43 CEST 2025
-base.0=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.4=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.5=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.6=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.7=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.8=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.9=C\:\\laragon\\www\\apiNefrosalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-=======
-#Wed May 07 20:44:14 CEST 2025
+#Fri May 09 17:50:50 CEST 2025
 base.0=C\:\\Users\\mario\\Desktop\\NefroSalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\mario\\Desktop\\NefroSalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\mario\\Desktop\\NefroSalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
@@ -22,7 +9,6 @@ base.6=C\:\\Users\\mario\\Desktop\\NefroSalut\\APP\\NefroSalut\\app\\build\\inte
 base.7=C\:\\Users\\mario\\Desktop\\NefroSalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
 base.8=C\:\\Users\\mario\\Desktop\\NefroSalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 base.9=C\:\\Users\\mario\\Desktop\\NefroSalut\\APP\\NefroSalut\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
->>>>>>> mariona6
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

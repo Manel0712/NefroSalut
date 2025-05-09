@@ -58,6 +58,16 @@ class DadesMediques : AppCompatActivity() {
 
     fun añadirDatosMedicos(view: View) {
         var DNI = binding.inputNomDieta.text.toString()
+        if (!validarDNI(DNI)) {
+            Snackbar.make(view, "DNI no válido", Snackbar.LENGTH_LONG).apply {
+                setActionTextColor(Color.WHITE)
+                view.setBackgroundColor(Color.RED)
+                val textView = view.findViewById<TextView>(com.google.android.material.R.id.snackbar_text)
+                textView.setTextColor(Color.WHITE)
+                textView.textSize = 24f
+            }.show()
+            return
+        }
         var data = binding.inputData.text.toString()
         var pes = binding.inputPes.text.toString().toDouble()
         var alçada = binding.inputAlcada.text.toString().toDouble()
@@ -86,7 +96,7 @@ class DadesMediques : AppCompatActivity() {
         var estadio = binding.inputClassificacio.selectedItem.toString()
         var IMC = pes / (alçada*alçada)
         var classificacio = ""
-        if (IMC>=18.5 && IMC<=24.9) {
+        if (IMC>=18.5 && IMC<=25.0) {
             if (activitatFisica) {
                 if (estadio.equals("Tractament conservador")) {
                     if (diabetic) {
@@ -189,4 +199,15 @@ class DadesMediques : AppCompatActivity() {
         var paciente = Paciente(name, apellidos, email, telefono, password.trim(), estat, "animo", activitatFisica, diabetic, hipertensio, estadio, 0, null, DNI, data, pes, alçada, IMC, classificacio, 0)
         viewModel.register(paciente)
     }
+    fun validarDNI(dni: String): Boolean {
+        val dniRegex = Regex("^[0-9]{8}[A-HJ-NP-TV-Z]$")
+        if (!dniRegex.matches(dni.uppercase())) return false
+
+        val letras = "TRWAGMYFPDXBNJZSQVHLCKE"
+        val numero = dni.substring(0, 8).toIntOrNull() ?: return false
+        val letraEsperada = letras[numero % 23]
+        val letraReal = dni[8].uppercaseChar()
+        return letraEsperada == letraReal
+    }
+
 }

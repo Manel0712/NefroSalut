@@ -52,14 +52,19 @@
             android:name="com.mariona.nefrosalut.Dietas"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
-            android:name="com.mariona.nefrosalut.Platos"
-=======
             android:name="com.mariona.nefrosalut.verPlatos"
->>>>>>> mariona6
             android:exported="false" />
         <activity
             android:name="com.mariona.nefrosalut.verVideos"
+            android:exported="false" />
+        <activity
+            android:name="com.mariona.nefrosalut.Platos"
+            android:exported="false" />
+        <activity
+            android:name="com.mariona.nefrosalut.Quiz"
+            android:exported="false" />
+        <activity
+            android:name="com.mariona.nefrosalut.Perfil"
             android:exported="false" />
         <activity
             android:name="com.mariona.nefrosalut.MainActivity"
