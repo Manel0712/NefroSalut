@@ -47,9 +47,6 @@ public final class ProgresBinding implements ViewBinding {
   public final ImageView imageView3;
 
   @NonNull
-  public final ImageView imageView4;
-
-  @NonNull
   public final ImageView inputFoto;
 
   @NonNull
@@ -63,9 +60,6 @@ public final class ProgresBinding implements ViewBinding {
 
   @NonNull
   public final TextView power2;
-
-  @NonNull
-  public final TextView power3;
 
   @NonNull
   public final TextView textView12;
@@ -85,11 +79,10 @@ public final class ProgresBinding implements ViewBinding {
   private ProgresBinding(@NonNull ConstraintLayout rootView, @NonNull TextView dataInici,
       @NonNull Guideline guideline10, @NonNull Guideline guideline11, @NonNull Guideline guideline6,
       @NonNull Guideline guideline7, @NonNull Guideline guideline8, @NonNull Guideline guideline9,
-      @NonNull ImageView imageView3, @NonNull ImageView imageView4, @NonNull ImageView inputFoto,
-      @NonNull TextView monedes, @NonNull TextView numPunts, @NonNull TextView power1,
-      @NonNull TextView power2, @NonNull TextView power3, @NonNull TextView textView12,
-      @NonNull TextView textView3, @NonNull TextView textView4, @NonNull TextView textView7,
-      @NonNull Toolbar toolbar) {
+      @NonNull ImageView imageView3, @NonNull ImageView inputFoto, @NonNull TextView monedes,
+      @NonNull TextView numPunts, @NonNull TextView power1, @NonNull TextView power2,
+      @NonNull TextView textView12, @NonNull TextView textView3, @NonNull TextView textView4,
+      @NonNull TextView textView7, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.dataInici = dataInici;
     this.guideline10 = guideline10;
@@ -99,13 +92,11 @@ public final class ProgresBinding implements ViewBinding {
     this.guideline8 = guideline8;
     this.guideline9 = guideline9;
     this.imageView3 = imageView3;
-    this.imageView4 = imageView4;
     this.inputFoto = inputFoto;
     this.monedes = monedes;
     this.numPunts = numPunts;
     this.power1 = power1;
     this.power2 = power2;
-    this.power3 = power3;
     this.textView12 = textView12;
     this.textView3 = textView3;
     this.textView4 = textView4;
@@ -188,12 +179,6 @@ public final class ProgresBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView4;
-      ImageView imageView4 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView4 == null) {
-        break missingId;
-      }
-
       id = R.id.inputFoto;
       ImageView inputFoto = ViewBindings.findChildViewById(rootView, id);
       if (inputFoto == null) {
@@ -221,12 +206,6 @@ public final class ProgresBinding implements ViewBinding {
       id = R.id.power2;
       TextView power2 = ViewBindings.findChildViewById(rootView, id);
       if (power2 == null) {
-        break missingId;
-      }
-
-      id = R.id.power3;
-      TextView power3 = ViewBindings.findChildViewById(rootView, id);
-      if (power3 == null) {
         break missingId;
       }
 
@@ -261,9 +240,8 @@ public final class ProgresBinding implements ViewBinding {
       }
 
       return new ProgresBinding((ConstraintLayout) rootView, dataInici, guideline10, guideline11,
-          guideline6, guideline7, guideline8, guideline9, imageView3, imageView4, inputFoto,
-          monedes, numPunts, power1, power2, power3, textView12, textView3, textView4, textView7,
-          toolbar);
+          guideline6, guideline7, guideline8, guideline9, imageView3, inputFoto, monedes, numPunts,
+          power1, power2, textView12, textView3, textView4, textView7, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -9,7 +9,7 @@ data class Paciente (
     var apellidos: String = "",
     var email: String,
     var telefono: String,
-    var contraseña: String,
+    var password: String,
     @SerializedName("estado_enfermedad")
     var estadoEnfermedad: String,
     @SerializedName("estado_animo")

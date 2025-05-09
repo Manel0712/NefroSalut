@@ -45,7 +45,7 @@ class RegisterFamiliarViewModel: ViewModel() {
             _error.value = null
 
             try {
-                var response = Connection.nefroSalutService.registerFamiliar(familiar.nombre, familiar.apellidos, familiar.email, familiar.telefono, familiar.contraseña.trim())
+                var response = Connection.nefroSalutService.registerFamiliar(familiar.nombre, familiar.apellidos, familiar.email, familiar.telefono, familiar.password.trim())
                 if (response.isSuccessful) {
                     _error.value = "Familiar registrado correctamente"
                 }

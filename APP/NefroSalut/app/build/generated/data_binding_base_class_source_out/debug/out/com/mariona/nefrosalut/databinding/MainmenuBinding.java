@@ -13,7 +13,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.button.MaterialButton;
 import com.mariona.nefrosalut.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -27,22 +26,13 @@ public final class MainmenuBinding implements ViewBinding {
   public final AppCompatButton btnDietas;
 
   @NonNull
-  public final AppCompatButton btnForos;
-
-  @NonNull
   public final AppCompatButton btnJocs;
-
-  @NonNull
-  public final MaterialButton btnOmpleDades;
 
   @NonNull
   public final AppCompatButton btnPerfil;
 
   @NonNull
   public final AppCompatButton btnVideos;
-
-  @NonNull
-  public final ImageView imgForo;
 
   @NonNull
   public final ImageView imgdietas;
@@ -69,20 +59,15 @@ public final class MainmenuBinding implements ViewBinding {
   public final TextView textView2;
 
   private MainmenuBinding(@NonNull ConstraintLayout rootView, @NonNull AppCompatButton btnDietas,
-      @NonNull AppCompatButton btnForos, @NonNull AppCompatButton btnJocs,
-      @NonNull MaterialButton btnOmpleDades, @NonNull AppCompatButton btnPerfil,
-      @NonNull AppCompatButton btnVideos, @NonNull ImageView imgForo, @NonNull ImageView imgdietas,
-      @NonNull ImageView imgjocs, @NonNull ImageView imgperfil, @NonNull ImageView imgvideo,
-      @NonNull ImageView logo, @NonNull Toolbar menu, @NonNull TextView textView,
-      @NonNull TextView textView2) {
+      @NonNull AppCompatButton btnJocs, @NonNull AppCompatButton btnPerfil,
+      @NonNull AppCompatButton btnVideos, @NonNull ImageView imgdietas, @NonNull ImageView imgjocs,
+      @NonNull ImageView imgperfil, @NonNull ImageView imgvideo, @NonNull ImageView logo,
+      @NonNull Toolbar menu, @NonNull TextView textView, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.btnDietas = btnDietas;
-    this.btnForos = btnForos;
     this.btnJocs = btnJocs;
-    this.btnOmpleDades = btnOmpleDades;
     this.btnPerfil = btnPerfil;
     this.btnVideos = btnVideos;
-    this.imgForo = imgForo;
     this.imgdietas = imgdietas;
     this.imgjocs = imgjocs;
     this.imgperfil = imgperfil;
@@ -126,21 +111,9 @@ public final class MainmenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnForos;
-      AppCompatButton btnForos = ViewBindings.findChildViewById(rootView, id);
-      if (btnForos == null) {
-        break missingId;
-      }
-
       id = R.id.btnJocs;
       AppCompatButton btnJocs = ViewBindings.findChildViewById(rootView, id);
       if (btnJocs == null) {
-        break missingId;
-      }
-
-      id = R.id.btnOmpleDades;
-      MaterialButton btnOmpleDades = ViewBindings.findChildViewById(rootView, id);
-      if (btnOmpleDades == null) {
         break missingId;
       }
 
@@ -153,12 +126,6 @@ public final class MainmenuBinding implements ViewBinding {
       id = R.id.btnVideos;
       AppCompatButton btnVideos = ViewBindings.findChildViewById(rootView, id);
       if (btnVideos == null) {
-        break missingId;
-      }
-
-      id = R.id.imgForo;
-      ImageView imgForo = ViewBindings.findChildViewById(rootView, id);
-      if (imgForo == null) {
         break missingId;
       }
 
@@ -210,9 +177,8 @@ public final class MainmenuBinding implements ViewBinding {
         break missingId;
       }
 
-      return new MainmenuBinding((ConstraintLayout) rootView, btnDietas, btnForos, btnJocs,
-          btnOmpleDades, btnPerfil, btnVideos, imgForo, imgdietas, imgjocs, imgperfil, imgvideo,
-          logo, menu, textView, textView2);
+      return new MainmenuBinding((ConstraintLayout) rootView, btnDietas, btnJocs, btnPerfil,
+          btnVideos, imgdietas, imgjocs, imgperfil, imgvideo, logo, menu, textView, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

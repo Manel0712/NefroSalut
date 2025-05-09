@@ -8,7 +8,7 @@ class Familiar (
     var apellidos: String = "",
     var email: String,
     var telefono: String,
-    var contraseña: String,
+    var password: String,
     @SerializedName("paciente_id")
     var pacienteId: Int?
 ): Serializable

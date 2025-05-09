@@ -37,4 +37,18 @@ class MainMenu : AppCompatActivity() {
         val i = Intent(this, verVideos::class.java)
         startActivity(i)
     }
+
+    fun quizClick(view: View) {
+        val i = Intent(this, escogerQuiz::class.java)
+        startActivity(i)
+    }
+
+    fun perfilClick(view: View) {
+        val i = Intent(this, Perfil::class.java)
+        startActivity(i)
+    }
+
+
+
+
 }
