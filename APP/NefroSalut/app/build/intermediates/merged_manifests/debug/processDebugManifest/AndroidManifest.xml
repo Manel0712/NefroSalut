@@ -58,7 +58,7 @@
             android:name="com.mariona.nefrosalut.verVideos"
             android:exported="false" />
         <activity
-            android:name="com.mariona.nefrosalut.Platos"
+            android:name="com.mariona.nefrosalut.platosDiets"
             android:exported="false" />
         <activity
             android:name="com.mariona.nefrosalut.Quiz"

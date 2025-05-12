@@ -16,11 +16,13 @@ import androidx.appcompat.widget.Toolbar
 import com.google.android.material.snackbar.Snackbar
 import com.mariona.nefrosalut.adapter.PlatosAdapter
 import com.mariona.nefrosalut.databinding.PlatsBinding
+import com.mariona.nefrosalut.viewModels.PlatosGeneralViewModel
+import com.mariona.nefrosalut.viewModels.PlatosGeneralViewModelFactory
 import com.mariona.nefrosalut.viewModels.PlatosViewModel
 import com.mariona.nefrosalut.viewModels.PlatosViewModelFactory
 
 class verPlatos : AppCompatActivity() {
-    private val viewModel: PlatosViewModel by viewModels { PlatosViewModelFactory() }
+    private val viewModel: PlatosGeneralViewModel by viewModels { PlatosGeneralViewModelFactory() }
     private lateinit var binding: PlatsBinding
     private val platosAdapter = PlatosAdapter(emptyList())
     var dieta: Int = 0
@@ -28,12 +30,12 @@ class verPlatos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val toolbar = binding.toolbar
-        setSupportActionBar(toolbar)
-
         binding = PlatsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        val toolbar = binding.toolbar
+        setSupportActionBar(toolbar)
 
         //dieta = intent.extras!!.getLong("dieta").toInt()
 
@@ -71,19 +73,19 @@ class verPlatos : AppCompatActivity() {
             }
         }
 
-        viewModel.loadPlatos(dieta)
+        viewModel.loadPlatos()
 
-        /*val spinner: Spinner = binding.spinerCategoriaPlat
+        val spinner: Spinner = binding.spinerCategoriaPlat
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 val seleccionado = parent.getItemAtPosition(position).toString()
-                viewModel.loadPlatosCategoria(dieta, seleccionado)
+                viewModel.loadPlatosCategoria(seleccionado)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
             }
-        }*/
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
