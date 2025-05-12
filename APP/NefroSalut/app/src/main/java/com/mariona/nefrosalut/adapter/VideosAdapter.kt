@@ -1,5 +1,7 @@
 package com.mariona.nefrosalut.adapter
 
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,9 +28,17 @@ class VideosAdapter(var videos: List<Videos>) : RecyclerView.Adapter<VideosAdapt
         holder.nombreVideo.text = videos.titulo
         holder.categoriaVideo.text = videos.categoria
         holder.linkVideo.text = videos.link
+
+        holder.linkVideo.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(videos.link))
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
         return videos.size
     }
+
+
 }

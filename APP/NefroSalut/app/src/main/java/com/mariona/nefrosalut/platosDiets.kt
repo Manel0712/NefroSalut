@@ -6,8 +6,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.AdapterView
-import android.widget.Spinner
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -19,7 +17,7 @@ import com.mariona.nefrosalut.databinding.VerDietasBinding
 import com.mariona.nefrosalut.viewModels.PlatosViewModel
 import com.mariona.nefrosalut.viewModels.PlatosViewModelFactory
 
-class Platos : AppCompatActivity() {
+class platosDiets : AppCompatActivity() {
     private val viewModel: PlatosViewModel by viewModels { PlatosViewModelFactory() }
     private lateinit var binding: VerDietasBinding
     private val platosAdapter = PlatosAdapter(emptyList())

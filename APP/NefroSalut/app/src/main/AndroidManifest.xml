@@ -30,7 +30,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".Platos"
+            android:name=".platosDiets"
             android:exported="false" />
 
         <activity
