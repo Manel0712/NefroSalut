@@ -1,0 +1,279 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mariona.nefrosalut"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Include required permissions for Google Maps API to run. -->
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:20:5-78
+12-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:20:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:21:5-66
+13-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:21:22-64
+14
+15    <uses-feature
+15-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:22:5-24:33
+16        android:glEsVersion="0x00020000"
+16-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:23:8-40
+17        android:required="true" />
+17-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:24:8-31
+18
+19    <queries>
+19-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:27:5-30:15
+20
+21        <!-- Needs to be explicitly declared on Android R+ -->
+22        <package android:name="com.google.android.apps.maps" />
+22-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:29:7-61
+22-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:29:16-59
+23    </queries>
+24
+25    <permission
+25-->[androidx.core:core:1.15.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\9d4d57ee3eadf8234598e7596aeea40b\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.mariona.nefrosalut.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.15.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\9d4d57ee3eadf8234598e7596aeea40b\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.15.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\9d4d57ee3eadf8234598e7596aeea40b\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.mariona.nefrosalut.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.15.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\9d4d57ee3eadf8234598e7596aeea40b\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.15.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\9d4d57ee3eadf8234598e7596aeea40b\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:5:5-80:19
+32        android:allowBackup="true"
+32-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:6:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.15.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\9d4d57ee3eadf8234598e7596aeea40b\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+34        android:dataExtractionRules="@xml/data_extraction_rules"
+34-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:7:9-65
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:fullBackupContent="@xml/backup_rules"
+37-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:8:9-54
+38        android:icon="@mipmap/ic_launcher"
+38-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:9:9-43
+39        android:label="@string/app_name"
+39-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:10:9-41
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:11:9-54
+41        android:supportsRtl="true"
+41-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:12:9-35
+42        android:testOnly="true"
+43        android:theme="@style/Theme.NefroSalut"
+43-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:13:9-48
+44        android:usesCleartextTraffic="true" >
+44-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:14:9-44
+45        <activity
+45-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:16:9-18:40
+46            android:name="com.mariona.nefrosalut.LoginSelectActivity"
+46-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:17:13-48
+47            android:exported="false" />
+47-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:18:13-37
+48        <activity
+48-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:19:9-21:40
+49            android:name="com.mariona.nefrosalut.LoginFamiliar"
+49-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:20:13-42
+50            android:exported="false" />
+50-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:21:13-37
+51        <activity
+51-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:22:9-24:40
+52            android:name="com.mariona.nefrosalut.Dietas"
+52-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:23:13-35
+53            android:exported="false" />
+53-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:24:13-37
+54        <activity
+54-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:25:9-27:40
+55            android:name="com.mariona.nefrosalut.verPlatos"
+55-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:26:13-38
+56            android:exported="false" />
+56-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:27:13-37
+57        <activity
+57-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:28:9-30:40
+58            android:name="com.mariona.nefrosalut.verVideos"
+58-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:29:13-38
+59            android:exported="false" />
+59-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:30:13-37
+60        <activity
+60-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:32:9-34:40
+61            android:name="com.mariona.nefrosalut.platosDiets"
+61-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:33:13-40
+62            android:exported="false" />
+62-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:34:13-37
+63        <activity
+63-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:36:9-38:40
+64            android:name="com.mariona.nefrosalut.Quiz"
+64-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:37:13-33
+65            android:exported="false" />
+65-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:38:13-37
+66        <activity
+66-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:40:9-42:40
+67            android:name="com.mariona.nefrosalut.Perfil"
+67-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:41:13-35
+68            android:exported="false" />
+68-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:42:13-37
+69        <activity
+69-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:44:9-46:40
+70            android:name="com.mariona.nefrosalut.quizCategoria"
+70-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:45:13-42
+71            android:exported="false" />
+71-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:46:13-37
+72        <activity
+72-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:48:9-50:40
+73            android:name="com.mariona.nefrosalut.escogerQuiz"
+73-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:49:13-40
+74            android:exported="false" />
+74-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:50:13-37
+75        <activity
+75-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:52:9-54:40
+76            android:name="com.mariona.nefrosalut.verProgreso"
+76-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:53:13-40
+77            android:exported="false" />
+77-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:54:13-37
+78        <activity
+78-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:56:9-58:40
+79            android:name="com.mariona.nefrosalut.crearDieta"
+79-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:57:13-39
+80            android:exported="false" />
+80-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:58:13-37
+81        <activity
+81-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:59:9-67:20
+82            android:name="com.mariona.nefrosalut.MainActivity"
+82-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:60:13-41
+83            android:exported="true" >
+83-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:61:13-36
+84            <intent-filter>
+84-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:62:13-66:29
+85                <action android:name="android.intent.action.MAIN" />
+85-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:63:17-69
+85-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:63:25-66
+86
+87                <category android:name="android.intent.category.LAUNCHER" />
+87-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:65:17-77
+87-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:65:27-74
+88            </intent-filter>
+89        </activity>
+90        <activity android:name="com.mariona.nefrosalut.LoginActivity" />
+90-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:68:9-51
+90-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:68:19-48
+91        <activity android:name="com.mariona.nefrosalut.RegisterSelectActivity" />
+91-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:69:9-60
+91-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:69:19-57
+92        <activity android:name="com.mariona.nefrosalut.RegisterPacientActivity" />
+92-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:70:9-61
+92-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:70:19-58
+93        <activity android:name="com.mariona.nefrosalut.RegisterFamiliarActivity" />
+93-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:71:9-62
+93-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:71:19-59
+94        <activity android:name="com.mariona.nefrosalut.DadesMediques" />
+94-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:72:9-51
+94-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:72:19-48
+95        <activity android:name="com.mariona.nefrosalut.MainMenu" />
+95-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:73:9-46
+95-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:73:19-43
+96        <activity android:name="com.mariona.nefrosalut.dietasPlats" />
+96-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:74:9-48
+96-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:74:19-46
+97
+98        <meta-data
+98-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:77:9-79:57
+99            android:name="preloaded_fonts"
+99-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:78:13-43
+100            android:resource="@array/preloaded_fonts" />
+100-->C:\laragon\www\NefroSalut\APP\NefroSalut\app\src\main\AndroidManifest.xml:79:13-54
+101        <!-- Needs to be explicitly declared on P+ -->
+102        <uses-library
+102-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:33:7-86
+103            android:name="org.apache.http.legacy"
+103-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:33:21-58
+104            android:required="false" />
+104-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ad2acc5c84838a8f58697dd79a7ecefe\transformed\play-services-maps-19.1.0\AndroidManifest.xml:33:59-83
+105
+106        <activity
+106-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\f0472988e9c6c9eb7a34d4c9cdbecd04\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+107-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\f0472988e9c6c9eb7a34d4c9cdbecd04\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+108            android:exported="false"
+108-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\f0472988e9c6c9eb7a34d4c9cdbecd04\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+109-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\f0472988e9c6c9eb7a34d4c9cdbecd04\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+110
+111        <meta-data
+111-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\b3c804c0023da1c0e36643f7f23c5c7a\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+112            android:name="com.google.android.gms.version"
+112-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\b3c804c0023da1c0e36643f7f23c5c7a\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+113            android:value="@integer/google_play_services_version" />
+113-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\b3c804c0023da1c0e36643f7f23c5c7a\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+114
+115        <provider
+115-->[androidx.emoji2:emoji2:1.3.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ecd1ba04edf48ba6be86569164c4980d\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+116            android:name="androidx.startup.InitializationProvider"
+116-->[androidx.emoji2:emoji2:1.3.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ecd1ba04edf48ba6be86569164c4980d\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+117            android:authorities="com.mariona.nefrosalut.androidx-startup"
+117-->[androidx.emoji2:emoji2:1.3.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ecd1ba04edf48ba6be86569164c4980d\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+118            android:exported="false" >
+118-->[androidx.emoji2:emoji2:1.3.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ecd1ba04edf48ba6be86569164c4980d\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+119            <meta-data
+119-->[androidx.emoji2:emoji2:1.3.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ecd1ba04edf48ba6be86569164c4980d\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+120-->[androidx.emoji2:emoji2:1.3.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ecd1ba04edf48ba6be86569164c4980d\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+121                android:value="androidx.startup" />
+121-->[androidx.emoji2:emoji2:1.3.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\ecd1ba04edf48ba6be86569164c4980d\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+122            <meta-data
+122-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\5dac791fcca9f7a62d539da050a81617\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+123                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+123-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\5dac791fcca9f7a62d539da050a81617\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+124                android:value="androidx.startup" />
+124-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\5dac791fcca9f7a62d539da050a81617\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+125            <meta-data
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+126                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+127                android:value="androidx.startup" />
+127-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+128        </provider>
+129
+130        <receiver
+130-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+131            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+132            android:directBootAware="false"
+132-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+133            android:enabled="true"
+133-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+134            android:exported="true"
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+135            android:permission="android.permission.DUMP" >
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+136            <intent-filter>
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+137                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+138            </intent-filter>
+139            <intent-filter>
+139-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+140                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+141            </intent-filter>
+142            <intent-filter>
+142-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+143                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+144            </intent-filter>
+145            <intent-filter>
+145-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+146                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\MANEL\.gradle\caches\8.10.2\transforms\3acefea1e861ad40b273fa636266a3ad\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+147            </intent-filter>
+148        </receiver>
+149    </application>
+150
+151</manifest>

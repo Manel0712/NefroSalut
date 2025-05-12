@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:background="@color/base"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="235dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/inria_sans_light"
+        android:gravity="center"
+        android:text="QUIZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="283dp"
+        android:layout_height="37dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/inria_sans_light"
+        android:text="Escull la categoria"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCategoriaNefrologia"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Que es la nefrolofia ? "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCategoriaDietes"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Dieta i Plats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaExercici" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCategoriaExercici"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Exercici Fisic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaMedicacio" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCategoriaMedicacio"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Medicacio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaDialisis" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCategoriaDialisis"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Dialisis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaTransplants" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCategoriaTransplants"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Trasplantament renal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaNefrologia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
