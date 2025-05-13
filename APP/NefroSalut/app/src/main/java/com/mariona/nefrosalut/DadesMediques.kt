@@ -32,11 +32,11 @@ class DadesMediques : AppCompatActivity() {
         binding.inputNomDieta.setOnFocusChangeListener { _, hasFocus ->
             if (!hasFocus) {
                 val dni = binding.inputNomDieta.text.toString()
-                if (!validarDNI(dni)) {
+                /*if (!validarDNI(dni)) {
                     binding.inputNomDieta.error = "DNI no válido"
                 } else {
                     binding.inputNomDieta.error = null
-                }
+                }*/
             }
         }
         name = intent.extras!!.getString("name").toString()
@@ -67,10 +67,10 @@ class DadesMediques : AppCompatActivity() {
 
     fun añadirDatosMedicos(view: View) {
         val DNI = binding.inputNomDieta.text.toString()
-        if (!validarDNI(DNI)) {
+        /*if (!validarDNI(DNI)) {
             binding.inputNomDieta.error = "DNI no válido"
             return
-        }
+        }*/
 
         val pesString = binding.inputPes.text.toString().replace(",", ".")
         val alçadaString = binding.inputAlcada.text.toString().replace(",", ".")
@@ -234,7 +234,7 @@ class DadesMediques : AppCompatActivity() {
         var paciente = Paciente(name, apellidos, email, telefono, password.trim(), estat, "animo", activitatFisica, diabetic, hipertensio, estadio, 0, null, DNI, data, pes, alçada, IMC, classificacio, 0)
         viewModel.register(paciente)
     }
-    fun validarDNI(dni: String): Boolean {
+    /*fun validarDNI(dni: String): Boolean {
         val dniRegex = Regex("^[0-9]{8}[A-HJ-NP-TV-Z]$")
         if (!dniRegex.matches(dni.uppercase())) return false
 
@@ -243,6 +243,6 @@ class DadesMediques : AppCompatActivity() {
         val letraEsperada = letras[numero % 23]
         val letraReal = dni[8].uppercaseChar()
         return letraEsperada == letraReal
-    }
+    }*/
 
 }

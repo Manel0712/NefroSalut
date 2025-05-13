@@ -110,7 +110,6 @@ id guideline6
 id guideline7
 id guideline8
 id guideline9
-id imageView2
 id imageView3
 id imgdietas
 id imgjocs

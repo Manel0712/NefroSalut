@@ -5,6 +5,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mariona.nefrosalut.R
@@ -15,7 +16,7 @@ class VideosAdapter(var videos: List<Videos>) : RecyclerView.Adapter<VideosAdapt
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombreVideo: TextView = itemView.findViewById(R.id.cardVideo)
         val categoriaVideo: TextView = itemView.findViewById(R.id.cardCategoriaVideo)
-        val linkVideo: TextView = itemView.findViewById(R.id.cardLinkVideo)
+        val linkVideo: ImageView = itemView.findViewById(R.id.cardLinkVideo)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,7 +28,6 @@ class VideosAdapter(var videos: List<Videos>) : RecyclerView.Adapter<VideosAdapt
         val videos = videos[position]
         holder.nombreVideo.text = videos.titulo
         holder.categoriaVideo.text = videos.categoria
-        holder.linkVideo.text = videos.link
 
         holder.linkVideo.setOnClickListener {
             val context = holder.itemView.context

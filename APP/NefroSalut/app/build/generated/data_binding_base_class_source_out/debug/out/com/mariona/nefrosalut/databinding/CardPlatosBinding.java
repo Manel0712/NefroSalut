@@ -24,17 +24,17 @@ public final class CardPlatosBinding implements ViewBinding {
   public final TextView cardCategoriaPlat;
 
   @NonNull
-  public final TextView cardNomDelPlat;
+  public final ImageView cardLinkVideo;
 
   @NonNull
-  public final ImageView imageView2;
+  public final TextView cardNomDelPlat;
 
   private CardPlatosBinding(@NonNull LinearLayout rootView, @NonNull TextView cardCategoriaPlat,
-      @NonNull TextView cardNomDelPlat, @NonNull ImageView imageView2) {
+      @NonNull ImageView cardLinkVideo, @NonNull TextView cardNomDelPlat) {
     this.rootView = rootView;
     this.cardCategoriaPlat = cardCategoriaPlat;
+    this.cardLinkVideo = cardLinkVideo;
     this.cardNomDelPlat = cardNomDelPlat;
-    this.imageView2 = imageView2;
   }
 
   @Override
@@ -70,20 +70,20 @@ public final class CardPlatosBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cardLinkVideo;
+      ImageView cardLinkVideo = ViewBindings.findChildViewById(rootView, id);
+      if (cardLinkVideo == null) {
+        break missingId;
+      }
+
       id = R.id.cardNomDelPlat;
       TextView cardNomDelPlat = ViewBindings.findChildViewById(rootView, id);
       if (cardNomDelPlat == null) {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
-        break missingId;
-      }
-
-      return new CardPlatosBinding((LinearLayout) rootView, cardCategoriaPlat, cardNomDelPlat,
-          imageView2);
+      return new CardPlatosBinding((LinearLayout) rootView, cardCategoriaPlat, cardLinkVideo,
+          cardNomDelPlat);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
