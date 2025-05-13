@@ -24,21 +24,17 @@ public final class CardVideosBinding implements ViewBinding {
   public final TextView cardCategoriaVideo;
 
   @NonNull
-  public final TextView cardLinkVideo;
+  public final ImageView cardLinkVideo;
 
   @NonNull
   public final TextView cardVideo;
 
-  @NonNull
-  public final ImageView imageView2;
-
   private CardVideosBinding(@NonNull LinearLayout rootView, @NonNull TextView cardCategoriaVideo,
-      @NonNull TextView cardLinkVideo, @NonNull TextView cardVideo, @NonNull ImageView imageView2) {
+      @NonNull ImageView cardLinkVideo, @NonNull TextView cardVideo) {
     this.rootView = rootView;
     this.cardCategoriaVideo = cardCategoriaVideo;
     this.cardLinkVideo = cardLinkVideo;
     this.cardVideo = cardVideo;
-    this.imageView2 = imageView2;
   }
 
   @Override
@@ -75,7 +71,7 @@ public final class CardVideosBinding implements ViewBinding {
       }
 
       id = R.id.cardLinkVideo;
-      TextView cardLinkVideo = ViewBindings.findChildViewById(rootView, id);
+      ImageView cardLinkVideo = ViewBindings.findChildViewById(rootView, id);
       if (cardLinkVideo == null) {
         break missingId;
       }
@@ -86,14 +82,8 @@ public final class CardVideosBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
-        break missingId;
-      }
-
       return new CardVideosBinding((LinearLayout) rootView, cardCategoriaVideo, cardLinkVideo,
-          cardVideo, imageView2);
+          cardVideo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

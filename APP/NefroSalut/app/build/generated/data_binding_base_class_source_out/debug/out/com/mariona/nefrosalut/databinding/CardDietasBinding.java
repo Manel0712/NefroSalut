@@ -21,16 +21,16 @@ public final class CardDietasBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final TextView cardNomDieta;
+  public final ImageView cardLinkVideo;
 
   @NonNull
-  public final ImageView imageView2;
+  public final TextView cardNomDieta;
 
-  private CardDietasBinding(@NonNull LinearLayout rootView, @NonNull TextView cardNomDieta,
-      @NonNull ImageView imageView2) {
+  private CardDietasBinding(@NonNull LinearLayout rootView, @NonNull ImageView cardLinkVideo,
+      @NonNull TextView cardNomDieta) {
     this.rootView = rootView;
+    this.cardLinkVideo = cardLinkVideo;
     this.cardNomDieta = cardNomDieta;
-    this.imageView2 = imageView2;
   }
 
   @Override
@@ -60,19 +60,19 @@ public final class CardDietasBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cardLinkVideo;
+      ImageView cardLinkVideo = ViewBindings.findChildViewById(rootView, id);
+      if (cardLinkVideo == null) {
+        break missingId;
+      }
+
       id = R.id.cardNomDieta;
       TextView cardNomDieta = ViewBindings.findChildViewById(rootView, id);
       if (cardNomDieta == null) {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
-        break missingId;
-      }
-
-      return new CardDietasBinding((LinearLayout) rootView, cardNomDieta, imageView2);
+      return new CardDietasBinding((LinearLayout) rootView, cardLinkVideo, cardNomDieta);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
