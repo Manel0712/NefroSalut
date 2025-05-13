@@ -25,6 +25,7 @@
 
     <!-- Spinner de categorias -->
     <string-array name="Categoria">
+        <item>Tots</item>
         <item>Que es la nefrologia</item>
         <item>Dieta y Plats</item>
         <item>Exercici Fisic</item>
@@ -49,6 +50,7 @@
     </string-array>
 
     <string-array name="CategoriPlats">
+        <item>Tots</item>
         <item>Carns</item>
         <item>Peix</item>
         <item>Embotits</item>
