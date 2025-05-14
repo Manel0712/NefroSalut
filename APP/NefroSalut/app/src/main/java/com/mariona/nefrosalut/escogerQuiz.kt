@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class escogerQuiz   : AppCompatActivity() {
 
+    private lateinit var categoria: String
     override fun onCreate(savedInstanceState: android.os.Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.escoger_quiz)
@@ -25,6 +26,7 @@ class escogerQuiz   : AppCompatActivity() {
     }
     fun aleatorioClick(view: android.view.View) {
         val i = android.content.Intent(this, Quiz::class.java)
+        i.putExtra("categoria", "aleatorio")
         startActivity(i)
     }
     fun quizcategoriaClick(view: android.view.View) {

@@ -64,6 +64,9 @@
             android:name="com.mariona.nefrosalut.Quiz"
             android:exported="false" />
         <activity
+            android:name="com.mariona.nefrosalut.afegirPlats"
+            android:exported="false" />
+        <activity
             android:name="com.mariona.nefrosalut.Perfil"
             android:exported="false" />
         <activity

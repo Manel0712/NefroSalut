@@ -30,6 +30,12 @@ class MainMenu : AppCompatActivity() {
 
     fun dietasClick(view: View) {
         val i = Intent(this, dietasPlats::class.java)
+        if (rol.equals("Paciente")) {
+            i.putExtra("user", user as Paciente)
+        } else if (rol.equals("Familiar")) {
+            i.putExtra("user", user as Familiar)
+        }
+        i.putExtra("rol", rol)
         startActivity(i)
     }
 

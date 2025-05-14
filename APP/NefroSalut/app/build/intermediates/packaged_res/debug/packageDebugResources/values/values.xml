@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="CategoriPlats">
+        <item>Tots</item>
         <item>Carns</item>
         <item>Peix</item>
         <item>Embotits</item>
@@ -14,6 +15,7 @@
         <item>Condiments</item>
     </string-array>
     <string-array name="Categoria">
+        <item>Tots</item>
         <item>Que es la nefrologia</item>
         <item>Dieta y Plats</item>
         <item>Exercici Fisic</item>
@@ -53,6 +55,9 @@
     </array>
     <color name="base">#A2B6B5</color>
     <color name="black">#FF000000</color>
+    <color name="estadio0">#B6EEA7</color>
+    <color name="estadio1">#F2E6A7</color>
+    <color name="estadio2">#F2B6A7</color>
     <color name="text">#D2D2D2</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">NEFROSALUT</string>

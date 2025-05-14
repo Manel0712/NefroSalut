@@ -10,6 +10,9 @@ array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
 color base
 color black
+color estadio0
+color estadio1
+color estadio2
 color text
 color white
 drawable _rallas
@@ -40,11 +43,8 @@ font inria_sans_light
 id Nomapp
 id btnAfegirPlats
 id btnAleatorio
-id btnCategoriaDialisis
-id btnCategoriaDietes
-id btnCategoriaExercici
-id btnCategoriaMedicacio
-id btnCategoriaNefrologia
+id btnCategoriaDialisisPeritoneal
+id btnCategoriaPredialisis
 id btnCategoriaTransplants
 id btnCerrarSesion
 id btnCrearDieta
@@ -78,6 +78,7 @@ id cardLinkVideo
 id cardNomDelPlat
 id cardNomDieta
 id cardVideo
+id cardView
 id checkboxActividadFisicaNo
 id checkboxActividadFisicaSi
 id checkboxDiabetico
@@ -135,7 +136,6 @@ id num_punts
 id op1
 id op2
 id op3
-id op4
 id power1
 id power2
 id powerDisolver
