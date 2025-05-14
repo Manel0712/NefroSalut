@@ -39,9 +39,6 @@ public final class QuizBinding implements ViewBinding {
   public final AppCompatButton op3;
 
   @NonNull
-  public final AppCompatButton op4;
-
-  @NonNull
   public final ImageView powerDisolver;
 
   @NonNull
@@ -58,7 +55,7 @@ public final class QuizBinding implements ViewBinding {
 
   private QuizBinding(@NonNull ConstraintLayout rootView, @NonNull Guideline guideline4,
       @NonNull Guideline guideline5, @NonNull AppCompatButton op1, @NonNull AppCompatButton op2,
-      @NonNull AppCompatButton op3, @NonNull AppCompatButton op4, @NonNull ImageView powerDisolver,
+      @NonNull AppCompatButton op3, @NonNull ImageView powerDisolver,
       @NonNull ImageView powerPorDos, @NonNull TextView pregunta, @NonNull TextView textView3,
       @NonNull Toolbar toolbar) {
     this.rootView = rootView;
@@ -67,7 +64,6 @@ public final class QuizBinding implements ViewBinding {
     this.op1 = op1;
     this.op2 = op2;
     this.op3 = op3;
-    this.op4 = op4;
     this.powerDisolver = powerDisolver;
     this.powerPorDos = powerPorDos;
     this.pregunta = pregunta;
@@ -132,12 +128,6 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.op4;
-      AppCompatButton op4 = ViewBindings.findChildViewById(rootView, id);
-      if (op4 == null) {
-        break missingId;
-      }
-
       id = R.id.powerDisolver;
       ImageView powerDisolver = ViewBindings.findChildViewById(rootView, id);
       if (powerDisolver == null) {
@@ -169,7 +159,7 @@ public final class QuizBinding implements ViewBinding {
       }
 
       return new QuizBinding((ConstraintLayout) rootView, guideline4, guideline5, op1, op2, op3,
-          op4, powerDisolver, powerPorDos, pregunta, textView3, toolbar);
+          powerDisolver, powerPorDos, pregunta, textView3, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

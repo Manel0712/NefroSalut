@@ -38,6 +38,10 @@
             android:exported="false" />
 
         <activity
+            android:name=".afegirPlats"
+            android:exported="false" />
+
+        <activity
             android:name=".Perfil"
             android:exported="false" />
 

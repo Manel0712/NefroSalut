@@ -10,9 +10,13 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 
 class dietasPlats  : AppCompatActivity() {
 
+    private lateinit var user: Any
+    private lateinit var rol: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,18 +29,44 @@ class dietasPlats  : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
+        }
+
         btnCrearDieta.setOnClickListener {
             val intent = Intent(this, crearDieta::class.java)
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
+            intent.putExtra("rol", rol)
             startActivity(intent)
         }
 
         btnVerPlato.setOnClickListener {
             val intent = Intent(this, verPlatos::class.java)
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
+            intent.putExtra("rol", rol)
             startActivity(intent)
         }
 
         btnVerDieta.setOnClickListener {
             val intent = Intent(this, Dietas::class.java)
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
+            intent.putExtra("rol", rol)
             startActivity(intent)
         }
 

@@ -57,72 +57,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.36" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCategoriaNefrologia"
+        android:id="@+id/btnCategoriaPredialisis"
         style="@style/RoundedButtonStyle"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:text="Que es la nefrolofia ? "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCategoriaDietes"
-        style="@style/RoundedButtonStyle"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Dieta i Plats"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaExercici" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCategoriaExercici"
-        style="@style/RoundedButtonStyle"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Exercici Fisic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaMedicacio" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCategoriaMedicacio"
-        style="@style/RoundedButtonStyle"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Medicacio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaDialisis" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCategoriaDialisis"
-        style="@style/RoundedButtonStyle"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Dialisis"
+        android:layout_marginTop="12dp"
+        android:onClick="categoriaPredialisis"
+        android:text="PREDIÀLISI"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCategoriaTransplants" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCategoriaDialisisPeritoneal"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:onClick="categoriaPerioneal"
+        android:text="DIÀLISIS PERITONEAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCategoriaTransplants"
         style="@style/RoundedButtonStyle"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:text="Trasplantament renal"
+        android:layout_marginTop="16dp"
+        android:onClick="categoriaHemodialisis"
+        android:text="HEMODIÀLISI"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaNefrologia" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCategoriaDialisisPeritoneal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,4 +23,22 @@ class quizCategoria   : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+    fun categoriaPredialisis(view: android.view.View) {
+        val i = android.content.Intent(this, Quiz::class.java)
+        i.putExtra("categoria", "predialisis")
+        startActivity(i)
+    }
+
+    fun categoriaHemodialisis(view: android.view.View) {
+        val i = android.content.Intent(this, Quiz::class.java)
+        i.putExtra("categoria", "hemodialisis")
+        startActivity(i)
+    }
+
+    fun categoriaPerioneal(view: android.view.View) {
+        val i = android.content.Intent(this, Quiz::class.java)
+        i.putExtra("categoria", "peritoneal")
+        startActivity(i)
+    }
 }

@@ -14,15 +14,19 @@ import androidx.appcompat.widget.Toolbar
 import com.google.android.material.snackbar.Snackbar
 import com.mariona.nefrosalut.adapter.PlatosAdapter
 import com.mariona.nefrosalut.databinding.VerDietasBinding
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 import com.mariona.nefrosalut.viewModels.PlatosViewModel
 import com.mariona.nefrosalut.viewModels.PlatosViewModelFactory
 
 class platosDiets : AppCompatActivity() {
     private val viewModel: PlatosViewModel by viewModels { PlatosViewModelFactory() }
     private lateinit var binding: VerDietasBinding
-    private val platosAdapter = PlatosAdapter(emptyList())
+    lateinit private var platosAdapter: PlatosAdapter
     var dieta: Int = 0
     private lateinit var nombreDieta: String
+    private lateinit var user: Any
+    private lateinit var rol: String
     var activacion: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +41,16 @@ class platosDiets : AppCompatActivity() {
 
         dieta = intent.extras!!.getLong("dieta").toInt()
         nombreDieta = intent.extras!!.getString("nombreDieta").toString()
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+            var paciente: Paciente? = user as? Paciente
+            platosAdapter = PlatosAdapter(emptyList(), paciente!!.clasificacion, this)
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
+        }
 
         binding.nomDieta.text = nombreDieta
 

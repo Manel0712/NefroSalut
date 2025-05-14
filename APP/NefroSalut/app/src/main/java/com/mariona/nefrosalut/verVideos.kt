@@ -78,7 +78,11 @@ class verVideos : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 if (activacion) {
                     val seleccionado = parent.getItemAtPosition(position).toString()
-                    viewModel.loadVideosCategoria(seleccionado)
+                    if(seleccionado.equals("Tots")){
+                        viewModel.loadVideos()
+                    }else{
+                        viewModel.loadVideosCategoria(seleccionado)
+                    }
                 }
                 else {
                     activacion = true

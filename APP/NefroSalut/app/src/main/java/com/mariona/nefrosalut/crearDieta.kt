@@ -3,8 +3,13 @@ package com.mariona.nefrosalut
 import android.content.Intent
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 
 class crearDieta: AppCompatActivity() {
+
+    private lateinit var user: Any
+    private lateinit var rol: String
 
     override fun onCreate(savedInstanceState: android.os.Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,8 +20,22 @@ class crearDieta: AppCompatActivity() {
         val btnAfegirPlats = findViewById<Button>(R.id.btnAfegirPlats)
 
         btnAfegirPlats.setOnClickListener {
-            val intent = Intent(this, verPlatos::class.java)
+            val intent = Intent(this, afegirPlats::class.java)
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
+            intent.putExtra("rol", rol)
             startActivity(intent)
+        }
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
         }
     }
 

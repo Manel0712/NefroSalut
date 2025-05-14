@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.mariona.nefrosalut.R;
@@ -29,12 +30,17 @@ public final class CardPlatosBinding implements ViewBinding {
   @NonNull
   public final TextView cardNomDelPlat;
 
+  @NonNull
+  public final CardView cardView;
+
   private CardPlatosBinding(@NonNull LinearLayout rootView, @NonNull TextView cardCategoriaPlat,
-      @NonNull ImageView cardLinkVideo, @NonNull TextView cardNomDelPlat) {
+      @NonNull ImageView cardLinkVideo, @NonNull TextView cardNomDelPlat,
+      @NonNull CardView cardView) {
     this.rootView = rootView;
     this.cardCategoriaPlat = cardCategoriaPlat;
     this.cardLinkVideo = cardLinkVideo;
     this.cardNomDelPlat = cardNomDelPlat;
+    this.cardView = cardView;
   }
 
   @Override
@@ -82,8 +88,14 @@ public final class CardPlatosBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cardView;
+      CardView cardView = ViewBindings.findChildViewById(rootView, id);
+      if (cardView == null) {
+        break missingId;
+      }
+
       return new CardPlatosBinding((LinearLayout) rootView, cardCategoriaPlat, cardLinkVideo,
-          cardNomDelPlat);
+          cardNomDelPlat, cardView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

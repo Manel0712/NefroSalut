@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="base">#A2B6B5</color>
     <color name="text">#D2D2D2</color>
+    <color name="estadio0">#B6EEA7</color>
+    <color name="estadio1">#F2E6A7</color>
+    <color name="estadio2">#F2B6A7</color>
 </resources>

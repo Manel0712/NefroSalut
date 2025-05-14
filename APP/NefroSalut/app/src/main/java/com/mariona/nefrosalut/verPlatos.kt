@@ -16,6 +16,8 @@ import androidx.appcompat.widget.Toolbar
 import com.google.android.material.snackbar.Snackbar
 import com.mariona.nefrosalut.adapter.PlatosAdapter
 import com.mariona.nefrosalut.databinding.PlatsBinding
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 import com.mariona.nefrosalut.viewModels.PlatosGeneralViewModel
 import com.mariona.nefrosalut.viewModels.PlatosGeneralViewModelFactory
 import com.mariona.nefrosalut.viewModels.PlatosViewModel
@@ -24,9 +26,14 @@ import com.mariona.nefrosalut.viewModels.PlatosViewModelFactory
 class verPlatos : AppCompatActivity() {
     private val viewModel: PlatosGeneralViewModel by viewModels { PlatosGeneralViewModelFactory() }
     private lateinit var binding: PlatsBinding
-    private val platosAdapter = PlatosAdapter(emptyList())
+
+    lateinit private var platosAdapter: PlatosAdapter
     var dieta: Int = 0
     var inicializado = false
+
+    private lateinit var user: Any
+    private lateinit var rol: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -37,6 +44,16 @@ class verPlatos : AppCompatActivity() {
 
         val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+            var paciente: Paciente? = user as? Paciente
+            platosAdapter = PlatosAdapter(emptyList(), paciente!!.clasificacion, this)
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
+        }
 
         //dieta = intent.extras!!.getLong("dieta").toInt()
 
@@ -82,7 +99,11 @@ class verPlatos : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 if (inicializado) {
                     val seleccionado = parent.getItemAtPosition(position).toString()
-                    viewModel.loadPlatosCategoria(seleccionado)
+                    if(seleccionado.equals("Tots")){
+                        viewModel.loadPlatos()
+                    }else{
+                        viewModel.loadPlatosCategoria(seleccionado)
+                    }
                 }
                 else {
                     inicializado = true
