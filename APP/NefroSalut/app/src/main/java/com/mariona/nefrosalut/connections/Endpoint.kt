@@ -48,4 +48,6 @@ interface Endpoint {
     @GET("api/plato/categoria/{categoria}")
     suspend fun platosCategoria(@Path("categoria") categoria: String): Response<List<Aliments>>
 
+    @POST("api/dieta")
+    suspend fun crearDieta(@Body dietas: Dietas): Response<List<Dietas>>
 }

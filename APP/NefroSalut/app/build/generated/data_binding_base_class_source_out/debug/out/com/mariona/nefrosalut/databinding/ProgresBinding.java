@@ -44,6 +44,15 @@ public final class ProgresBinding implements ViewBinding {
   public final Guideline guideline9;
 
   @NonNull
+  public final Guideline guidelineNom;
+
+  @NonNull
+  public final Guideline guidelineQuiz;
+
+  @NonNull
+  public final Guideline guidelineVideos;
+
+  @NonNull
   public final ImageView imageView3;
 
   @NonNull
@@ -53,6 +62,9 @@ public final class ProgresBinding implements ViewBinding {
   public final TextView monedes;
 
   @NonNull
+  public final TextView nomPacient;
+
+  @NonNull
   public final TextView numPunts;
 
   @NonNull
@@ -60,6 +72,9 @@ public final class ProgresBinding implements ViewBinding {
 
   @NonNull
   public final TextView power2;
+
+  @NonNull
+  public final TextView quizzesFets;
 
   @NonNull
   public final TextView textView12;
@@ -74,15 +89,31 @@ public final class ProgresBinding implements ViewBinding {
   public final TextView textView7;
 
   @NonNull
+  public final TextView textViewNomPacient;
+
+  @NonNull
+  public final TextView textViewQuiz;
+
+  @NonNull
+  public final TextView textViewVideos;
+
+  @NonNull
   public final Toolbar toolbar;
+
+  @NonNull
+  public final TextView videosVistos;
 
   private ProgresBinding(@NonNull ConstraintLayout rootView, @NonNull TextView dataInici,
       @NonNull Guideline guideline10, @NonNull Guideline guideline11, @NonNull Guideline guideline6,
       @NonNull Guideline guideline7, @NonNull Guideline guideline8, @NonNull Guideline guideline9,
-      @NonNull ImageView imageView3, @NonNull ImageView inputFoto, @NonNull TextView monedes,
+      @NonNull Guideline guidelineNom, @NonNull Guideline guidelineQuiz,
+      @NonNull Guideline guidelineVideos, @NonNull ImageView imageView3,
+      @NonNull ImageView inputFoto, @NonNull TextView monedes, @NonNull TextView nomPacient,
       @NonNull TextView numPunts, @NonNull TextView power1, @NonNull TextView power2,
-      @NonNull TextView textView12, @NonNull TextView textView3, @NonNull TextView textView4,
-      @NonNull TextView textView7, @NonNull Toolbar toolbar) {
+      @NonNull TextView quizzesFets, @NonNull TextView textView12, @NonNull TextView textView3,
+      @NonNull TextView textView4, @NonNull TextView textView7,
+      @NonNull TextView textViewNomPacient, @NonNull TextView textViewQuiz,
+      @NonNull TextView textViewVideos, @NonNull Toolbar toolbar, @NonNull TextView videosVistos) {
     this.rootView = rootView;
     this.dataInici = dataInici;
     this.guideline10 = guideline10;
@@ -91,17 +122,26 @@ public final class ProgresBinding implements ViewBinding {
     this.guideline7 = guideline7;
     this.guideline8 = guideline8;
     this.guideline9 = guideline9;
+    this.guidelineNom = guidelineNom;
+    this.guidelineQuiz = guidelineQuiz;
+    this.guidelineVideos = guidelineVideos;
     this.imageView3 = imageView3;
     this.inputFoto = inputFoto;
     this.monedes = monedes;
+    this.nomPacient = nomPacient;
     this.numPunts = numPunts;
     this.power1 = power1;
     this.power2 = power2;
+    this.quizzesFets = quizzesFets;
     this.textView12 = textView12;
     this.textView3 = textView3;
     this.textView4 = textView4;
     this.textView7 = textView7;
+    this.textViewNomPacient = textViewNomPacient;
+    this.textViewQuiz = textViewQuiz;
+    this.textViewVideos = textViewVideos;
     this.toolbar = toolbar;
+    this.videosVistos = videosVistos;
   }
 
   @Override
@@ -173,6 +213,24 @@ public final class ProgresBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline_nom;
+      Guideline guidelineNom = ViewBindings.findChildViewById(rootView, id);
+      if (guidelineNom == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline_quiz;
+      Guideline guidelineQuiz = ViewBindings.findChildViewById(rootView, id);
+      if (guidelineQuiz == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline_videos;
+      Guideline guidelineVideos = ViewBindings.findChildViewById(rootView, id);
+      if (guidelineVideos == null) {
+        break missingId;
+      }
+
       id = R.id.imageView3;
       ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
       if (imageView3 == null) {
@@ -191,6 +249,12 @@ public final class ProgresBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.nom_pacient;
+      TextView nomPacient = ViewBindings.findChildViewById(rootView, id);
+      if (nomPacient == null) {
+        break missingId;
+      }
+
       id = R.id.num_punts;
       TextView numPunts = ViewBindings.findChildViewById(rootView, id);
       if (numPunts == null) {
@@ -206,6 +270,12 @@ public final class ProgresBinding implements ViewBinding {
       id = R.id.power2;
       TextView power2 = ViewBindings.findChildViewById(rootView, id);
       if (power2 == null) {
+        break missingId;
+      }
+
+      id = R.id.quizzes_fets;
+      TextView quizzesFets = ViewBindings.findChildViewById(rootView, id);
+      if (quizzesFets == null) {
         break missingId;
       }
 
@@ -233,15 +303,41 @@ public final class ProgresBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textViewNomPacient;
+      TextView textViewNomPacient = ViewBindings.findChildViewById(rootView, id);
+      if (textViewNomPacient == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewQuiz;
+      TextView textViewQuiz = ViewBindings.findChildViewById(rootView, id);
+      if (textViewQuiz == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewVideos;
+      TextView textViewVideos = ViewBindings.findChildViewById(rootView, id);
+      if (textViewVideos == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
+      id = R.id.videos_vistos;
+      TextView videosVistos = ViewBindings.findChildViewById(rootView, id);
+      if (videosVistos == null) {
+        break missingId;
+      }
+
       return new ProgresBinding((ConstraintLayout) rootView, dataInici, guideline10, guideline11,
-          guideline6, guideline7, guideline8, guideline9, imageView3, inputFoto, monedes, numPunts,
-          power1, power2, textView12, textView3, textView4, textView7, toolbar);
+          guideline6, guideline7, guideline8, guideline9, guidelineNom, guidelineQuiz,
+          guidelineVideos, imageView3, inputFoto, monedes, nomPacient, numPunts, power1, power2,
+          quizzesFets, textView12, textView3, textView4, textView7, textViewNomPacient,
+          textViewQuiz, textViewVideos, toolbar, videosVistos);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

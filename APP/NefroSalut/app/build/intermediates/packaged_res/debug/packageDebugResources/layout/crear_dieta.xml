@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -59,20 +60,18 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAfegirPlats"
+        android:id="@+id/btnGuardarNomDieta"
         style="@style/RoundedButtonStyle"
         android:layout_width="228dp"
         android:layout_height="56dp"
-        android:drawableStart="@drawable/baseline_add_24"
+        android:layout_marginTop="36dp"
         android:drawablePadding="8dp"
         android:onClick="afegirPlats"
-        android:text="Afegir plats"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNomDieta"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintTop_toBottomOf="@+id/inputNomDieta" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

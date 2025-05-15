@@ -72,7 +72,7 @@ class RegisterFamiliarActivity : AppCompatActivity() {
         }
 
         else {
-            var familiar = Familiar(binding.etName.text.toString(), binding.etApellidos.text.toString(), binding.etEmail.text.toString(), binding.etTelefono.text.toString(), binding.etPassword.text.toString().trim(), null)
+            var familiar = Familiar(0,binding.etName.text.toString(), binding.etApellidos.text.toString(), binding.etEmail.text.toString(), binding.etTelefono.text.toString(), binding.etPassword.text.toString().trim(), null)
             viewModel.register(familiar)
         }
     }

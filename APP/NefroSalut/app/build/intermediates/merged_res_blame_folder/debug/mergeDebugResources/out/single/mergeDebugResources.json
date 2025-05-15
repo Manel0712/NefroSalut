@@ -132,10 +132,6 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\drawable\\ajedrez_caballero_alt.png"
     },
     {
-        "merged": "com.mariona.nefrosalut.app-debug-43:/layout_card_platos.xml.flat",
-        "source": "com.mariona.nefrosalut.app-main-45:/layout/card_platos.xml"
-    },
-    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -162,6 +158,10 @@
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_dades_mediques.xml.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\dades_mediques.xml"
+    },
+    {
+        "merged": "com.mariona.nefrosalut.app-debug-43:/layout_crear_dieta.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-45:/layout/crear_dieta.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_activity_login_select.xml.flat",
