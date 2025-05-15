@@ -41,7 +41,6 @@ drawable usuarios
 drawable x
 font inria_sans_light
 id Nomapp
-id btnAfegirPlats
 id btnAleatorio
 id btnCategoriaDialisisPeritoneal
 id btnCategoriaPredialisis
@@ -52,6 +51,7 @@ id btnDialisis
 id btnDietas
 id btnDietes
 id btnExercici
+id btnGuardarNomDieta
 id btnJocs
 id btnLogin
 id btnMedicacio
@@ -111,6 +111,9 @@ id guideline6
 id guideline7
 id guideline8
 id guideline9
+id guideline_nom
+id guideline_quiz
+id guideline_videos
 id imageView3
 id imgdietas
 id imgjocs
@@ -132,6 +135,7 @@ id menu
 id monedes
 id nomCategoria
 id nomDieta
+id nom_pacient
 id num_punts
 id op1
 id op2
@@ -142,7 +146,9 @@ id powerDisolver
 id powerPorDos
 id pregunta
 id progress
+id quizzes_fets
 id recyclerView
+id root
 id rvVerDietas
 id spinerCategoriaPlat
 id spinner
@@ -155,11 +161,15 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textViewNomPacient
+id textViewQuiz
+id textViewVideos
 id toolbar
 id tvActividadFisica
 id tvLoginTitle
 id tvRegisterTitle
 id videoView2
+id videos_vistos
 layout activity_login_select
 layout activity_main
 layout card_dietas

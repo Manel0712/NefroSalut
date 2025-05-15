@@ -8,12 +8,12 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\escoger_quiz.xml"
     },
     {
-        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\mainmenu.xml",
-        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\mainmenu.xml"
+        "merged": "com.mariona.nefrosalut.app-mergeDebugResources-42:/layout/crear_dieta.xml",
+        "source": "com.mariona.nefrosalut.app-main-45:/layout/crear_dieta.xml"
     },
     {
-        "merged": "com.mariona.nefrosalut.app-mergeDebugResources-42:/layout/card_platos.xml",
-        "source": "com.mariona.nefrosalut.app-main-45:/layout/card_platos.xml"
+        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\mainmenu.xml",
+        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\mainmenu.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\card_videos.xml",
@@ -68,12 +68,12 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\dietas.xml"
     },
     {
-        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\card_platos.xml",
-        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\card_platos.xml"
-    },
-    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\crear_dieta.xml",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\crear_dieta.xml"
+    },
+    {
+        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\card_platos.xml",
+        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\card_platos.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\progres.xml",

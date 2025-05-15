@@ -23,7 +23,7 @@ public final class CrearDietaBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton btnAfegirPlats;
+  public final AppCompatButton btnGuardarNomDieta;
 
   @NonNull
   public final TextInputEditText inputNomDieta;
@@ -35,16 +35,21 @@ public final class CrearDietaBinding implements ViewBinding {
   public final TextView nomDieta;
 
   @NonNull
+  public final ConstraintLayout root;
+
+  @NonNull
   public final Toolbar toolbar;
 
   private CrearDietaBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatButton btnAfegirPlats, @NonNull TextInputEditText inputNomDieta,
-      @NonNull TextView nomCategoria, @NonNull TextView nomDieta, @NonNull Toolbar toolbar) {
+      @NonNull AppCompatButton btnGuardarNomDieta, @NonNull TextInputEditText inputNomDieta,
+      @NonNull TextView nomCategoria, @NonNull TextView nomDieta, @NonNull ConstraintLayout root,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.btnAfegirPlats = btnAfegirPlats;
+    this.btnGuardarNomDieta = btnGuardarNomDieta;
     this.inputNomDieta = inputNomDieta;
     this.nomCategoria = nomCategoria;
     this.nomDieta = nomDieta;
+    this.root = root;
     this.toolbar = toolbar;
   }
 
@@ -75,9 +80,9 @@ public final class CrearDietaBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnAfegirPlats;
-      AppCompatButton btnAfegirPlats = ViewBindings.findChildViewById(rootView, id);
-      if (btnAfegirPlats == null) {
+      id = R.id.btnGuardarNomDieta;
+      AppCompatButton btnGuardarNomDieta = ViewBindings.findChildViewById(rootView, id);
+      if (btnGuardarNomDieta == null) {
         break missingId;
       }
 
@@ -99,14 +104,16 @@ public final class CrearDietaBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout root = (ConstraintLayout) rootView;
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new CrearDietaBinding((ConstraintLayout) rootView, btnAfegirPlats, inputNomDieta,
-          nomCategoria, nomDieta, toolbar);
+      return new CrearDietaBinding((ConstraintLayout) rootView, btnGuardarNomDieta, inputNomDieta,
+          nomCategoria, nomDieta, root, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

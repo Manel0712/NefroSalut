@@ -5,6 +5,7 @@ import java.io.Serializable
 import java.time.LocalDate
 
 data class Paciente (
+    var id: Long,
     var nombre: String,
     var apellidos: String = "",
     var email: String,

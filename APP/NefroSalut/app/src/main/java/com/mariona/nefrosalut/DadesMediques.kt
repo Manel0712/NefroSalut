@@ -231,7 +231,7 @@ class DadesMediques : AppCompatActivity() {
                 }
             }
         }
-        var paciente = Paciente(name, apellidos, email, telefono, password.trim(), estat, "animo", activitatFisica, diabetic, hipertensio, estadio, 0, null, DNI, data, pes, alçada, IMC, classificacio, 0)
+        var paciente = Paciente(0,name, apellidos, email, telefono, password.trim(), estat, "animo", activitatFisica, diabetic, hipertensio, estadio, 0, null, DNI, data, pes, alçada, IMC, classificacio, 0)
         viewModel.register(paciente)
     }
     /*fun validarDNI(dni: String): Boolean {

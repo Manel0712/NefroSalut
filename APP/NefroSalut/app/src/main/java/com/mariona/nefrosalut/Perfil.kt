@@ -14,6 +14,8 @@ class Perfil : AppCompatActivity() {
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

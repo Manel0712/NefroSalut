@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 class Familiar (
+    var id: Long,
     var nombre: String,
     var apellidos: String = "",
     var email: String,

@@ -3314,7 +3314,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnAfegirPlats
 id btnAleatorio
 id btnCategoriaDialisisPeritoneal
 id btnCategoriaPredialisis
@@ -3325,6 +3324,7 @@ id btnDialisis
 id btnDietas
 id btnDietes
 id btnExercici
+id btnGuardarNomDieta
 id btnJocs
 id btnLogin
 id btnMedicacio
@@ -3498,6 +3498,9 @@ id guideline6
 id guideline7
 id guideline8
 id guideline9
+id guideline_nom
+id guideline_quiz
+id guideline_videos
 id header_title
 id hide_ime_id
 id hideable
@@ -3628,6 +3631,7 @@ id noScroll
 id noState
 id nomCategoria
 id nomDieta
+id nom_pacient
 id none
 id normal
 id north
@@ -3683,6 +3687,7 @@ id pressed
 id progress
 id progress_circular
 id progress_horizontal
+id quizzes_fets
 id radio
 id ratio
 id rectangles
@@ -3693,6 +3698,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id root
 id rounded
 id row_index_key
 id rvVerDietas
@@ -3791,6 +3797,9 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textViewNomPacient
+id textViewQuiz
+id textViewVideos
 id textWatcher
 id text_input_end_icon
 id text_input_error_icon
@@ -3832,6 +3841,7 @@ id useLogo
 id vertical
 id vertical_only
 id videoView2
+id videos_vistos
 id view_offset_helper
 id view_transition
 id view_tree_disjoint_parent
