@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.mariona.nefrosalut.R
 import com.mariona.nefrosalut.models.Aliments
 
-class afegirPlatsAdapter(var aliments: List<Aliments> = emptyList(), var clasificacion: String, var context: Context)  : RecyclerView.Adapter<afegirPlatsAdapter.ViewHolder>() {
+class afegirPlatsAdapter(var aliments: List<Aliments> = emptyList(), var clasificacion: String, var context: Context, private val onCardClick: (Aliments) -> Unit)  : RecyclerView.Adapter<afegirPlatsAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombre: TextView = itemView.findViewById(R.id.cardNomDelPlat)
@@ -37,6 +37,13 @@ class afegirPlatsAdapter(var aliments: List<Aliments> = emptyList(), var clasifi
 
         }else if(alimento.clasificaciones[clasificacion] == 2L){
             holder.cardview.setBackgroundColor(ContextCompat.getColor(context, R.color.estadio2))
+        }
+
+        val cardview = holder.cardview
+
+        cardview.setOnClickListener{
+            onCardClick(alimento)
+
         }
 
     }

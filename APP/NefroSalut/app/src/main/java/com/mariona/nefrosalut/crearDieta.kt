@@ -46,10 +46,10 @@ class crearDieta: AppCompatActivity() {
                     intent.putExtra("user", user as Familiar)
                 }
                 intent.putExtra("rol", rol)
+                intent.putExtra("dieta", dietas[0])
 
                 startActivity(intent)
             }
-
         }
 
         val btnGuardarDieta = findViewById<Button>(R.id.btnGuardarNomDieta)

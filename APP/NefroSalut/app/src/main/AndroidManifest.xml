@@ -20,7 +20,7 @@
             android:name=".LoginFamiliar"
             android:exported="false" />
         <activity
-            android:name=".Dietas"
+            android:name=".verDietas"
             android:exported="false" />
         <activity
             android:name=".verPlatos"
