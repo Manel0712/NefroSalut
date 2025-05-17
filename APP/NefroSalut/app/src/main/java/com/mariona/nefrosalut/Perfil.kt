@@ -22,9 +22,8 @@ class Perfil : AppCompatActivity() {
         val nombreTextView = findViewById<TextView>(R.id.inputUser)
         val emailTextView = findViewById<TextView>(R.id.inputEmail)
 
-        //nombreTextView.text = paciente.nombre : "Nombre no disponible"
-
-        //emailTextView.text = paciente.email : "Email no disponible"
+        nombreTextView.text = paciente?.nombre ?: "Nombre no disponible"
+        emailTextView.text = paciente?.email ?: "Email no disponible"
 
 
     }

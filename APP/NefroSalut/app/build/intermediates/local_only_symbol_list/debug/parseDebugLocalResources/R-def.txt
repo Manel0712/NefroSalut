@@ -136,6 +136,8 @@ id monedes
 id nomCategoria
 id nomDieta
 id nom_pacient
+id numPregunta
+id numPuntos
 id num_punts
 id op1
 id op2

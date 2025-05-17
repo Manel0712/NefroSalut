@@ -3637,6 +3637,8 @@ int id north 0x7f0a01a8
 int id notification_background 0x7f0a01a9
 int id notification_main_column 0x7f0a01aa
 int id notification_main_column_container 0x7f0a01ab
+int id numPregunta 0x7f0a028b
+int id numPuntos 0x7f0a028c
 int id num_punts 0x7f0a01ac
 int id off 0x7f0a01ad
 int id on 0x7f0a01ae
