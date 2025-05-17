@@ -52,6 +52,10 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\mipmap-anydpi\\ic_launcher_round.xml"
     },
     {
+        "merged": "com.mariona.nefrosalut.app-debug-43:/layout_quiz.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-45:/layout/quiz.xml"
+    },
+    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\drawable_ojo_abierto.png.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\drawable\\ojo_abierto.png"
     },
@@ -136,12 +140,12 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_quiz_categoria.xml.flat",
-        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\quiz_categoria.xml"
-    },
-    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\drawable__rallas.png.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\drawable\\_rallas.png"
+    },
+    {
+        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_quiz_categoria.xml.flat",
+        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\quiz_categoria.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\drawable_rounded_text.xml.flat",
@@ -158,10 +162,6 @@
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_dades_mediques.xml.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\dades_mediques.xml"
-    },
-    {
-        "merged": "com.mariona.nefrosalut.app-debug-43:/layout_crear_dieta.xml.flat",
-        "source": "com.mariona.nefrosalut.app-main-45:/layout/crear_dieta.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_activity_login_select.xml.flat",
@@ -244,12 +244,12 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_card_platos.xml.flat",
-        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\card_platos.xml"
-    },
-    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_card_platos.xml.flat",
+        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\card_platos.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\drawable_foro.png.flat",

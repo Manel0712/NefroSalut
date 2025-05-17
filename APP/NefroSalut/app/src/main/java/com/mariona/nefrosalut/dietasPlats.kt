@@ -2,8 +2,6 @@ package com.mariona.nefrosalut
 
 import android.content.Intent
 import android.os.Bundle
-import android.renderscript.ScriptGroup.Input
-import android.view.InputEvent
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
@@ -60,7 +58,7 @@ class dietasPlats  : AppCompatActivity() {
         }
 
         btnVerDieta.setOnClickListener {
-            val intent = Intent(this, Dietas::class.java)
+            val intent = Intent(this, verDietas::class.java)
             if (rol.equals("Paciente")) {
                 intent.putExtra("user", user as Paciente)
             } else if (rol.equals("Familiar")) {

@@ -4,8 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.mariona.nefrosalut.models.Paciente
 
 class Perfil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +16,14 @@ class Perfil : AppCompatActivity() {
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        val paciente = intent.getSerializableExtra("user") as? Paciente
+
+        val nombreTextView = findViewById<TextView>(R.id.inputUser)
+        val emailTextView = findViewById<TextView>(R.id.inputEmail)
+
+        nombreTextView.text = paciente?.nombre ?: "Nombre no disponible"
+        emailTextView.text = paciente?.email ?: "Email no disponible"
 
 
     }

@@ -12,26 +12,30 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.google.android.material.snackbar.Snackbar
 import com.mariona.nefrosalut.adapter.PlatosAdapter
+import com.mariona.nefrosalut.adapter.afegirPlatsAdapter
 import com.mariona.nefrosalut.databinding.PlatsBinding
+import com.mariona.nefrosalut.models.Aliments
+import com.mariona.nefrosalut.models.Dietas
 import com.mariona.nefrosalut.models.Familiar
 import com.mariona.nefrosalut.models.Paciente
+import com.mariona.nefrosalut.models.Platos
+import com.mariona.nefrosalut.viewModels.CrearDietasViewModel
+import com.mariona.nefrosalut.viewModels.CrearDietasViewModelFactory
 import com.mariona.nefrosalut.viewModels.PlatosGeneralViewModel
 import com.mariona.nefrosalut.viewModels.PlatosGeneralViewModelFactory
-import com.mariona.nefrosalut.viewModels.PlatosViewModel
-import com.mariona.nefrosalut.viewModels.PlatosViewModelFactory
 
 class afegirPlats : AppCompatActivity() {
     private val viewModel: PlatosGeneralViewModel by viewModels { PlatosGeneralViewModelFactory() }
+    private val viewModel2: CrearDietasViewModel by viewModels { CrearDietasViewModelFactory() }
     private lateinit var binding: PlatsBinding
 
     private lateinit var user: Any
     private lateinit var rol: String
 
-    lateinit private var platosAdapter: PlatosAdapter
-    var dieta: Int = 0
+    lateinit private var afegirPlatsAdapter: afegirPlatsAdapter
+    private lateinit var dieta: Dietas
     var inicializado = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,15 +53,15 @@ class afegirPlats : AppCompatActivity() {
         if (rol.equals("Paciente")) {
             user = intent.extras!!.getSerializable("user") as Paciente
             var paciente: Paciente? = user as? Paciente
-            platosAdapter = PlatosAdapter(emptyList(), paciente!!.clasificacion, this)
+            afegirPlatsAdapter = afegirPlatsAdapter(emptyList(), paciente!!.clasificacion, this, {ponerPlatos(it)})
         }
         else if (rol.equals("Familiar")) {
             user = intent.extras!!.getSerializable("user") as Familiar
         }
 
-        //dieta = intent.extras!!.getLong("dieta").toInt()
+        dieta = intent.extras!!.getSerializable("dieta") as Dietas
 
-        binding.rvVerDietas.adapter = platosAdapter
+        binding.rvVerDietas.adapter = afegirPlatsAdapter
 
         viewModel.platosListLoading.observe(this) { cargando ->
             if (cargando) {
@@ -69,8 +73,8 @@ class afegirPlats : AppCompatActivity() {
 
         viewModel.plato.observe(this) { platos ->
             if (platos.size != 0) {
-                platosAdapter.aliments = platos
-                platosAdapter.notifyDataSetChanged()
+                afegirPlatsAdapter.aliments = platos
+                afegirPlatsAdapter.notifyDataSetChanged()
             }
         }
 
@@ -89,6 +93,15 @@ class afegirPlats : AppCompatActivity() {
                 textView.textSize = 28f
                 snackbar.show()
             }
+        }
+
+        viewModel2.ponerPlato.observe(this) { platos ->
+            if(platos.size>0){
+                val snackbar = Snackbar.make(findViewById(R.id.root), "Plat afegit correctament", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null)
+                snackbar.show()
+            }
+
         }
 
         viewModel.loadPlatos()
@@ -115,10 +128,6 @@ class afegirPlats : AppCompatActivity() {
         }
     }
 
-    fun ponerPlatos(){
-
-    }
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
         return true
@@ -132,5 +141,10 @@ class afegirPlats : AppCompatActivity() {
             R.id.btnperfil -> startActivity(Intent(this, Perfil::class.java))
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    fun ponerPlatos(plato: Aliments){
+        viewModel2.ponerPlatos(dieta.id, plato.id)
+
     }
 }

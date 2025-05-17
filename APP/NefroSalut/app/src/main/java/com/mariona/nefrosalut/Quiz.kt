@@ -4,12 +4,22 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.mariona.nefrosalut.models.QuizModelo
 
 class Quiz : AppCompatActivity() {
 
     private lateinit var categoria: String
+    lateinit var pregunta: TextView
+    lateinit var opcio1: Button
+    lateinit var opcio2: Button
+    lateinit var opcio3: Button
+    lateinit var numPregunta: TextView
+    lateinit private var puntos: TextView
+    private var questionsList: MutableList<QuizModelo> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,17 +28,21 @@ class Quiz : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        if(categoria == "aleatorio") {
-            // Logic for random category
-        } else if(categoria == "predialisis") {
-            // Logic for predialysis category
-        } else if(categoria == "hemodialisis") {
-            // Logic for hemodialysis category
-        } else if(categoria == "peritoneal") {
-            // Logic for peritoneal category
-        } else {
-            // Default case or error handling
+        pregunta = findViewById(R.id.pregunta)
+        opcio1 = findViewById(R.id.op1)
+        opcio2 = findViewById(R.id.op2)
+        opcio3 = findViewById(R.id.op3)
+        numPregunta = findViewById(R.id.numPregunta)
+        puntos = findViewById(R.id.numPuntos)
 
+        if(categoria == "aleatorio") {
+            preguntasCategoriaAleatoria()
+        } else if(categoria == "predialisis") {
+            preguntasCategoriaPredialisis()
+        } else if(categoria == "hemodialisis") {
+            preguntasCategoriaHemodialisis()
+        } else if(categoria == "peritoneal") {
+            preguntasCategoriaPeritoneal()
         }
     }
 
@@ -45,6 +59,20 @@ class Quiz : AppCompatActivity() {
             R.id.btnperfil -> startActivity(Intent(this, Perfil::class.java))
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    fun preguntasCategoriaPredialisis() {
+
+    }
+    fun preguntasCategoriaHemodialisis() {
+
+    }
+    fun preguntasCategoriaPeritoneal() {
+
+    }
+
+    fun preguntasCategoriaAleatoria() {
+
     }
 
 }

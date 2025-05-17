@@ -30,6 +30,12 @@ public final class QuizBinding implements ViewBinding {
   public final Guideline guideline5;
 
   @NonNull
+  public final TextView numPregunta;
+
+  @NonNull
+  public final TextView numPuntos;
+
+  @NonNull
   public final AppCompatButton op1;
 
   @NonNull
@@ -54,13 +60,15 @@ public final class QuizBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private QuizBinding(@NonNull ConstraintLayout rootView, @NonNull Guideline guideline4,
-      @NonNull Guideline guideline5, @NonNull AppCompatButton op1, @NonNull AppCompatButton op2,
-      @NonNull AppCompatButton op3, @NonNull ImageView powerDisolver,
-      @NonNull ImageView powerPorDos, @NonNull TextView pregunta, @NonNull TextView textView3,
-      @NonNull Toolbar toolbar) {
+      @NonNull Guideline guideline5, @NonNull TextView numPregunta, @NonNull TextView numPuntos,
+      @NonNull AppCompatButton op1, @NonNull AppCompatButton op2, @NonNull AppCompatButton op3,
+      @NonNull ImageView powerDisolver, @NonNull ImageView powerPorDos, @NonNull TextView pregunta,
+      @NonNull TextView textView3, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.guideline4 = guideline4;
     this.guideline5 = guideline5;
+    this.numPregunta = numPregunta;
+    this.numPuntos = numPuntos;
     this.op1 = op1;
     this.op2 = op2;
     this.op3 = op3;
@@ -107,6 +115,18 @@ public final class QuizBinding implements ViewBinding {
       id = R.id.guideline5;
       Guideline guideline5 = ViewBindings.findChildViewById(rootView, id);
       if (guideline5 == null) {
+        break missingId;
+      }
+
+      id = R.id.numPregunta;
+      TextView numPregunta = ViewBindings.findChildViewById(rootView, id);
+      if (numPregunta == null) {
+        break missingId;
+      }
+
+      id = R.id.numPuntos;
+      TextView numPuntos = ViewBindings.findChildViewById(rootView, id);
+      if (numPuntos == null) {
         break missingId;
       }
 
@@ -158,8 +178,8 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
-      return new QuizBinding((ConstraintLayout) rootView, guideline4, guideline5, op1, op2, op3,
-          powerDisolver, powerPorDos, pregunta, textView3, toolbar);
+      return new QuizBinding((ConstraintLayout) rootView, guideline4, guideline5, numPregunta,
+          numPuntos, op1, op2, op3, powerDisolver, powerPorDos, pregunta, textView3, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

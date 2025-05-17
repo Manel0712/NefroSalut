@@ -3638,6 +3638,8 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numPregunta
+id numPuntos
 id num_punts
 id off
 id on
