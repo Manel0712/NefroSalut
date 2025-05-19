@@ -9,6 +9,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,6 +25,9 @@ public final class PlatsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final AppCompatButton btnSortir;
+
+  @NonNull
   public final TextView nomCategoria;
 
   @NonNull
@@ -33,7 +37,7 @@ public final class PlatsBinding implements ViewBinding {
   public final ProgressBar progress;
 
   @NonNull
-  public final RecyclerView rvVerDietas;
+  public final RecyclerView rvVerPlatos;
 
   @NonNull
   public final Spinner spinerCategoriaPlat;
@@ -41,14 +45,16 @@ public final class PlatsBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
-  private PlatsBinding(@NonNull ConstraintLayout rootView, @NonNull TextView nomCategoria,
-      @NonNull TextView nomDieta, @NonNull ProgressBar progress, @NonNull RecyclerView rvVerDietas,
-      @NonNull Spinner spinerCategoriaPlat, @NonNull Toolbar toolbar) {
+  private PlatsBinding(@NonNull ConstraintLayout rootView, @NonNull AppCompatButton btnSortir,
+      @NonNull TextView nomCategoria, @NonNull TextView nomDieta, @NonNull ProgressBar progress,
+      @NonNull RecyclerView rvVerPlatos, @NonNull Spinner spinerCategoriaPlat,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.btnSortir = btnSortir;
     this.nomCategoria = nomCategoria;
     this.nomDieta = nomDieta;
     this.progress = progress;
-    this.rvVerDietas = rvVerDietas;
+    this.rvVerPlatos = rvVerPlatos;
     this.spinerCategoriaPlat = spinerCategoriaPlat;
     this.toolbar = toolbar;
   }
@@ -80,6 +86,12 @@ public final class PlatsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnSortir;
+      AppCompatButton btnSortir = ViewBindings.findChildViewById(rootView, id);
+      if (btnSortir == null) {
+        break missingId;
+      }
+
       id = R.id.nomCategoria;
       TextView nomCategoria = ViewBindings.findChildViewById(rootView, id);
       if (nomCategoria == null) {
@@ -98,9 +110,9 @@ public final class PlatsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rvVerDietas;
-      RecyclerView rvVerDietas = ViewBindings.findChildViewById(rootView, id);
-      if (rvVerDietas == null) {
+      id = R.id.rvVerPlatos;
+      RecyclerView rvVerPlatos = ViewBindings.findChildViewById(rootView, id);
+      if (rvVerPlatos == null) {
         break missingId;
       }
 
@@ -116,8 +128,8 @@ public final class PlatsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new PlatsBinding((ConstraintLayout) rootView, nomCategoria, nomDieta, progress,
-          rvVerDietas, spinerCategoriaPlat, toolbar);
+      return new PlatsBinding((ConstraintLayout) rootView, btnSortir, nomCategoria, nomDieta,
+          progress, rvVerPlatos, spinerCategoriaPlat, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

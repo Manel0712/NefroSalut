@@ -57,7 +57,7 @@ class verPlatos : AppCompatActivity() {
 
         //dieta = intent.extras!!.getLong("dieta").toInt()
 
-        binding.rvVerDietas.adapter = platosAdapter
+        binding.rvVerPlatos.adapter = platosAdapter
 
         viewModel.platosListLoading.observe(this) { cargando ->
             if (cargando) {

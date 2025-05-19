@@ -1,4 +1,6 @@
 package com.mariona.nefrosalut.models
 
-class DietasPlats {
-}
+data class DietasPlats(
+    var dieta_id: Long,
+    var plato: Long,
+)

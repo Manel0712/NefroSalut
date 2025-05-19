@@ -30,12 +30,12 @@ class afegirPlatsAdapter(var aliments: List<Aliments> = emptyList(), var clasifi
         holder.nombre.text = alimento.nombre
         holder.categoria.text = alimento.categoria
 
-        if(alimento.clasificaciones[clasificacion] == 0L) {
+        if(alimento.clasificaciones[clasificacion] == 0) {
             holder.cardview.setBackgroundColor(ContextCompat.getColor(context, R.color.estadio0))
-        } else if(alimento.clasificaciones[clasificacion] == 1L){
+        } else if(alimento.clasificaciones[clasificacion] == 1){
             holder.cardview.setBackgroundColor(ContextCompat.getColor(context, R.color.estadio1))
 
-        }else if(alimento.clasificaciones[clasificacion] == 2L){
+        }else if(alimento.clasificaciones[clasificacion] == 2){
             holder.cardview.setBackgroundColor(ContextCompat.getColor(context, R.color.estadio2))
         }
 

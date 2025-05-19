@@ -59,6 +59,7 @@ id btnNefrologia
 id btnPerfil
 id btnPorCategoria
 id btnRegister
+id btnSortir
 id btnSubmitLogin
 id btnSubmitRegister
 id btnSubmitRegister2
@@ -152,6 +153,7 @@ id quizzes_fets
 id recyclerView
 id root
 id rvVerDietas
+id rvVerPlatos
 id spinerCategoriaPlat
 id spinner
 id textView
