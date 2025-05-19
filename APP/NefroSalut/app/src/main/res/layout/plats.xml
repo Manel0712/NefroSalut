@@ -72,8 +72,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvVerPlatos"
-        android:layout_width="414dp"
-        android:layout_height="347dp"
+        android:layout_width="416dp"
+        android:layout_height="371dp"
         android:layout_marginTop="12dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"

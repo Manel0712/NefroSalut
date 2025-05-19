@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
+import android.widget.Button
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -34,6 +35,7 @@ class afegirPlats : AppCompatActivity() {
     private lateinit var user: Any
     private lateinit var rol: String
 
+    private lateinit var btnSortir: Button
     lateinit private var afegirPlatsAdapter: afegirPlatsAdapter
     private lateinit var dieta: Dietas
     var inicializado = false
@@ -95,6 +97,18 @@ class afegirPlats : AppCompatActivity() {
                 textView.textSize = 28f
                 snackbar.show()
             }
+
+            btnSortir = findViewById(R.id.btnSortir)
+            btnSortir.setOnClickListener {
+                val intent = Intent(this, dietasPlats::class.java)
+                if (rol.equals("Paciente")) {
+                    intent.putExtra("user", user as Paciente)
+                } else if (rol.equals("Familiar")) {
+                    intent.putExtra("user", user as Familiar)
+                }
+                intent.putExtra("rol", rol)
+                startActivity(intent)
+            }
         }
 
         viewModel2.ponerPlato.observe(this) { platos ->
@@ -155,14 +169,5 @@ class afegirPlats : AppCompatActivity() {
 
     }
 
-    fun sortirDietesPlats(){
-        val intent = Intent(this, dietasPlats::class.java)
-        if (rol.equals("Paciente")) {
-            intent.putExtra("user", user as Paciente)
-        } else if (rol.equals("Familiar")) {
-            intent.putExtra("user", user as Familiar)
-        }
-        intent.putExtra("rol", rol)
-        startActivity(intent)
-    }
+
 }
