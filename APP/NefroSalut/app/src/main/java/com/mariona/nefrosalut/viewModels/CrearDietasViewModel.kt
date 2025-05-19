@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.mariona.nefrosalut.connections.Connection
 import com.mariona.nefrosalut.models.Aliments
 import com.mariona.nefrosalut.models.Dietas
+import com.mariona.nefrosalut.models.DietasPlats
 import kotlinx.coroutines.launch
 
 class CrearDietasViewModel: ViewModel() {
@@ -18,8 +19,8 @@ class CrearDietasViewModel: ViewModel() {
     private val _crearDieta = MutableLiveData<List<Dietas>>(emptyList())
     public val crearDieta: LiveData<List<Dietas>> get() = _crearDieta
 
-    private val _ponerPlato = MutableLiveData<List<Aliments>>(emptyList())
-    public val ponerPlato: LiveData<List<Aliments>> get() = _ponerPlato
+    private val _ponerPlato = MutableLiveData<List<DietasPlats>>(emptyList())
+    public val ponerPlato: LiveData<List<DietasPlats>> get() = _ponerPlato
 
     private val _error = MutableLiveData<String?>(null)
     public val error: LiveData<String?> get() = _error

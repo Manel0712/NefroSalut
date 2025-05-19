@@ -97,8 +97,13 @@ class afegirPlats : AppCompatActivity() {
 
         viewModel2.ponerPlato.observe(this) { platos ->
             if(platos.size>0){
-                val snackbar = Snackbar.make(findViewById(R.id.root), "Plat afegit correctament", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null)
+                val snackbar = Snackbar.make(view, "Plat afegit correctament",
+                    Snackbar.LENGTH_LONG).setAction("Action", null)
+                snackbar.setActionTextColor(Color.WHITE)
+                val snackbarView = snackbar.view
+                val textView =
+                    snackbarView.findViewById(com.google.android.material.R.id.snackbar_text) as TextView
+                textView.textSize = 28f
                 snackbar.show()
             }
 

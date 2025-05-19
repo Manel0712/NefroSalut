@@ -3,6 +3,7 @@ package com.mariona.nefrosalut.connections
 import com.mariona.nefrosalut.models.Aliments
 import com.mariona.nefrosalut.models.Categoria
 import com.mariona.nefrosalut.models.Dietas
+import com.mariona.nefrosalut.models.DietasPlats
 import com.mariona.nefrosalut.models.Familiar
 import com.mariona.nefrosalut.models.Paciente
 import com.mariona.nefrosalut.models.Videos
@@ -52,5 +53,5 @@ interface Endpoint {
     suspend fun crearDieta(@Body dietas: Dietas): Response<List<Dietas>>
 
     @GET("api/dieta/{dieta}/añadirplato/{plato}")
-    suspend fun afegirPlatsDieta(@Path("dieta") id: Long, @Path("plato") idPlato: Long): Response<List<Aliments>>
+    suspend fun afegirPlatsDieta(@Path("dieta") id: Long, @Path("plato") idPlato: Long): Response<List<DietasPlats>>
 }
