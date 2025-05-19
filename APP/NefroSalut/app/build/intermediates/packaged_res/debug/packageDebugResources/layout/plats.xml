@@ -34,7 +34,7 @@
         android:id="@+id/nomCategoria"
         android:layout_width="256dp"
         android:layout_height="33dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/inria_sans_light"
         android:text="Categoria"
@@ -47,20 +47,37 @@
         android:id="@+id/spinerCategoriaPlat"
         android:layout_width="373dp"
         android:layout_height="61dp"
+        android:layout_marginTop="12dp"
         android:entries="@array/CategoriPlats"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomCategoria"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintTop_toBottomOf="@+id/nomCategoria" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSortir"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="149dp"
+        android:layout_height="45dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/inria_sans_light"
+        android:onClick="sortirDietesPlats"
+        android:text="Sortir"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvVerDietas"
+        app:layout_constraintVertical_bias="0.619" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvVerDietas"
-        android:layout_width="410dp"
-        android:layout_height="387dp"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/rvVerPlatos"
+        android:layout_width="414dp"
+        android:layout_height="347dp"
+        android:layout_marginTop="12dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinerCategoriaPlat" />
 

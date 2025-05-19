@@ -6,5 +6,5 @@ data class Aliments (
     val id: Long,
     val nombre: String = "",
     val categoria: String = "",
-    val clasificaciones: Map<String, Long> = emptyMap(),
+    val clasificaciones: Map<String, Int> = emptyMap(),
 ): Serializable

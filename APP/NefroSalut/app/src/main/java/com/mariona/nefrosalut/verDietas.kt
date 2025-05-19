@@ -13,14 +13,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.snackbar.Snackbar
 import com.mariona.nefrosalut.adapter.DietasAdapter
+import com.mariona.nefrosalut.adapter.afegirPlatsAdapter
 import com.mariona.nefrosalut.viewModels.DietasViewModel
 import com.mariona.nefrosalut.viewModels.DietasViewModelFactory
 import com.mariona.nefrosalut.databinding.DietasBinding
 import com.mariona.nefrosalut.models.Dietas
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 
 class verDietas : AppCompatActivity() {
     private val viewModel: DietasViewModel by viewModels { DietasViewModelFactory() }
     private lateinit var binding: DietasBinding
+    private lateinit var user: Any
+    private lateinit var rol: String
     private val dietasAdapter = DietasAdapter(emptyList(), {platos(it)})
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +52,14 @@ class verDietas : AppCompatActivity() {
         viewModel.dieta.observe(this) { dietas ->
             dietasAdapter.dietas = dietas
             dietasAdapter.notifyDataSetChanged()
+        }
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
         }
 
         viewModel.error.observe(this) {
@@ -81,11 +94,18 @@ class verDietas : AppCompatActivity() {
     }
 
     fun platos(dieta: Dietas) {
-        val i = Intent(this, verPlatos::class.java)
+        val intent = Intent(this, verPlatos::class.java)
 
-        i.putExtra("dieta", dieta.id)
-        i.putExtra("nombreDieta", dieta.nombre)
-        startActivity(i)
+        intent.putExtra("dieta", dieta.id)
+        intent.putExtra("nombreDieta", dieta.nombre)
+
+        if (rol.equals("Paciente")) {
+            intent.putExtra("user", user as Paciente)
+        } else if (rol.equals("Familiar")) {
+            intent.putExtra("user", user as Familiar)
+        }
+        intent.putExtra("rol", rol)
+        startActivity(intent)
     }
 
 }

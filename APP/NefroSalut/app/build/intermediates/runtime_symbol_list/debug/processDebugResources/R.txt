@@ -3331,6 +3331,7 @@ int id btnNefrologia 0x7f0a0076
 int id btnPerfil 0x7f0a0077
 int id btnPorCategoria 0x7f0a0078
 int id btnRegister 0x7f0a0079
+int id btnSortir 0x7f0a028d
 int id btnSubmitLogin 0x7f0a007a
 int id btnSubmitRegister 0x7f0a007b
 int id btnSubmitRegister2 0x7f0a007c
@@ -3703,6 +3704,7 @@ int id root 0x7f0a01e8
 int id rounded 0x7f0a01e9
 int id row_index_key 0x7f0a01ea
 int id rvVerDietas 0x7f0a01eb
+int id rvVerPlatos 0x7f0a028e
 int id satellite 0x7f0a01ec
 int id save_non_transition_alpha 0x7f0a01ed
 int id save_overlay_view 0x7f0a01ee

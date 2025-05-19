@@ -46,6 +46,8 @@ class afegirPlats : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        binding.btnSortir.visibility = View.VISIBLE
+
         val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
 
@@ -61,7 +63,7 @@ class afegirPlats : AppCompatActivity() {
 
         dieta = intent.extras!!.getSerializable("dieta") as Dietas
 
-        binding.rvVerDietas.adapter = afegirPlatsAdapter
+        binding.rvVerPlatos.adapter = afegirPlatsAdapter
 
         viewModel.platosListLoading.observe(this) { cargando ->
             if (cargando) {
@@ -151,5 +153,16 @@ class afegirPlats : AppCompatActivity() {
     fun ponerPlatos(plato: Aliments){
         viewModel2.ponerPlatos(dieta.id, plato.id)
 
+    }
+
+    fun sortirDietesPlats(){
+        val intent = Intent(this, dietasPlats::class.java)
+        if (rol.equals("Paciente")) {
+            intent.putExtra("user", user as Paciente)
+        } else if (rol.equals("Familiar")) {
+            intent.putExtra("user", user as Familiar)
+        }
+        intent.putExtra("rol", rol)
+        startActivity(intent)
     }
 }
