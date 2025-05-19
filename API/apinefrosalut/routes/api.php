@@ -42,5 +42,6 @@ Route::get('/dieta/{dieta}/añadirplato', [DietaController::class, "añadirPlato
 Route::get('/dieta/{dieta}/platos', [DietaController::class, "platos"])->middleware('auth:sanctum');
 Route::get('/dieta/{dieta}/platos/{categoria}', [DietaController::class, "platosCategoria"])->middleware('auth:sanctum');
 Route::get('/video/categoria/{categoria}', [VideoController::class, "videosCategoria"])->middleware('auth:sanctum');
+Route::get('/plato/categoria/{categoria}', [PlatosController::class, "platosCategoria"])->middleware('auth:sanctum');
 
 /* Token: eOAnQ3ZLex43Yinb8rWLGa1XjrTrW7JLXGfAB9PFf2640000 */

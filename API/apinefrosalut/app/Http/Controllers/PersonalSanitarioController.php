@@ -28,7 +28,7 @@ class PersonalSanitarioController extends Controller
      */
     public function store(Request $request)
     {
-        $password = $request->contraseña;
+        $password = $request->password;
         $passwordHash = Hash::make($password);
         $progreso = Progreso::create([
             'power_ups' => json_encode([]),
@@ -104,6 +104,7 @@ class PersonalSanitarioController extends Controller
 
     public function loggin(Request $request) {
         $personal = PersonalSanitario::where('email', $request->email)->first();
+        dd($personal);
         if ($personal && Hash::check($request->password, $personal->password)) {
             return response()->json([
                 $personal

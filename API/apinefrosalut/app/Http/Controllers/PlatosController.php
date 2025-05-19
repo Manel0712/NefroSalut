@@ -13,9 +13,7 @@ class PlatosController extends Controller
     public function index()
     {
         $platos = Plato::all();
-        return response()->json([
-            $platos
-        ], 200);
+        return response()->json($platos, 200);
     }
 
     /**
@@ -55,10 +53,27 @@ class PlatosController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(platos $platos)
+    public function destroy(string $id)
     {
         $plato = Plato::findOrFail($id);
         $plato->delete();
         return response()->json([], 204);
+    }
+
+    public function platosCategoria(string $categoria) {
+        $platos = Plato::where("categoria", $categoria)->get();
+        $finalResult = [];
+        if ($platos->count()==1) {
+            foreach ($platos as $item) {
+                $finalResult[] = $item;
+            }
+            return response()->json($finalResult, 200);
+        }
+        else {
+            foreach ($platos as $item) {
+                $finalResult[] = $item;
+            }
+            return response()->json($finalResult, 200);
+        }
     }
 }

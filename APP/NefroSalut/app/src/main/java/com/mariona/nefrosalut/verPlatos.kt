@@ -26,6 +26,7 @@ class verPlatos : AppCompatActivity() {
     private lateinit var binding: PlatsBinding
     private val platosAdapter = PlatosAdapter(emptyList())
     var dieta: Int = 0
+    var inicializado = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -79,8 +80,13 @@ class verPlatos : AppCompatActivity() {
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                val seleccionado = parent.getItemAtPosition(position).toString()
-                viewModel.loadPlatosCategoria(seleccionado)
+                if (inicializado) {
+                    val seleccionado = parent.getItemAtPosition(position).toString()
+                    viewModel.loadPlatosCategoria(seleccionado)
+                }
+                else {
+                    inicializado = true
+                }
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {

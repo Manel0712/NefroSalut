@@ -21,7 +21,9 @@ class MainMenu : AppCompatActivity() {
         setContentView(view)
         rol = intent.extras!!.getString("rol").toString()
         if (rol.equals("Paciente")) {
-            user = intent.extras!!.getSerializable("user") as Paciente
+            user = intent!!.getParcelableExtra<Paciente>("user")!!
+            var paciente: Paciente? = user as? Paciente
+            paciente!!.nombre
         }
         else if (rol.equals("Familiar")) {
             user = intent.extras!!.getSerializable("user") as Familiar

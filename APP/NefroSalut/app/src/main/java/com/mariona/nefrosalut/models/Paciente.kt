@@ -1,9 +1,12 @@
 package com.mariona.nefrosalut.models
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 import java.io.Serializable
 import java.time.LocalDate
 
+@Parcelize
 data class Paciente (
     var nombre: String,
     var apellidos: String = "",
@@ -31,4 +34,4 @@ data class Paciente (
     var clasificacion: String,
     @SerializedName("progreso_id")
     var progresoId: Int,
-): Serializable
+): Parcelable

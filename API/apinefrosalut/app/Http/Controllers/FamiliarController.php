@@ -25,7 +25,7 @@ class FamiliarController extends Controller
      */
     public function store(Request $request)
     {
-        $password = $request->contraseña;
+        $password = $request->password;
         $passwordHash = Hash::make($password);
         $progreso = Progreso::create([
             'power_ups' => json_encode([]),
