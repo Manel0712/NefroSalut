@@ -27,6 +27,9 @@ public final class PerfilBinding implements ViewBinding {
   public final AppCompatButton btnCerrarSesion;
 
   @NonNull
+  public final AppCompatButton btnDadesMediques;
+
+  @NonNull
   public final AppCompatButton btnVerProgreso;
 
   @NonNull
@@ -57,12 +60,14 @@ public final class PerfilBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private PerfilBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatButton btnCerrarSesion, @NonNull AppCompatButton btnVerProgreso,
-      @NonNull Guideline guideline11, @NonNull Guideline guideline6, @NonNull Guideline guideline7,
-      @NonNull Guideline guideline8, @NonNull TextView inputEmail, @NonNull ImageView inputFoto,
-      @NonNull TextView inputUser, @NonNull TextView textView3, @NonNull Toolbar toolbar) {
+      @NonNull AppCompatButton btnCerrarSesion, @NonNull AppCompatButton btnDadesMediques,
+      @NonNull AppCompatButton btnVerProgreso, @NonNull Guideline guideline11,
+      @NonNull Guideline guideline6, @NonNull Guideline guideline7, @NonNull Guideline guideline8,
+      @NonNull TextView inputEmail, @NonNull ImageView inputFoto, @NonNull TextView inputUser,
+      @NonNull TextView textView3, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.btnCerrarSesion = btnCerrarSesion;
+    this.btnDadesMediques = btnDadesMediques;
     this.btnVerProgreso = btnVerProgreso;
     this.guideline11 = guideline11;
     this.guideline6 = guideline6;
@@ -105,6 +110,12 @@ public final class PerfilBinding implements ViewBinding {
       id = R.id.btnCerrarSesion;
       AppCompatButton btnCerrarSesion = ViewBindings.findChildViewById(rootView, id);
       if (btnCerrarSesion == null) {
+        break missingId;
+      }
+
+      id = R.id.btnDadesMediques;
+      AppCompatButton btnDadesMediques = ViewBindings.findChildViewById(rootView, id);
+      if (btnDadesMediques == null) {
         break missingId;
       }
 
@@ -168,9 +179,9 @@ public final class PerfilBinding implements ViewBinding {
         break missingId;
       }
 
-      return new PerfilBinding((ConstraintLayout) rootView, btnCerrarSesion, btnVerProgreso,
-          guideline11, guideline6, guideline7, guideline8, inputEmail, inputFoto, inputUser,
-          textView3, toolbar);
+      return new PerfilBinding((ConstraintLayout) rootView, btnCerrarSesion, btnDadesMediques,
+          btnVerProgreso, guideline11, guideline6, guideline7, guideline8, inputEmail, inputFoto,
+          inputUser, textView3, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

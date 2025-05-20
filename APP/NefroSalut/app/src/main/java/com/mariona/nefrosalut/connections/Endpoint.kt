@@ -6,6 +6,7 @@ import com.mariona.nefrosalut.models.Dietas
 import com.mariona.nefrosalut.models.DietasPlats
 import com.mariona.nefrosalut.models.Familiar
 import com.mariona.nefrosalut.models.Paciente
+import com.mariona.nefrosalut.models.QuizModelo
 import com.mariona.nefrosalut.models.Videos
 import retrofit2.Response
 import retrofit2.http.*
@@ -54,4 +55,10 @@ interface Endpoint {
 
     @GET("api/dieta/{dieta}/añadirplato/{plato}")
     suspend fun afegirPlatsDieta(@Path("dieta") id: Long, @Path("plato") idPlato: Long): Response<List<DietasPlats>>
+
+    @GET("api/quiz")
+    suspend fun quiz(): Response<List<QuizModelo>>
+
+    @GET("api/quiz/categoria/{categoria}")
+    suspend fun quizCategoria(@Path("categoria") categoria: String): Response<List<QuizModelo>>
 }

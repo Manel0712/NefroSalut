@@ -82,6 +82,9 @@
             android:name="com.mariona.nefrosalut.crearDieta"
             android:exported="false" />
         <activity
+            android:name="com.mariona.nefrosalut.DadesMediquesMostrarActivity"
+            android:exported="false" />
+        <activity
             android:name="com.mariona.nefrosalut.MainActivity"
             android:exported="true" >
             <intent-filter>

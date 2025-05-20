@@ -8,6 +8,10 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\escoger_quiz.xml"
     },
     {
+        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\dades_mediques_mostrar.xml",
+        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\dades_mediques_mostrar.xml"
+    },
+    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\mainmenu.xml",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\mainmenu.xml"
     },
@@ -22,10 +26,6 @@
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\quiz_categoria.xml",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\quiz_categoria.xml"
-    },
-    {
-        "merged": "com.mariona.nefrosalut.app-mergeDebugResources-42:/layout/plats.xml",
-        "source": "com.mariona.nefrosalut.app-main-45:/layout/plats.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\videos_categoria.xml",
@@ -60,6 +60,10 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\perfil.xml"
     },
     {
+        "merged": "com.mariona.nefrosalut.app-mergeDebugResources-42:/layout/perfil.xml",
+        "source": "com.mariona.nefrosalut.app-main-45:/layout/perfil.xml"
+    },
+    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\registre_personal.xml",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\registre_personal.xml"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\card_platos.xml",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\card_platos.xml"
+    },
+    {
+        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\ver_dades_mediques.xml",
+        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\ver_dades_mediques.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-mergeDebugResources-42:\\layout\\progres.xml",

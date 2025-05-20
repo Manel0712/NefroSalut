@@ -60,6 +60,10 @@
         <activity
             android:name=".crearDieta"
             android:exported="false" />
+
+        <activity
+            android:name=".DadesMediquesMostrarActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
