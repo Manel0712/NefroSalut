@@ -20,6 +20,10 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.mariona.nefrosalut.app-debug-43:/layout_perfil.xml.flat",
+        "source": "com.mariona.nefrosalut.app-main-45:/layout/perfil.xml"
+    },
+    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\xml\\data_extraction_rules.xml"
     },
@@ -116,10 +120,6 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\login.xml"
     },
     {
-        "merged": "com.mariona.nefrosalut.app-debug-43:/layout_plats.xml.flat",
-        "source": "com.mariona.nefrosalut.app-main-45:/layout/plats.xml"
-    },
-    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\drawable_levantamiento_de_pesas_con_mancuernas.png.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\drawable\\levantamiento_de_pesas_con_mancuernas.png"
     },
@@ -172,8 +172,16 @@
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\drawable\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_ver_dades_mediques.xml.flat",
+        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\ver_dades_mediques.xml"
+    },
+    {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\layout_dades_mediques_mostrar.xml.flat",
+        "source": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-main-45:\\layout\\dades_mediques_mostrar.xml"
     },
     {
         "merged": "C:\\Users\\mario\\.gradle\\daemon\\8.10.2\\com.mariona.nefrosalut.app-debug-43:\\mipmap-mdpi_ic_launcher.webp.flat",

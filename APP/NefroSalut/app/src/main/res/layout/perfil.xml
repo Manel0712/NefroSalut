@@ -78,10 +78,25 @@
         android:fontFamily="@font/inria_sans_light"
         android:onClick="cerrarSesionClick"
         android:text="Tanca sessió"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDadesMediques"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="158dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/inria_sans_light"
+        android:onClick="verDadesMedicas"
+        android:text="Dades Mèdiques"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnVerProgreso"
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <androidx.constraintlayout.widget.Guideline
