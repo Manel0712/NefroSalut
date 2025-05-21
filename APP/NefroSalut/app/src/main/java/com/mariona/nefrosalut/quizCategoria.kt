@@ -26,19 +26,19 @@ class quizCategoria   : AppCompatActivity() {
 
     fun categoriaPredialisis(view: android.view.View) {
         val i = android.content.Intent(this, Quiz::class.java)
-        i.putExtra("categoria", "predialisis")
+        i.putExtra("categoria", "Prediàlisi")
         startActivity(i)
     }
 
     fun categoriaHemodialisis(view: android.view.View) {
         val i = android.content.Intent(this, Quiz::class.java)
-        i.putExtra("categoria", "hemodialisis")
+        i.putExtra("categoria", "Hemodiálisis")
         startActivity(i)
     }
 
     fun categoriaPerioneal(view: android.view.View) {
         val i = android.content.Intent(this, Quiz::class.java)
-        i.putExtra("categoria", "peritoneal")
+        i.putExtra("categoria", "Peritoneal")
         startActivity(i)
     }
 }
