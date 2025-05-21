@@ -11,12 +11,12 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //binding = DadesMediquesMostrarBinding.inflate(layoutInflater)
-        setContentView(R.layout.dades_mediques_mostrar)
+        binding = DadesMediquesMostrarBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
-        // Obtener los datos del intent
+
         val dni = intent.getStringExtra("dni") ?: "No disponible"
         val dataNaixement = intent.getStringExtra("dataNaixement") ?: "No disponible"
         val pes = intent.getDoubleExtra("pes", 0.0)
@@ -27,7 +27,6 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
         val estat = intent.getStringExtra("estat") ?: "No disponible"
         val fase = intent.getStringExtra("fase") ?: "No disponible"
 
-        // Poner los datos en los TextViews
         binding.tvDniDade.text = dni
         binding.tvDataNaixementDades.text = dataNaixement
         binding.tvPesDades.text = if (pes != 0.0) pes.toString() else "No disponible"
