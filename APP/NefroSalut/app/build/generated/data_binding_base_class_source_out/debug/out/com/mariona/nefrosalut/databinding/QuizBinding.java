@@ -24,16 +24,37 @@ public final class QuizBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final AppCompatButton btnVolverMenu;
+
+  @NonNull
+  public final Guideline guideline21;
+
+  @NonNull
   public final Guideline guideline4;
 
   @NonNull
   public final Guideline guideline5;
 
   @NonNull
+  public final ImageView imageView;
+
+  @NonNull
+  public final ImageView imageView2;
+
+  @NonNull
+  public final TextView numDisolverResultado;
+
+  @NonNull
+  public final TextView numMoedasResultado;
+
+  @NonNull
   public final TextView numPregunta;
 
   @NonNull
   public final TextView numPuntos;
+
+  @NonNull
+  public final TextView numPuntosResultado;
 
   @NonNull
   public final AppCompatButton op1;
@@ -45,6 +66,9 @@ public final class QuizBinding implements ViewBinding {
   public final AppCompatButton op3;
 
   @NonNull
+  public final TextView porDosResultado;
+
+  @NonNull
   public final ImageView powerDisolver;
 
   @NonNull
@@ -54,28 +78,58 @@ public final class QuizBinding implements ViewBinding {
   public final TextView pregunta;
 
   @NonNull
+  public final ConstraintLayout quiz;
+
+  @NonNull
+  public final ConstraintLayout resultado;
+
+  @NonNull
+  public final TextView textView10;
+
+  @NonNull
   public final TextView textView3;
+
+  @NonNull
+  public final TextView textView9;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private QuizBinding(@NonNull ConstraintLayout rootView, @NonNull Guideline guideline4,
-      @NonNull Guideline guideline5, @NonNull TextView numPregunta, @NonNull TextView numPuntos,
-      @NonNull AppCompatButton op1, @NonNull AppCompatButton op2, @NonNull AppCompatButton op3,
+  private QuizBinding(@NonNull ConstraintLayout rootView, @NonNull AppCompatButton btnVolverMenu,
+      @NonNull Guideline guideline21, @NonNull Guideline guideline4, @NonNull Guideline guideline5,
+      @NonNull ImageView imageView, @NonNull ImageView imageView2,
+      @NonNull TextView numDisolverResultado, @NonNull TextView numMoedasResultado,
+      @NonNull TextView numPregunta, @NonNull TextView numPuntos,
+      @NonNull TextView numPuntosResultado, @NonNull AppCompatButton op1,
+      @NonNull AppCompatButton op2, @NonNull AppCompatButton op3, @NonNull TextView porDosResultado,
       @NonNull ImageView powerDisolver, @NonNull ImageView powerPorDos, @NonNull TextView pregunta,
-      @NonNull TextView textView3, @NonNull Toolbar toolbar) {
+      @NonNull ConstraintLayout quiz, @NonNull ConstraintLayout resultado,
+      @NonNull TextView textView10, @NonNull TextView textView3, @NonNull TextView textView9,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.btnVolverMenu = btnVolverMenu;
+    this.guideline21 = guideline21;
     this.guideline4 = guideline4;
     this.guideline5 = guideline5;
+    this.imageView = imageView;
+    this.imageView2 = imageView2;
+    this.numDisolverResultado = numDisolverResultado;
+    this.numMoedasResultado = numMoedasResultado;
     this.numPregunta = numPregunta;
     this.numPuntos = numPuntos;
+    this.numPuntosResultado = numPuntosResultado;
     this.op1 = op1;
     this.op2 = op2;
     this.op3 = op3;
+    this.porDosResultado = porDosResultado;
     this.powerDisolver = powerDisolver;
     this.powerPorDos = powerPorDos;
     this.pregunta = pregunta;
+    this.quiz = quiz;
+    this.resultado = resultado;
+    this.textView10 = textView10;
     this.textView3 = textView3;
+    this.textView9 = textView9;
     this.toolbar = toolbar;
   }
 
@@ -106,6 +160,18 @@ public final class QuizBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnVolverMenu;
+      AppCompatButton btnVolverMenu = ViewBindings.findChildViewById(rootView, id);
+      if (btnVolverMenu == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline21;
+      Guideline guideline21 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline21 == null) {
+        break missingId;
+      }
+
       id = R.id.guideline4;
       Guideline guideline4 = ViewBindings.findChildViewById(rootView, id);
       if (guideline4 == null) {
@@ -118,6 +184,30 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.numDisolverResultado;
+      TextView numDisolverResultado = ViewBindings.findChildViewById(rootView, id);
+      if (numDisolverResultado == null) {
+        break missingId;
+      }
+
+      id = R.id.numMoedasResultado;
+      TextView numMoedasResultado = ViewBindings.findChildViewById(rootView, id);
+      if (numMoedasResultado == null) {
+        break missingId;
+      }
+
       id = R.id.numPregunta;
       TextView numPregunta = ViewBindings.findChildViewById(rootView, id);
       if (numPregunta == null) {
@@ -127,6 +217,12 @@ public final class QuizBinding implements ViewBinding {
       id = R.id.numPuntos;
       TextView numPuntos = ViewBindings.findChildViewById(rootView, id);
       if (numPuntos == null) {
+        break missingId;
+      }
+
+      id = R.id.numPuntosResultado;
+      TextView numPuntosResultado = ViewBindings.findChildViewById(rootView, id);
+      if (numPuntosResultado == null) {
         break missingId;
       }
 
@@ -148,6 +244,12 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.porDosResultado;
+      TextView porDosResultado = ViewBindings.findChildViewById(rootView, id);
+      if (porDosResultado == null) {
+        break missingId;
+      }
+
       id = R.id.powerDisolver;
       ImageView powerDisolver = ViewBindings.findChildViewById(rootView, id);
       if (powerDisolver == null) {
@@ -166,9 +268,33 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.quiz;
+      ConstraintLayout quiz = ViewBindings.findChildViewById(rootView, id);
+      if (quiz == null) {
+        break missingId;
+      }
+
+      id = R.id.resultado;
+      ConstraintLayout resultado = ViewBindings.findChildViewById(rootView, id);
+      if (resultado == null) {
+        break missingId;
+      }
+
+      id = R.id.textView10;
+      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
+      if (textView10 == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView9;
+      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
+      if (textView9 == null) {
         break missingId;
       }
 
@@ -178,8 +304,10 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
-      return new QuizBinding((ConstraintLayout) rootView, guideline4, guideline5, numPregunta,
-          numPuntos, op1, op2, op3, powerDisolver, powerPorDos, pregunta, textView3, toolbar);
+      return new QuizBinding((ConstraintLayout) rootView, btnVolverMenu, guideline21, guideline4,
+          guideline5, imageView, imageView2, numDisolverResultado, numMoedasResultado, numPregunta,
+          numPuntos, numPuntosResultado, op1, op2, op3, porDosResultado, powerDisolver, powerPorDos,
+          pregunta, quiz, resultado, textView10, textView3, textView9, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

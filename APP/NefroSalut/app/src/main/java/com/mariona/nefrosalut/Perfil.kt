@@ -47,7 +47,7 @@ class Perfil : AppCompatActivity() {
                 startActivity(intent)
             }
 
-    }
+        }
 
         rol = intent.extras!!.getString("rol").toString()
         if (rol.equals("Paciente")) {

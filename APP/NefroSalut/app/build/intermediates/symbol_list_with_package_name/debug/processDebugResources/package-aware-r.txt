@@ -3200,6 +3200,8 @@ drawable ojo_abierto
 drawable pastillas
 drawable rinones
 drawable rounded_button
+drawable rounded_button_correcto
+drawable rounded_button_incorrecto
 drawable rounded_text
 drawable sangre_de_inyeccion_de_jeringa
 drawable test_level_drawable
@@ -3343,6 +3345,7 @@ id btnVerDieta
 id btnVerPlato
 id btnVerProgreso
 id btnVideos
+id btnVolverMenu
 id btnjocs
 id btnperfil
 id btnplats
@@ -3494,6 +3497,7 @@ id guideline18
 id guideline19
 id guideline2
 id guideline20
+id guideline21
 id guideline3
 id guideline4
 id guideline5
@@ -3520,6 +3524,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id imageView2
 id imageView3
 id imgdietas
 id imgjocs
@@ -3641,8 +3647,11 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numDisolverResultado
+id numMoedasResultado
 id numPregunta
 id numPuntos
+id numPuntosResultado
 id num_punts
 id off
 id on
@@ -3681,6 +3690,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id porDosResultado
 id position
 id postLayout
 id power1
@@ -3692,12 +3702,14 @@ id pressed
 id progress
 id progress_circular
 id progress_horizontal
+id quiz
 id quizzes_fets
 id radio
 id ratio
 id rectangles
 id recyclerView
 id report_drawn
+id resultado
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3795,6 +3807,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
 id textView12
 id textView2
 id textView3
@@ -3803,6 +3816,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id textViewNomPacient
 id textViewQuiz
 id textViewVideos
@@ -4635,6 +4649,8 @@ style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
 style RoundedButtonStyle
+style RoundedButtonStyleCorreto
+style RoundedButtonStyleIncorreto
 style RoundedTextStyle
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem

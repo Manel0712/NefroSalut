@@ -28,7 +28,7 @@ class QuizViewModel: ViewModel() {
                 _quiz.value?.let { original ->
                     val random = java.util.Random()
                     val desordenada = original
-                        .map { it to random.nextInt(60) }
+                        .map { it to random.nextInt(59) }
                         .sortedBy { it.second }
                         .map { it.first }
                         .toMutableList()
@@ -48,6 +48,16 @@ class QuizViewModel: ViewModel() {
             var resposta = Connection.nefroSalutService.quizCategoria(categoria)
             if (resposta.isSuccessful) {
                 _quiz.value = resposta.body()
+                _quiz.value?.let { original ->
+                    val random = java.util.Random()
+                    val desordenada = original
+                        .map { it to random.nextInt(59) }
+                        .sortedBy { it.second }
+                        .map { it.first }
+                        .toMutableList()
+
+                    _quiz.value = desordenada
+                }
             }
             else {
                 _error.value = "ERROR CODE: " + resposta.code().toString()
