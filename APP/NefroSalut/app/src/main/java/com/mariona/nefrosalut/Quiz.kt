@@ -48,6 +48,9 @@ class Quiz : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
 
+        layoutQuiz = findViewById(R.id.quiz)
+        layoutResultado = findViewById(R.id.resultado)
+
         pregunta = findViewById(R.id.pregunta)
         opcio1 = findViewById(R.id.op1)
         opcio2 = findViewById(R.id.op2)
