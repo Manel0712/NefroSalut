@@ -3345,6 +3345,7 @@ int id btnVerPlato 0x7f0a0080
 int id btnVerProgreso 0x7f0a0081
 int id btnVideos 0x7f0a0082
 int id btnVolverMenu 0x7f0a02a2
+int id btnVolverPerfil 0x7f0a02ae
 int id btnjocs 0x7f0a0083
 int id btnperfil 0x7f0a0084
 int id btnplats 0x7f0a0085
@@ -3497,6 +3498,7 @@ int id guideline19 0x7f0a0117
 int id guideline2 0x7f0a0118
 int id guideline20 0x7f0a028f
 int id guideline21 0x7f0a02a3
+int id guideline22 0x7f0a02af
 int id guideline3 0x7f0a0119
 int id guideline4 0x7f0a011a
 int id guideline5 0x7f0a011b
@@ -3807,6 +3809,7 @@ int id textStart 0x7f0a0240
 int id textTop 0x7f0a0241
 int id textView 0x7f0a0242
 int id textView10 0x7f0a02ac
+int id textView11 0x7f0a02b2
 int id textView12 0x7f0a0243
 int id textView2 0x7f0a0244
 int id textView3 0x7f0a0245
@@ -3866,6 +3869,8 @@ int id tvFaseDades 0x7f0a029c
 int id tvHipertensio 0x7f0a029d
 int id tvHipertensioDades 0x7f0a029e
 int id tvLoginTitle 0x7f0a026d
+int id tvNomCognoms 0x7f0a02b0
+int id tvNomCognomsDades 0x7f0a02b1
 int id tvPes 0x7f0a029f
 int id tvPesDades 0x7f0a02a0
 int id tvRegisterTitle 0x7f0a026e

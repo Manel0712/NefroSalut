@@ -44,6 +44,9 @@ class Perfil : AppCompatActivity() {
                 intent.putExtra("diabetic", it.diabetico)
                 intent.putExtra("estat", it.estadoEnfermedad)
                 intent.putExtra("fase", it.estadio)
+                intent.putExtra("nom", it.nombre)
+                intent.putExtra("cognoms", it.apellidos)
+
                 startActivity(intent)
             }
 
@@ -60,6 +63,8 @@ class Perfil : AppCompatActivity() {
         fun verDadesMedicas(paciente: Paciente) {
             val intent = Intent(this, DadesMediquesMostrarActivity::class.java)
             // Pasamos los datos necesarios via intent
+            intent.putExtra("nom", paciente.nombre)
+            intent.putExtra("cognoms", paciente.apellidos)
             intent.putExtra("dni", paciente.DNI)
             intent.putExtra("dataNaixement", paciente.fechaNacimiento)
             intent.putExtra("pes", paciente.peso)

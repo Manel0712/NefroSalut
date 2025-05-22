@@ -1,5 +1,6 @@
 package com.mariona.nefrosalut
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -25,6 +26,10 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
         val diabetic = intent.getBooleanExtra("diabetic", false)
         val estat = intent.getStringExtra("estat") ?: "No disponible"
         val fase = intent.getStringExtra("fase") ?: "No disponible"
+        val nom = intent.getStringExtra("nom") ?: "No disponible"
+        val cognoms = intent.getStringExtra("cognoms") ?: ""
+
+        binding.tvNomCognomsDades.text = "$nom, $cognoms"
 
         binding.tvDniDade.text = dni
         binding.tvDataNaixementDades.text = dataNaixement
@@ -35,5 +40,10 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
         binding.tvDiabeticoDades.text = if (diabetic) "Sí" else "No"
         binding.tvEstatDades.text = estat
         binding.tvFaseDades.text = fase
+    }
+
+    fun volverOnClick(){
+        val intent = Intent(this, Perfil::class.java)
+        startActivity(intent)
     }
 }

@@ -50,8 +50,10 @@ class MainMenu : AppCompatActivity() {
     }
 
     fun perfilClick(view: View) {
-        val i = Intent(this, Perfil::class.java)
-        startActivity(i)
+        val intent = Intent(this, Perfil::class.java)
+        intent.putExtra("user", user as java.io.Serializable)
+        intent.putExtra("rol", rol)
+        startActivity(intent)
     }
 
 

@@ -87,6 +87,9 @@ public final class QuizBinding implements ViewBinding {
   public final TextView textView10;
 
   @NonNull
+  public final TextView textView11;
+
+  @NonNull
   public final TextView textView3;
 
   @NonNull
@@ -104,8 +107,8 @@ public final class QuizBinding implements ViewBinding {
       @NonNull AppCompatButton op2, @NonNull AppCompatButton op3, @NonNull TextView porDosResultado,
       @NonNull ImageView powerDisolver, @NonNull ImageView powerPorDos, @NonNull TextView pregunta,
       @NonNull ConstraintLayout quiz, @NonNull ConstraintLayout resultado,
-      @NonNull TextView textView10, @NonNull TextView textView3, @NonNull TextView textView9,
-      @NonNull Toolbar toolbar) {
+      @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView3,
+      @NonNull TextView textView9, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.btnVolverMenu = btnVolverMenu;
     this.guideline21 = guideline21;
@@ -128,6 +131,7 @@ public final class QuizBinding implements ViewBinding {
     this.quiz = quiz;
     this.resultado = resultado;
     this.textView10 = textView10;
+    this.textView11 = textView11;
     this.textView3 = textView3;
     this.textView9 = textView9;
     this.toolbar = toolbar;
@@ -286,6 +290,12 @@ public final class QuizBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView11;
+      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
+      if (textView11 == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -307,7 +317,7 @@ public final class QuizBinding implements ViewBinding {
       return new QuizBinding((ConstraintLayout) rootView, btnVolverMenu, guideline21, guideline4,
           guideline5, imageView, imageView2, numDisolverResultado, numMoedasResultado, numPregunta,
           numPuntos, numPuntosResultado, op1, op2, op3, porDosResultado, powerDisolver, powerPorDos,
-          pregunta, quiz, resultado, textView10, textView3, textView9, toolbar);
+          pregunta, quiz, resultado, textView10, textView11, textView3, textView9, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

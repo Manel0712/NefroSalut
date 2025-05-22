@@ -73,6 +73,7 @@ id btnVerPlato
 id btnVerProgreso
 id btnVideos
 id btnVolverMenu
+id btnVolverPerfil
 id btnjocs
 id btnperfil
 id btnplats
@@ -111,6 +112,7 @@ id guideline19
 id guideline2
 id guideline20
 id guideline21
+id guideline22
 id guideline3
 id guideline4
 id guideline5
@@ -172,6 +174,7 @@ id spinerCategoriaPlat
 id spinner
 id textView
 id textView10
+id textView11
 id textView12
 id textView2
 id textView3
@@ -202,6 +205,8 @@ id tvFaseDades
 id tvHipertensio
 id tvHipertensioDades
 id tvLoginTitle
+id tvNomCognoms
+id tvNomCognomsDades
 id tvPes
 id tvPesDades
 id tvRegisterTitle
