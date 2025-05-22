@@ -22,10 +22,10 @@ class Perfil : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        val paciente = intent.getSerializableExtra("user") as? Paciente
+
         val nombreTextView = findViewById<TextView>(R.id.inputUser)
         val emailTextView = findViewById<TextView>(R.id.inputEmail)
-
-        val paciente = intent.getSerializableExtra("user") as? Paciente
 
         nombreTextView.text = paciente?.nombre ?: "Nombre no disponible"
         emailTextView.text = paciente?.email ?: "Email no disponible"

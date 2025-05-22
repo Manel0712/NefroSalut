@@ -6,7 +6,6 @@ import androidx.appcompat.widget.Toolbar
 import com.mariona.nefrosalut.databinding.DadesMediquesMostrarBinding
 
 class DadesMediquesMostrarActivity : AppCompatActivity() {
-
     private lateinit var binding: DadesMediquesMostrarBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
