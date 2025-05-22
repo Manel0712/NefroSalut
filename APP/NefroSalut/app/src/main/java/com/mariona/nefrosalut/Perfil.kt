@@ -22,10 +22,10 @@ class Perfil : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        val paciente = intent.getSerializableExtra("user") as? Paciente
+
         val nombreTextView = findViewById<TextView>(R.id.inputUser)
         val emailTextView = findViewById<TextView>(R.id.inputEmail)
-
-        val paciente = intent.getSerializableExtra("user") as? Paciente
 
         nombreTextView.text = paciente?.nombre ?: "Nombre no disponible"
         emailTextView.text = paciente?.email ?: "Email no disponible"
@@ -44,6 +44,9 @@ class Perfil : AppCompatActivity() {
                 intent.putExtra("diabetic", it.diabetico)
                 intent.putExtra("estat", it.estadoEnfermedad)
                 intent.putExtra("fase", it.estadio)
+                intent.putExtra("nom", it.nombre)
+                intent.putExtra("cognoms", it.apellidos)
+
                 startActivity(intent)
             }
 
@@ -60,6 +63,8 @@ class Perfil : AppCompatActivity() {
         fun verDadesMedicas(paciente: Paciente) {
             val intent = Intent(this, DadesMediquesMostrarActivity::class.java)
             // Pasamos los datos necesarios via intent
+            intent.putExtra("nom", paciente.nombre)
+            intent.putExtra("cognoms", paciente.apellidos)
             intent.putExtra("dni", paciente.DNI)
             intent.putExtra("dataNaixement", paciente.fechaNacimiento)
             intent.putExtra("pes", paciente.peso)

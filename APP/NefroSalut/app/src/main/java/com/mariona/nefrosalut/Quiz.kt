@@ -67,7 +67,7 @@ class Quiz : AppCompatActivity() {
 
         btnFinalitzar = findViewById(R.id.btnVolverMenu)
         btnFinalitzar.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MainMenu::class.java))
         }
 
 
