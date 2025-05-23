@@ -1,8 +1,14 @@
 package com.mariona.nefrosalut
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 
 class escogerQuiz   : AppCompatActivity() {
+
+    private lateinit var user: Any
+    private lateinit var rol: String
 
     private lateinit var categoria: String
     override fun onCreate(savedInstanceState: android.os.Bundle?) {
@@ -10,6 +16,14 @@ class escogerQuiz   : AppCompatActivity() {
         setContentView(R.layout.escoger_quiz)
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
+        }
     }
     override fun onCreateOptionsMenu(menu: android.view.Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
@@ -25,12 +39,27 @@ class escogerQuiz   : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
     fun aleatorioClick(view: android.view.View) {
+
         val i = android.content.Intent(this, Quiz::class.java)
         i.putExtra("categoria", "aleatorio")
+        if (rol.equals("Paciente")) {
+            i.putExtra("user", user as Paciente)
+        } else if (rol.equals("Familiar")) {
+            i.putExtra("user", user as Familiar)
+        }
+        i.putExtra("rol", rol)
+
         startActivity(i)
     }
     fun quizcategoriaClick(view: android.view.View) {
         val i = android.content.Intent(this, quizCategoria::class.java)
+        i.putExtra("categoria", "aleatorio")
+        if (rol.equals("Paciente")) {
+            i.putExtra("user", user as Paciente)
+        } else if (rol.equals("Familiar")) {
+            i.putExtra("user", user as Familiar)
+        }
+        i.putExtra("rol", rol)
         startActivity(i)
     }
 }

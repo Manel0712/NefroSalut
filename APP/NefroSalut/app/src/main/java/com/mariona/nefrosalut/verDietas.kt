@@ -94,7 +94,7 @@ class verDietas : AppCompatActivity() {
     }
 
     fun platos(dieta: Dietas) {
-        val intent = Intent(this, verPlatos::class.java)
+        val intent = Intent(this, platosDiets::class.java)
 
         intent.putExtra("dieta", dieta.id)
         intent.putExtra("nombreDieta", dieta.nombre)

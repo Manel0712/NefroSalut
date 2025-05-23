@@ -1,9 +1,7 @@
 package com.mariona.nefrosalut
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.ContextThemeWrapper
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -13,8 +11,9 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.lifecycleScope
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 import com.mariona.nefrosalut.models.QuizModelo
 import com.mariona.nefrosalut.viewModels.QuizViewModel
 import com.mariona.nefrosalut.viewModels.QuizViewModelFactory
@@ -36,9 +35,15 @@ class Quiz : AppCompatActivity() {
     lateinit var monedas: TextView
     lateinit var porDos: TextView
     lateinit var disolver: TextView
+    lateinit var puntosResultado: TextView
     private var questionsList: MutableList<QuizModelo> = ArrayList()
     private val viewModel: QuizViewModel by viewModels { QuizViewModelFactory() }
     var preguntas: List<QuizModelo>? = null
+    private lateinit var user: Any
+    private lateinit var rol: String
+    var paciente: Paciente? = null
+    var correctas: Int = 0
+    var incorrectas: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +52,14 @@ class Quiz : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+            paciente = user as? Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
+        }
 
         layoutQuiz = findViewById(R.id.quiz)
         layoutResultado = findViewById(R.id.resultado)
@@ -64,10 +77,27 @@ class Quiz : AppCompatActivity() {
         disolver.text  = "0"
         porDos = findViewById(R.id.porDosResultado)
         porDos.text = "0"
+        puntosResultado = findViewById(R.id.numPuntosResultado)
+        puntosResultado.text = "0"
+
+
+        viewModel.progreso.observe(this) { progresos ->
+            if (progresos.size > 0) {
+                viewModel.guardarProgreso(paciente!!.id, correctas, incorrectas)
+            }
+        }
 
         btnFinalitzar = findViewById(R.id.btnVolverMenu)
         btnFinalitzar.setOnClickListener {
-            startActivity(Intent(this, MainMenu::class.java))
+            val intent = Intent(this, MainMenu::class.java)
+
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
+            intent.putExtra("rol", rol)
+            startActivity(intent)
         }
 
 
@@ -116,9 +146,12 @@ class Quiz : AppCompatActivity() {
             opcio1.setBackgroundResource(R.drawable.rounded_button_correcto)
             puntos = findViewById(R.id.numPuntos)
             puntos.text = (puntos.text.toString().toInt() + 10).toString()
+            puntosResultado.text = (puntos.text.toString().toInt() + 10).toString()
             monedas.text = (monedas.text.toString().toInt() + 10).toString()
+            correctas++
         } else {
             opcio1.setBackgroundResource(R.drawable.rounded_button_incorrecto)
+            incorrectas++
             if (opcio2.text == viewModel.quiz.value?.get(numPregunta.text.toString().toInt()-1)?.correctOption) {
                 opcio2.setBackgroundResource(R.drawable.rounded_button_correcto)
             }
@@ -135,10 +168,13 @@ class Quiz : AppCompatActivity() {
             opcio2.setBackgroundResource(R.drawable.rounded_button_correcto)
             puntos = findViewById(R.id.numPuntos)
             puntos.text = (puntos.text.toString().toInt() + 10).toString()
+            puntosResultado.text = (puntos.text.toString().toInt() + 10).toString()
             monedas.text = (monedas.text.toString().toInt() + 10).toString()
+            correctas++
         } else {
             // Incorrect answer
             opcio2.setBackgroundResource(R.drawable.rounded_button_incorrecto)
+            incorrectas++
             if (opcio1.text == viewModel.quiz.value?.get(numPregunta.text.toString().toInt()-1)?.correctOption) {
                 opcio1.setBackgroundResource(R.drawable.rounded_button_correcto)
             }
@@ -154,9 +190,12 @@ class Quiz : AppCompatActivity() {
             opcio3.setBackgroundResource(R.drawable.rounded_button_correcto)
             puntos = findViewById(R.id.numPuntos)
             puntos.text = (puntos.text.toString().toInt() + 10).toString()
+            puntosResultado.text = (puntos.text.toString().toInt() + 10).toString()
             monedas.text = (monedas.text.toString().toInt() + 10).toString()
+            correctas++
         } else {
             opcio3.setBackgroundResource(R.drawable.rounded_button_incorrecto)
+            incorrectas++
             if (opcio1.text == viewModel.quiz.value?.get(numPregunta.text.toString().toInt()-1)?.correctOption) {
                 opcio1.setBackgroundResource(R.drawable.rounded_button_correcto)
             }
@@ -181,10 +220,14 @@ class Quiz : AppCompatActivity() {
                     disolver.text = (porDos.text.toString().toInt() + 1).toString()
                 }
 
+                puntosResultado.text = (puntos.text.toString().toInt()).toString()
+
                 monedas.findViewById<TextView>(R.id.numMoedasResultado)
-                puntos.findViewById<TextView>(R.id.numPuntosResultado)
+                puntosResultado.findViewById<TextView>(R.id.numPuntosResultado)
                 porDos.findViewById<TextView>(R.id.porDosResultado)
                 disolver.findViewById<TextView>(R.id.numDisolverResultado)
+
+                actualizarPuntos()
 
             }
             else{
@@ -216,6 +259,11 @@ class Quiz : AppCompatActivity() {
 
     fun preguntasCategoriaAleatoria() {
         viewModel.loadQuiz()
+    }
+
+    fun actualizarPuntos(){
+        viewModel.updateProgreso(paciente!!.progreso, monedas.text.toString().toInt(), mapOf("porDos" to porDos.text.toString().toInt(), "disolver" to disolver.text.toString().toInt()), puntos.text.toString().toInt())
+
     }
 
 }

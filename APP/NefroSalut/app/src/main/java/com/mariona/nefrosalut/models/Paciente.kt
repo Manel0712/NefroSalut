@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 import java.time.LocalDate
 
-data class Paciente (
+data class Paciente(
     var id: Long,
     var nombre: String,
     var apellidos: String = "",
@@ -31,5 +31,5 @@ data class Paciente (
     var IMC: Double,
     var clasificacion: String,
     @SerializedName("progreso_id")
-    var progresoId: Int,
+    var progreso: Int
 ): Serializable

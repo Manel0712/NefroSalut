@@ -6,7 +6,9 @@ import com.mariona.nefrosalut.models.Dietas
 import com.mariona.nefrosalut.models.DietasPlats
 import com.mariona.nefrosalut.models.Familiar
 import com.mariona.nefrosalut.models.Paciente
+import com.mariona.nefrosalut.models.Progreso
 import com.mariona.nefrosalut.models.QuizModelo
+import com.mariona.nefrosalut.models.QuizPaciente
 import com.mariona.nefrosalut.models.Videos
 import retrofit2.Response
 import retrofit2.http.*
@@ -61,4 +63,10 @@ interface Endpoint {
 
     @GET("api/quiz/categoria/{categoria}")
     suspend fun quizCategoria(@Path("categoria") categoria: String): Response<List<QuizModelo>>
+
+    @GET("api/guardarPartda")
+    suspend fun guardarPartida(@Query("user_id") userId: Long, @Query("quiz_id") quizId: Long, @Query("correctas") respuestasCorrectas: Int, @Query("incorrectas") respuestasIncorrectas: Int): Response<List<QuizPaciente>>
+
+    @PUT ("api/progreso/{progreso}")
+    suspend fun updateProgreso(@Path("progreso") id: Int, @Query("power_ups") powerUps: String, @Query("monedas") monedas: Int , @Query("puntos") puntos: Int): Response<List<Progreso>>
 }
