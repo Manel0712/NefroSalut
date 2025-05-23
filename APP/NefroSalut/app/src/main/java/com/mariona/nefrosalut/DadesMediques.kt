@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.mariona.nefrosalut.databinding.DadesMediquesBinding
 import com.mariona.nefrosalut.models.Paciente
+import com.mariona.nefrosalut.models.Progreso
 import com.mariona.nefrosalut.viewModels.RegisterPacienteViewModel
 import com.mariona.nefrosalut.viewModels.RegisterPacienteViewModelFactory
 
@@ -231,7 +232,24 @@ class DadesMediques : AppCompatActivity() {
                 }
             }
         }
-        var paciente = Paciente(0,name, apellidos, email, telefono, password.trim(), estat, "animo", activitatFisica, diabetic, hipertensio, estadio, 0, null, DNI, data, pes, alçada, IMC, classificacio, 0)
+        val progresoInicial = Progreso(
+            powerUps = mapOf(
+                "videos_vistos" to 0,
+                "quizzes_fets" to 0,
+                "power1" to 0,
+                "power2" to 0
+            ),
+            monedas = 0,
+            puntos = 0
+        )
+
+        val paciente = Paciente(
+            0, name, apellidos, email, telefono, password.trim(), estat, "animo",
+            activitatFisica, diabetic, hipertensio, estadio, 0, null, DNI, data,
+            pes, alçada, IMC, classificacio, 0
+        )
+
+
         viewModel.register(paciente)
     }
     /*fun validarDNI(dni: String): Boolean {

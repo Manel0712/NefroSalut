@@ -44,7 +44,7 @@ class RegisterPacienteViewModel: ViewModel() {
             _error.value = null
 
             try {
-                var response = Connection.nefroSalutService.register(paciente.nombre, paciente.apellidos, paciente.email, paciente.telefono, paciente.password.trim(), paciente.estadoEnfermedad, paciente.estadoAnimo, paciente.actividadFisica, paciente.diabetico, paciente.hipertenso, paciente.estadio, paciente.puntos, paciente.DNI, paciente.fechaNacimiento, paciente.peso, paciente.altura, paciente.IMC, paciente.clasificacion, paciente.progresoId)
+                var response = Connection.nefroSalutService.register(paciente.nombre, paciente.apellidos, paciente.email, paciente.telefono, paciente.password.trim(), paciente.estadoEnfermedad, paciente.estadoAnimo, paciente.actividadFisica, paciente.diabetico, paciente.hipertenso, paciente.estadio, paciente.puntos, paciente.DNI, paciente.fechaNacimiento, paciente.peso, paciente.altura, paciente.IMC, paciente.clasificacion, paciente.progreso)
                 if (response.isSuccessful) {
                     _error.value = "Paciente registrado correctamente"
                 }

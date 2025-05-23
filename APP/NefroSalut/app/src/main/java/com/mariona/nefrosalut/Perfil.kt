@@ -95,8 +95,14 @@ class Perfil : AppCompatActivity() {
 
 
     fun verProgresoClick(view: android.view.View) {
-        val i = android.content.Intent(this, verProgreso::class.java)
-        startActivity(i)
+        val intent = Intent(this, verProgreso::class.java)
+
+        val paciente = user as? Paciente
+        val progreso = paciente?.progreso  // Asegúrate de tener esto en la clase Paciente
+
+        intent.putExtra("progreso", progreso)
+        intent.putExtra("nombre", paciente?.nombre)
+        startActivity(intent)
     }
 
     fun cerrarSesionClick(view: android.view.View) {
