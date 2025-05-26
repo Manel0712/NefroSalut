@@ -4,7 +4,7 @@
             "outputFile": "com.mariona.nefrosalut.app-mergeDebugResources-41:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\64c0c60d70f026faebb431a7d1fc5053\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\64c0c60d70f026faebb431a7d1fc5053\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\05d8938d95f2e38d6766b8b187619eed\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\05d8938d95f2e38d6766b8b187619eed\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\mario\\.gradle\\caches\\8.10.2\\transforms\\3453f7ddb08f25e3859f14c3cdabc6f8\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\MANEL\\.gradle\\caches\\8.10.2\\transforms\\3453f7ddb08f25e3859f14c3cdabc6f8\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

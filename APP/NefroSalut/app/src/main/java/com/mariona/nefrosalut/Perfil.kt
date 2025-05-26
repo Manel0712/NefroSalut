@@ -46,6 +46,12 @@ class Perfil : AppCompatActivity() {
                 intent.putExtra("fase", it.estadio)
                 intent.putExtra("nom", it.nombre)
                 intent.putExtra("cognoms", it.apellidos)
+                if (rol.equals("Paciente")) {
+                    intent.putExtra("user", user as Paciente)
+                } else if (rol.equals("Familiar")) {
+                    intent.putExtra("user", user as Familiar)
+                }
+                intent.putExtra("rol", rol)
 
                 startActivity(intent)
             }
