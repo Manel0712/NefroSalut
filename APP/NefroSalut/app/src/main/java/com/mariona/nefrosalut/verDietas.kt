@@ -33,6 +33,10 @@ class verDietas : AppCompatActivity() {
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+        }
 
         binding = DietasBinding.inflate(layoutInflater)
         val view = binding.root

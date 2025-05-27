@@ -16,6 +16,10 @@ class escogerQuiz   : AppCompatActivity() {
         setContentView(R.layout.escoger_quiz)
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+        }
 
         rol = intent.extras!!.getString("rol").toString()
         if (rol.equals("Paciente")) {

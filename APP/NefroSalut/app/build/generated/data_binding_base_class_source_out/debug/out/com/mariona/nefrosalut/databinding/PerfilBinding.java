@@ -24,13 +24,13 @@ public final class PerfilBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton btnCerrarSesion;
-
-  @NonNull
   public final AppCompatButton btnDadesMediques;
 
   @NonNull
   public final AppCompatButton btnVerProgreso;
+
+  @NonNull
+  public final AppCompatButton btnVolver;
 
   @NonNull
   public final Guideline guideline11;
@@ -60,15 +60,15 @@ public final class PerfilBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private PerfilBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatButton btnCerrarSesion, @NonNull AppCompatButton btnDadesMediques,
-      @NonNull AppCompatButton btnVerProgreso, @NonNull Guideline guideline11,
+      @NonNull AppCompatButton btnDadesMediques, @NonNull AppCompatButton btnVerProgreso,
+      @NonNull AppCompatButton btnVolver, @NonNull Guideline guideline11,
       @NonNull Guideline guideline6, @NonNull Guideline guideline7, @NonNull Guideline guideline8,
       @NonNull TextView inputEmail, @NonNull ImageView inputFoto, @NonNull TextView inputUser,
       @NonNull TextView textView3, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.btnCerrarSesion = btnCerrarSesion;
     this.btnDadesMediques = btnDadesMediques;
     this.btnVerProgreso = btnVerProgreso;
+    this.btnVolver = btnVolver;
     this.guideline11 = guideline11;
     this.guideline6 = guideline6;
     this.guideline7 = guideline7;
@@ -107,12 +107,6 @@ public final class PerfilBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnCerrarSesion;
-      AppCompatButton btnCerrarSesion = ViewBindings.findChildViewById(rootView, id);
-      if (btnCerrarSesion == null) {
-        break missingId;
-      }
-
       id = R.id.btnDadesMediques;
       AppCompatButton btnDadesMediques = ViewBindings.findChildViewById(rootView, id);
       if (btnDadesMediques == null) {
@@ -122,6 +116,12 @@ public final class PerfilBinding implements ViewBinding {
       id = R.id.btnVerProgreso;
       AppCompatButton btnVerProgreso = ViewBindings.findChildViewById(rootView, id);
       if (btnVerProgreso == null) {
+        break missingId;
+      }
+
+      id = R.id.btnVolver;
+      AppCompatButton btnVolver = ViewBindings.findChildViewById(rootView, id);
+      if (btnVolver == null) {
         break missingId;
       }
 
@@ -179,8 +179,8 @@ public final class PerfilBinding implements ViewBinding {
         break missingId;
       }
 
-      return new PerfilBinding((ConstraintLayout) rootView, btnCerrarSesion, btnDadesMediques,
-          btnVerProgreso, guideline11, guideline6, guideline7, guideline8, inputEmail, inputFoto,
+      return new PerfilBinding((ConstraintLayout) rootView, btnDadesMediques, btnVerProgreso,
+          btnVolver, guideline11, guideline6, guideline7, guideline8, inputEmail, inputFoto,
           inputUser, textView3, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);

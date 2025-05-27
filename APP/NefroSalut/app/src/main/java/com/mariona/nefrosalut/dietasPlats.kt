@@ -26,6 +26,10 @@ class dietasPlats  : AppCompatActivity() {
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+        }
 
         rol = intent.extras!!.getString("rol").toString()
         if (rol.equals("Paciente")) {
