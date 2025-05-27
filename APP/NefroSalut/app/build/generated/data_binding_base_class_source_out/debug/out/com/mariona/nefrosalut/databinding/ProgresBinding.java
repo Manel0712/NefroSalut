@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
@@ -21,6 +22,9 @@ import java.lang.String;
 public final class ProgresBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final AppCompatButton btnVolver;
 
   @NonNull
   public final TextView dataInici;
@@ -103,18 +107,19 @@ public final class ProgresBinding implements ViewBinding {
   @NonNull
   public final TextView videosVistos;
 
-  private ProgresBinding(@NonNull ConstraintLayout rootView, @NonNull TextView dataInici,
-      @NonNull Guideline guideline10, @NonNull Guideline guideline11, @NonNull Guideline guideline6,
-      @NonNull Guideline guideline7, @NonNull Guideline guideline8, @NonNull Guideline guideline9,
-      @NonNull Guideline guidelineNom, @NonNull Guideline guidelineQuiz,
-      @NonNull Guideline guidelineVideos, @NonNull ImageView imageView3,
-      @NonNull ImageView inputFoto, @NonNull TextView monedes, @NonNull TextView nomPacient,
-      @NonNull TextView numPunts, @NonNull TextView power1, @NonNull TextView power2,
-      @NonNull TextView quizzesFets, @NonNull TextView textView12, @NonNull TextView textView3,
-      @NonNull TextView textView4, @NonNull TextView textView7,
+  private ProgresBinding(@NonNull ConstraintLayout rootView, @NonNull AppCompatButton btnVolver,
+      @NonNull TextView dataInici, @NonNull Guideline guideline10, @NonNull Guideline guideline11,
+      @NonNull Guideline guideline6, @NonNull Guideline guideline7, @NonNull Guideline guideline8,
+      @NonNull Guideline guideline9, @NonNull Guideline guidelineNom,
+      @NonNull Guideline guidelineQuiz, @NonNull Guideline guidelineVideos,
+      @NonNull ImageView imageView3, @NonNull ImageView inputFoto, @NonNull TextView monedes,
+      @NonNull TextView nomPacient, @NonNull TextView numPunts, @NonNull TextView power1,
+      @NonNull TextView power2, @NonNull TextView quizzesFets, @NonNull TextView textView12,
+      @NonNull TextView textView3, @NonNull TextView textView4, @NonNull TextView textView7,
       @NonNull TextView textViewNomPacient, @NonNull TextView textViewQuiz,
       @NonNull TextView textViewVideos, @NonNull Toolbar toolbar, @NonNull TextView videosVistos) {
     this.rootView = rootView;
+    this.btnVolver = btnVolver;
     this.dataInici = dataInici;
     this.guideline10 = guideline10;
     this.guideline11 = guideline11;
@@ -171,6 +176,12 @@ public final class ProgresBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnVolver;
+      AppCompatButton btnVolver = ViewBindings.findChildViewById(rootView, id);
+      if (btnVolver == null) {
+        break missingId;
+      }
+
       id = R.id.data_inici;
       TextView dataInici = ViewBindings.findChildViewById(rootView, id);
       if (dataInici == null) {
@@ -333,8 +344,8 @@ public final class ProgresBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ProgresBinding((ConstraintLayout) rootView, dataInici, guideline10, guideline11,
-          guideline6, guideline7, guideline8, guideline9, guidelineNom, guidelineQuiz,
+      return new ProgresBinding((ConstraintLayout) rootView, btnVolver, dataInici, guideline10,
+          guideline11, guideline6, guideline7, guideline8, guideline9, guidelineNom, guidelineQuiz,
           guidelineVideos, imageView3, inputFoto, monedes, nomPacient, numPunts, power1, power2,
           quizzesFets, textView12, textView3, textView4, textView7, textViewNomPacient,
           textViewQuiz, textViewVideos, toolbar, videosVistos);

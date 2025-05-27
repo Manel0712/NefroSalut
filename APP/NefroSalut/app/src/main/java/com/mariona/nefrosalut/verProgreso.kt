@@ -1,18 +1,39 @@
 package com.mariona.nefrosalut
 
+import android.content.Intent
+import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 import com.mariona.nefrosalut.models.Progreso
 
 class verProgreso: AppCompatActivity() {
 
+    private lateinit var user: Any
+    private lateinit var rol: String
     override fun onCreate(savedInstanceState: android.os.Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.progres)
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+        }
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
+        }
+
+
         val progreso = intent.getSerializableExtra("progreso") as? Progreso
         val nombre = intent.getStringExtra("nombre")
+
 
         // Referencias a los TextView
         val nomPacientTextView = findViewById<TextView>(R.id.nom_pacient)
@@ -51,5 +72,16 @@ class verProgreso: AppCompatActivity() {
             R.id.btnperfil -> startActivity(android.content.Intent(this, Perfil::class.java))
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    fun volverOnClick(view: View){
+        val intent = Intent(this, Perfil::class.java)
+        if (rol.equals("Paciente")) {
+            intent.putExtra("user", user as Paciente)
+        } else if (rol.equals("Familiar")) {
+            intent.putExtra("user", user as Familiar)
+        }
+        intent.putExtra("rol", rol)
+        startActivity(intent)
     }
 }

@@ -1,5 +1,6 @@
 package com.mariona.nefrosalut
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import com.mariona.nefrosalut.models.Familiar
 import com.mariona.nefrosalut.models.Paciente
@@ -14,6 +15,10 @@ class quizCategoria   : AppCompatActivity() {
         setContentView(R.layout.quiz_categoria)
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+        }
 
         rol = intent.extras!!.getString("rol").toString()
         if (rol.equals("Paciente")) {

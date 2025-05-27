@@ -9,11 +9,11 @@ import com.mariona.nefrosalut.databinding.DadesMediquesMostrarBinding
 import com.mariona.nefrosalut.models.Familiar
 import com.mariona.nefrosalut.models.Paciente
 
-private lateinit var user: Any
-private lateinit var rol: String
+
 class DadesMediquesMostrarActivity : AppCompatActivity() {
     private lateinit var binding: DadesMediquesMostrarBinding
-
+    private lateinit var user: Any
+    private lateinit var rol: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DadesMediquesMostrarBinding.inflate(layoutInflater)
@@ -29,6 +29,10 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+        }
 
         val dni = intent.getStringExtra("dni") ?: "No disponible"
         val dataNaixement = intent.getStringExtra("dataNaixement") ?: "No disponible"

@@ -3320,7 +3320,6 @@ id btnAleatorio
 id btnCategoriaDialisisPeritoneal
 id btnCategoriaPredialisis
 id btnCategoriaTransplants
-id btnCerrarSesion
 id btnCrearDieta
 id btnDadesMediques
 id btnDialisis
@@ -3345,6 +3344,7 @@ id btnVerDieta
 id btnVerPlato
 id btnVerProgreso
 id btnVideos
+id btnVolver
 id btnVolverMenu
 id btnVolverPerfil
 id btnjocs

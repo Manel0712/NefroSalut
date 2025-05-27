@@ -31,6 +31,10 @@ class crearDieta: AppCompatActivity() {
         setContentView(R.layout.crear_dieta)
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+        }
 
         viewModel.crearDieta.observe(this) { dietas ->
 

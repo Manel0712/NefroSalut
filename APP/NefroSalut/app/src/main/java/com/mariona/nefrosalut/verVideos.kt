@@ -35,6 +35,10 @@ class verVideos : AppCompatActivity() {
 
         val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+        }
 
         binding.recyclerView.adapter = videosAdapter
 
