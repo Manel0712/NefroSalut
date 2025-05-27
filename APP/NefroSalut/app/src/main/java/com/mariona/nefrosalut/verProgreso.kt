@@ -25,14 +25,17 @@ class verProgreso: AppCompatActivity() {
         val power2TextView = findViewById<TextView>(R.id.power2)
 
         // Mostrar los valores
+        val entries = progreso!!.powerUps.entries.toList()
         nomPacientTextView.text = nombre ?: ""
         videosTextView.text = progreso?.powerUps?.get("videos_vistos")?.toString() ?: "0"
         quizzesTextView.text = progreso?.powerUps?.get("quizzes_fets")?.toString() ?: "0"
         dataIniciTextView.text = "01/01/2024" // Puedes hacerlo dinÃ¡mico si quieres
         puntsTextView.text = progreso?.puntos?.toString() ?: "0"
         monedesTextView.text = progreso?.monedas?.toString() ?: "0"
-        power1TextView.text = "X${progreso?.powerUps?.get("power1") ?: 0}"
-        power2TextView.text = "X${progreso?.powerUps?.get("power2") ?: 0}"
+        val firstEntry = entries[1]
+        power1TextView.text = "X${firstEntry.value ?: 0}"
+        val secondEntry = entries[0]
+        power2TextView.text = "X${secondEntry.value ?: 0}"
     }
 
     override fun onCreateOptionsMenu(menu: android.view.Menu?): Boolean {

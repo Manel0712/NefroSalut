@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:background="@color/base"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomDieta"
+        android:layout_width="235dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/inria_sans_light"
+        android:gravity="center"
+        android:text="Dietes i Plats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCrearDieta"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="228dp"
+        android:layout_height="56dp"
+        android:drawableStart="@drawable/baseline_add_24"
+        android:drawablePadding="8dp"
+        android:text="Crear dieta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline19" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerDieta"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="228dp"
+        android:layout_height="56dp"
+        android:drawablePadding="8dp"
+        android:text="Veure dieta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearDieta" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerPlato"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="228dp"
+        android:layout_height="56dp"
+        android:drawablePadding="8dp"
+        android:text="Veure plat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerDieta" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

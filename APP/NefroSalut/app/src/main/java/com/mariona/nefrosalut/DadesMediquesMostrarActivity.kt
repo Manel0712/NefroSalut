@@ -2,10 +2,15 @@ package com.mariona.nefrosalut
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.mariona.nefrosalut.databinding.DadesMediquesMostrarBinding
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 
+private lateinit var user: Any
+private lateinit var rol: String
 class DadesMediquesMostrarActivity : AppCompatActivity() {
     private lateinit var binding: DadesMediquesMostrarBinding
 
@@ -13,6 +18,14 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DadesMediquesMostrarBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
+        }
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -42,8 +55,14 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
         binding.tvFaseDades.text = fase
     }
 
-    fun volverOnClick(){
+    fun volverOnClick(view: View){
         val intent = Intent(this, Perfil::class.java)
+        if (rol.equals("Paciente")) {
+            intent.putExtra("user", user as Paciente)
+        } else if (rol.equals("Familiar")) {
+            intent.putExtra("user", user as Familiar)
+        }
+        intent.putExtra("rol", rol)
         startActivity(intent)
     }
 }

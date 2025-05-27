@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar superior -->
+
+
+    <ImageView
+        android:id="@+id/imgvideo"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:src="@drawable/juego_de_claqueta"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVideos"
+        app:layout_constraintStart_toEndOf="@+id/btnVideos"
+        app:layout_constraintTop_toTopOf="@+id/btnVideos" />
+
+    <ImageView
+        android:id="@+id/imgjocs"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ajedrez_caballero_alt"
+        app:layout_constraintBottom_toBottomOf="@+id/btnJocs"
+        app:layout_constraintStart_toEndOf="@+id/btnJocs"
+        app:layout_constraintTop_toTopOf="@+id/btnJocs" />
+
+    <ImageView
+        android:id="@+id/imgdietas"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ensalada"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDietas"
+        app:layout_constraintStart_toEndOf="@+id/btnDietas"
+        app:layout_constraintTop_toTopOf="@+id/btnDietas" />
+
+    <ImageView
+        android:id="@+id/imgperfil"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:src="@drawable/usuario"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPerfil"
+        app:layout_constraintStart_toEndOf="@+id/btnPerfil"
+        app:layout_constraintTop_toTopOf="@+id/btnPerfil" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:background="@color/base"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto Bienvenida -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="249dp"
+        android:layout_height="62dp"
+        android:src="@drawable/untitled"
+        app:layout_constraintBottom_toBottomOf="@+id/menu"
+        app:layout_constraintEnd_toEndOf="@+id/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benvingut/da"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Texto Menu -->
+
+    <!-- Botón Videos -->
+
+    <!-- Botón Jocs -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Menu"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVideos"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/base"
+        android:icon="@drawable/juego_de_claqueta"
+
+        android:onClick="videosClick"
+        android:text="Videos"
+        android:textColor="#000000"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <!-- Botón Dietas -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnJocs"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/base"
+        android:onClick="quizClick"
+        android:text="Quiz"
+        android:textColor="#000000"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVideos" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDietas"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/base"
+
+        android:onClick="dietasClick"
+        android:text="Dietas"
+        android:textColor="#000000"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJocs" />
+
+    <!-- Botón Perfil -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPerfil"
+        style="@style/RoundedButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/base"
+
+        android:onClick="perfilClick"
+        android:text="Perfil"
+        android:textColor="#000000"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDietas" />
+
+    <!-- Botón Foros -->
+
+    <!-- Botón Omple les dades -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

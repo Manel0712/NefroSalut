@@ -8,5 +8,5 @@ data class Progreso(
     val powerUps: Map<String, Int>,
     val monedas: Int,
     val puntos: Int
-)
+): Serializable
 
