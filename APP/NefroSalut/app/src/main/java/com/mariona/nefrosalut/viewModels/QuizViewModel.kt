@@ -22,6 +22,9 @@ class QuizViewModel: ViewModel() {
     private val _progreso = MutableLiveData<List<Progreso>>(emptyList())
     public val progreso: LiveData<List<Progreso>> get() = _progreso
 
+    private val _progresoUsuario = MutableLiveData<List<Progreso>>(emptyList())
+    public val progresoUsuario: LiveData<List<Progreso>> get() = _progresoUsuario
+
     private val _guardarProgreso = MutableLiveData<List<QuizPaciente>>(emptyList())
     public val guardarProgreso: LiveData<List<QuizPaciente>> get() = _guardarProgreso
 
@@ -95,6 +98,19 @@ class QuizViewModel: ViewModel() {
             var resposta = Connection.nefroSalutService.guardarPartida(idUsuario, 1, respuestasCorectas, respuestasIncorrectas)
             if (resposta.isSuccessful) {
                 _guardarProgreso.value = resposta.body()
+            }
+            else {
+                _error.value = "ERROR CODE: " + resposta.code().toString()
+            }
+        }
+    }
+
+    public fun progreso(idUsuario: Long) {
+        viewModelScope.launch {
+            _error.value = null
+            var resposta = Connection.nefroSalutService.progreso(idUsuario)
+            if (resposta.isSuccessful) {
+                _progresoUsuario.value = resposta.body()
             }
             else {
                 _error.value = "ERROR CODE: " + resposta.code().toString()

@@ -10,7 +10,7 @@ import retrofit2.create
 import java.util.concurrent.TimeUnit
 
 object Connection {
-    private const val TOKEN = "eOAnQ3ZLex43Yinb8rWLGa1XjrTrW7JLXGfAB9PFf2640000"
+    private const val TOKEN = "M8sJktVNZJtJzmotdQRZD9D1KEXPfhT84bIP5peY4ef9272c"
 
     private val authInterceptor = Interceptor { chain ->
         val originalRequest: Request = chain.request()

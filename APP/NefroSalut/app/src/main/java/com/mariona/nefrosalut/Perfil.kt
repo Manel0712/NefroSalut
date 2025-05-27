@@ -6,15 +6,19 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.mariona.nefrosalut.models.Familiar
 import com.mariona.nefrosalut.models.Paciente
+import com.mariona.nefrosalut.viewModels.QuizViewModel
+import com.mariona.nefrosalut.viewModels.QuizViewModelFactory
 
 class Perfil : AppCompatActivity() {
 
     private lateinit var user: Any
     private lateinit var rol: String
+    private val viewModel: QuizViewModel by viewModels { QuizViewModelFactory() }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.perfil)
@@ -26,6 +30,19 @@ class Perfil : AppCompatActivity() {
 
         val nombreTextView = findViewById<TextView>(R.id.inputUser)
         val emailTextView = findViewById<TextView>(R.id.inputEmail)
+
+        viewModel.progresoUsuario.observe(this) { progresos ->
+            if (progresos.size != 0) {
+                val intent = Intent(this, verProgreso::class.java)
+
+                val paciente = user as? Paciente
+                val progreso = progresos[0]
+
+                intent.putExtra("progreso", progreso)
+                intent.putExtra("nombre", paciente?.nombre)
+                startActivity(intent)
+            }
+        }
 
         nombreTextView.text = paciente?.nombre ?: "Nombre no disponible"
         emailTextView.text = paciente?.email ?: "Email no disponible"
@@ -101,14 +118,8 @@ class Perfil : AppCompatActivity() {
 
 
     fun verProgresoClick(view: android.view.View) {
-        val intent = Intent(this, verProgreso::class.java)
-
-        val paciente = user as? Paciente
-        val progreso = paciente?.progreso  // Asegúrate de tener esto en la clase Paciente
-
-        intent.putExtra("progreso", progreso)
-        intent.putExtra("nombre", paciente?.nombre)
-        startActivity(intent)
+        var paciente = user as Paciente
+        viewModel.progreso(paciente.id)
     }
 
     fun cerrarSesionClick(view: android.view.View) {

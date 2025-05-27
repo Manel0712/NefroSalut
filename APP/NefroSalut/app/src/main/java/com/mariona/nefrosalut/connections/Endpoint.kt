@@ -69,4 +69,7 @@ interface Endpoint {
 
     @PUT ("api/progreso/{progreso}")
     suspend fun updateProgreso(@Path("progreso") id: Int, @Query("power_ups") powerUps: String, @Query("monedas") monedas: Int , @Query("puntos") puntos: Int): Response<List<Progreso>>
+
+    @GET ("api/paciente/{paciente}/progreso")
+    suspend fun progreso(@Path("paciente") id: Long): Response<List<Progreso>>
 }
