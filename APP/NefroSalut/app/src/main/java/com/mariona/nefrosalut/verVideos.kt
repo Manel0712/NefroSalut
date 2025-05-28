@@ -16,6 +16,8 @@ import androidx.appcompat.widget.Toolbar
 import com.google.android.material.snackbar.Snackbar
 import com.mariona.nefrosalut.adapter.VideosAdapter
 import com.mariona.nefrosalut.databinding.ListVideosBinding
+import com.mariona.nefrosalut.models.Familiar
+import com.mariona.nefrosalut.models.Paciente
 import com.mariona.nefrosalut.viewModels.VideosViewModelFactory
 import com.mariona.nefrosalut.viewModels.VideosViewModel
 
@@ -24,6 +26,8 @@ class verVideos : AppCompatActivity() {
     private lateinit var binding: ListVideosBinding
     private val videosAdapter = VideosAdapter(emptyList())
     var activacion: Boolean = false
+    private lateinit var user: Any
+    private lateinit var rol: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +41,21 @@ class verVideos : AppCompatActivity() {
         setSupportActionBar(toolbar)
         toolbar.setOnClickListener {
             val intent = Intent(this, MainMenu::class.java)
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
+            intent.putExtra("rol", rol)
             startActivity(intent)
+        }
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
         }
 
         binding.recyclerView.adapter = videosAdapter

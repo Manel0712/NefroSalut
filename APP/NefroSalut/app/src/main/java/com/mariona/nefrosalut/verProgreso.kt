@@ -19,6 +19,12 @@ class verProgreso: AppCompatActivity() {
         setSupportActionBar(toolbar)
         toolbar.setOnClickListener {
             val intent = Intent(this, MainMenu::class.java)
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
+            intent.putExtra("rol", rol)
             startActivity(intent)
         }
 

@@ -19,6 +19,19 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
         binding = DadesMediquesMostrarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        toolbar.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
+            startActivity(intent)
+        }
+
+
         rol = intent.extras!!.getString("rol").toString()
         if (rol.equals("Paciente")) {
             user = intent.extras!!.getSerializable("user") as Paciente
@@ -27,12 +40,6 @@ class DadesMediquesMostrarActivity : AppCompatActivity() {
             user = intent.extras!!.getSerializable("user") as Familiar
         }
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        toolbar.setOnClickListener {
-            val intent = Intent(this, MainMenu::class.java)
-            startActivity(intent)
-        }
 
         val dni = intent.getStringExtra("dni") ?: "No disponible"
         val dataNaixement = intent.getStringExtra("dataNaixement") ?: "No disponible"
