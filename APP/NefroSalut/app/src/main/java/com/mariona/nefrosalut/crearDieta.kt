@@ -33,7 +33,20 @@ class crearDieta: AppCompatActivity() {
         setSupportActionBar(toolbar)
         toolbar.setOnClickListener {
             val intent = Intent(this, MainMenu::class.java)
+            if (rol.equals("Paciente")) {
+                intent.putExtra("user", user as Paciente)
+            } else if (rol.equals("Familiar")) {
+                intent.putExtra("user", user as Familiar)
+            }
             startActivity(intent)
+        }
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
         }
 
         viewModel.crearDieta.observe(this) { dietas ->
