@@ -153,7 +153,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7048f904-a423-4bc5-8239-93afea667e51" name="Changes" comment="Toolbar, falta arreglar i ultimos canvios" />
+    <list default="true" id="7048f904-a423-4bc5-8239-93afea667e51" name="Changes" comment="Toolbar, falta arreglar i ultimos canvios">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -658,12 +660,12 @@
       <map>
         <entry key="com.mariona.nefrosalut">
           <value>
-            <CheckInfo lastCheckTimestamp="1748379238837" />
+            <CheckInfo lastCheckTimestamp="1748509474141" />
           </value>
         </entry>
         <entry key="com.mariona.nefrosalut.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1748379238837" />
+            <CheckInfo lastCheckTimestamp="1748509474141" />
           </value>
         </entry>
       </map>
