@@ -10,7 +10,7 @@ import retrofit2.create
 import java.util.concurrent.TimeUnit
 
 object Connection {
-    private const val TOKEN = "eOAnQ3ZLex43Yinb8rWLGa1XjrTrW7JLXGfAB9PFf2640000"
+    private const val TOKEN = "8OoKQ1nQSmPcnOCfh0mso8bHbjHods6grbwHW0V3c1fa4b8b"
 
     private val authInterceptor = Interceptor { chain ->
         val originalRequest: Request = chain.request()
@@ -27,7 +27,7 @@ object Connection {
     private val okHttpClientNefrosalut = HttpLoggingInterceptor().run {
         level = HttpLoggingInterceptor.Level.BODY
         OkHttpClient.Builder()
-            .connectTimeout(10, TimeUnit.SECONDS)
+            .connectTimeout(3600, TimeUnit.SECONDS)
             .addInterceptor(authInterceptor)
             .addInterceptor(loggingInterceptor)
             .addInterceptor(this).build()
@@ -35,7 +35,7 @@ object Connection {
     }
 
     private val builderNefrosalut = Retrofit.Builder()
-        .baseUrl("http://10.0.2.2:8000/")
+        .baseUrl("https://nefrosalutapi.onrender.com/public/")
         .client(okHttpClientNefrosalut)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
