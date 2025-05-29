@@ -31,8 +31,21 @@ class verDietas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        binding = DietasBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
+
+        rol = intent.extras!!.getString("rol").toString()
+        if (rol.equals("Paciente")) {
+            user = intent.extras!!.getSerializable("user") as Paciente
+        }
+        else if (rol.equals("Familiar")) {
+            user = intent.extras!!.getSerializable("user") as Familiar
+        }
+
         toolbar.setOnClickListener {
             val intent = Intent(this, MainMenu::class.java)
             if (rol.equals("Paciente")) {
@@ -42,10 +55,6 @@ class verDietas : AppCompatActivity() {
             }
             startActivity(intent)
         }
-
-        binding = DietasBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
 
         binding.rvVerDietas.adapter = dietasAdapter
 
@@ -61,14 +70,6 @@ class verDietas : AppCompatActivity() {
         viewModel.dieta.observe(this) { dietas ->
             dietasAdapter.dietas = dietas
             dietasAdapter.notifyDataSetChanged()
-        }
-
-        rol = intent.extras!!.getString("rol").toString()
-        if (rol.equals("Paciente")) {
-            user = intent.extras!!.getSerializable("user") as Paciente
-        }
-        else if (rol.equals("Familiar")) {
-            user = intent.extras!!.getSerializable("user") as Familiar
         }
 
         viewModel.error.observe(this) {

@@ -27,7 +27,7 @@ object Connection {
     private val okHttpClientNefrosalut = HttpLoggingInterceptor().run {
         level = HttpLoggingInterceptor.Level.BODY
         OkHttpClient.Builder()
-            .connectTimeout(3600, TimeUnit.SECONDS)
+            .connectTimeout(7200, TimeUnit.SECONDS)
             .addInterceptor(authInterceptor)
             .addInterceptor(loggingInterceptor)
             .addInterceptor(this).build()

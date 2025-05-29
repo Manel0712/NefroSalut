@@ -28,8 +28,7 @@ class CrearDietasViewModel: ViewModel() {
     fun crearDieta(nombre: String, rol: String, usuario: Long) {
         viewModelScope.launch {
             _error.value = null
-            var dieta = Dietas(0, nombre, rol, usuario)
-            var resposta = Connection.nefroSalutService.crearDieta(dieta)
+            var resposta = Connection.nefroSalutService.crearDieta(nombre, rol, usuario)
 
             if (resposta.isSuccessful) {
                 _crearDieta.value = resposta.body()

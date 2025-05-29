@@ -32,7 +32,11 @@ class platosDiets : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        binding = VerDietasBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
         toolbar.setOnClickListener {
             val intent = Intent(this, MainMenu::class.java)
@@ -43,10 +47,6 @@ class platosDiets : AppCompatActivity() {
             }
             startActivity(intent)
         }
-
-        binding = VerDietasBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
 
         dieta = intent.extras!!.getLong("dieta").toInt()
         nombreDieta = intent.extras!!.getString("nombreDieta").toString()
